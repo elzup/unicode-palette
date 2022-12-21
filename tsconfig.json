@@ -1,0 +1,15 @@
+{
+  "extends": "@elzup/tsconfig",
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "noUncheckedIndexedAccess": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "outDir": "lib",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
