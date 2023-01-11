@@ -1,13 +1,12 @@
 {
-  "name": "TODO",
+  "name": "unicode-palette",
   "version": "0.0.0",
-  "description": "TODO",
+  "description": "unicode-palette",
   "access": "public",
-  "type": "module",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": "elzup/TODO",
+  "repository": "elzup/unicode-palette",
   "engines": {
     "node": ">=16"
   },
