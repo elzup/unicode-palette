@@ -3200,10 +3200,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lint-staged@13.2.2:
-  version "13.2.2"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-13.2.2.tgz#5e711d3139c234f73402177be2f8dd312e6508ca"
-  integrity sha512-71gSwXKy649VrSU09s10uAT0rWCcY3aewhMaHyl2N84oBk4Xs9HgxvUp3AYu+bNsK4NrOYYxvSgg7FyGJ+jGcA==
+lint-staged@13.2.3:
+  version "13.2.3"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-13.2.3.tgz#f899aad6c093473467e9c9e316e3c2d8a28f87a7"
+  integrity sha512-zVVEXLuQIhr1Y7R7YAWx4TZLdvuzk7DnmrsTNL0fax6Z3jrpFcas+vKbzxhhvp6TA55m1SQuWkpzI1qbfDZbAg==
   dependencies:
     chalk "5.2.0"
     cli-truncate "^3.1.0"
@@ -4035,10 +4035,10 @@ signal-exit@^3.0.2, signal-exit@^3.0.3, signal-exit@^3.0.7:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
 
-simple-git@^3.7.1:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.11.0.tgz#fd8c98756f671e8056d7c0023394dadf1e3124b7"
-  integrity sha512-XULamN/hxviH/ABjDbxJqUTpH59Pn3fHRtwZZZ6v7KWTLE3wKl6CLB0SPXFfzjalQ5hUp+R5DWX2X8rKm4crvw==
+simple-git@^3.18.0:
+  version "3.19.1"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.19.1.tgz#ff9c021961a3d876a1b115b1893bed9a28855d30"
+  integrity sha512-Ck+rcjVaE1HotraRAS8u/+xgTvToTuoMkT9/l9lvuP5jftwnYUp6DwuJzsKErHgfyRk8IB8pqGHWEbM3tLgV1w==
   dependencies:
     "@kwsites/file-exists" "^1.1.1"
     "@kwsites/promise-deferred" "^1.1.1"
@@ -4492,10 +4492,10 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-unimported@1.27.1:
-  version "1.27.1"
-  resolved "https://registry.yarnpkg.com/unimported/-/unimported-1.27.1.tgz#3ef7970578a69584e7aabfe9d4c81fd530a011f9"
-  integrity sha512-2qahkDZxuOucHhz6mYo0Htfg/QqcLCoE/j3w9NRwv4s2obhYU7kLxBcD19lEmtZnwE/48ynOzh8wZdUj/edAhw==
+unimported@1.29.2:
+  version "1.29.2"
+  resolved "https://registry.yarnpkg.com/unimported/-/unimported-1.29.2.tgz#70c15ddacb8022ec84c92e45c0b38e546fadcca9"
+  integrity sha512-wJFzlt0X86Xgo6RHlKDpydMifJhKRj4H8i6H3m+PH+c478kbvqQ/uMJ2Qz14HS2ZQqG1yuKE5rWknTLD4kIdTA==
   dependencies:
     "@typescript-eslint/parser" "^5.27.1"
     "@typescript-eslint/typescript-estree" "^5.27.1"
@@ -4508,7 +4508,7 @@ unimported@1.27.1:
     ora "^5.3.0"
     read-pkg-up "^7.0.1"
     resolve "^1.20.0"
-    simple-git "^3.7.1"
+    simple-git "^3.18.0"
     term-size "^2.2.1"
     typescript "^4.3.5"
     yargs "^16.2.0"
