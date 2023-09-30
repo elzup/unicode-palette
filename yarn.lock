@@ -1544,6 +1544,16 @@ convert-source-map@^1.4.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
+cosmiconfig@^8.3.6:
+  version "8.3.6"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.3.6.tgz#060a2b871d66dba6c8538ea1118ba1ac16f5fae3"
+  integrity sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==
+  dependencies:
+    import-fresh "^3.3.0"
+    js-yaml "^4.1.0"
+    parse-json "^5.2.0"
+    path-type "^4.0.0"
+
 create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
@@ -2452,7 +2462,7 @@ ignore@^5.2.0:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
 
-import-fresh@^3.0.0, import-fresh@^3.2.1:
+import-fresh@^3.0.0, import-fresh@^3.2.1, import-fresh@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.3.0.tgz#37162c25fcb9ebaa2e6e53d5b4d88ce17d9e0c2b"
   integrity sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==
@@ -4465,14 +4475,15 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-unimported@1.29.2:
-  version "1.29.2"
-  resolved "https://registry.yarnpkg.com/unimported/-/unimported-1.29.2.tgz#70c15ddacb8022ec84c92e45c0b38e546fadcca9"
-  integrity sha512-wJFzlt0X86Xgo6RHlKDpydMifJhKRj4H8i6H3m+PH+c478kbvqQ/uMJ2Qz14HS2ZQqG1yuKE5rWknTLD4kIdTA==
+unimported@1.30.0:
+  version "1.30.0"
+  resolved "https://registry.yarnpkg.com/unimported/-/unimported-1.30.0.tgz#c0350cd408be706fd0465d15449815ad37f17440"
+  integrity sha512-4/NKy/a8kEFu6tDbY/CTiaqtIBR1LeI5RWDzfLlKX2ipMfNMbTyEVjxiGCWq8EByI8rvH+Y2+IEaPU8n7U141g==
   dependencies:
     "@typescript-eslint/parser" "^5.27.1"
     "@typescript-eslint/typescript-estree" "^5.27.1"
     chalk "^4.1.0"
+    cosmiconfig "^8.3.6"
     debug "^4.3.2"
     file-entry-cache "^6.0.1"
     flow-remove-types "2.156.0"
