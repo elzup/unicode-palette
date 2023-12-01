@@ -57,7 +57,7 @@
     "ts-jest": "28.0.8",
     "tsd": "0.29.0",
     "typescript": "4.9.5",
-    "unimported": "1.30.0"
+    "unimported": "1.31.1"
   },
   "dependencies": {
     "ts-node": "^10.9.1"
