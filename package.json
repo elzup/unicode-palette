@@ -55,7 +55,7 @@
     "lint-staged": "13.3.0",
     "prettier": "2.8.8",
     "ts-jest": "28.0.8",
-    "tsd": "0.29.0",
+    "tsd": "0.30.1",
     "typescript": "4.9.5",
     "unimported": "1.31.1"
   },
