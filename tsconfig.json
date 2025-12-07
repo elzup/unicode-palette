@@ -1,15 +1,18 @@
 {
   "extends": "@elzup/tsconfig",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "esnext",
+    "module": "esnext",
+    "target": "es2020",
+    "moduleResolution": "node",
     "noUncheckedIndexedAccess": false,
     "noPropertyAccessFromIndexSignature": false,
     "outDir": "lib",
     "baseUrl": ".",
+    "declaration": false,
     "paths": {
       "*": ["node_modules/*", "src/types/*"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["src/__test__/**/*", "lib"]
 }

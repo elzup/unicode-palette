@@ -1,76 +1,56 @@
-import { createCanvas, registerFont } from 'canvas'
 import * as fs from 'fs'
+import { createCanvas, registerFont } from 'canvas'
+import type { CharCategory, GridOptions } from '../types'
+import {
+  getCategory,
+  resolveConfig,
+  skipSurrogate,
+  CATEGORY_COLORS,
+} from './core'
 
-// GNU Unifont を登録（BMP全体をカバー）
-const UNIFONT_PATH = './fonts/unifont.otf'
-if (!fs.existsSync(UNIFONT_PATH)) {
-  console.error('Error: Font file not found.')
-  console.error('')
-  console.error('Please run the setup script first:')
-  console.error('  ./scripts/setup-font.sh')
-  console.error('')
-  console.error('Or download manually from:')
-  console.error('  https://unifoundry.com/pub/unifont/')
-  process.exit(1)
-}
-registerFont(UNIFONT_PATH, { family: 'Unifont' })
-console.log(`Font loaded: ${UNIFONT_PATH}`)
+export type RenderStats = Record<CharCategory, number>
 
-const CELL_SIZE = 16
-const COLS = 64
-const ROWS = 104
-const TOTAL = COLS * ROWS // 6656 (約10% of BMP, 黄金比 1:1.625)
-
-const START_CODEPOINT = 0x0000
-
-// 非表示文字の判定
-const RE_CONTROL = /\p{Cc}/u // 制御文字
-const RE_SURROGATE = /\p{Cs}/u // サロゲート
-const RE_UNASSIGNED = /\p{Cn}/u // 未割り当て・非文字
-const RE_PRIVATE = /\p{Co}/u // 私用領域
-
-type CharCategory =
-  | 'printable'
-  | 'control'
-  | 'surrogate'
-  | 'unassigned'
-  | 'private'
-  | 'noGlyph' // フォントにグリフがない
-
-function getCategory(char: string): CharCategory {
-  if (RE_CONTROL.test(char)) return 'control'
-  if (RE_SURROGATE.test(char)) return 'surrogate'
-  if (RE_UNASSIGNED.test(char)) return 'unassigned'
-  if (RE_PRIVATE.test(char)) return 'private'
-  return 'printable'
+function ensureFont(fontPath: string): void {
+  if (!fs.existsSync(fontPath)) {
+    console.error('Error: Font file not found.')
+    console.error('')
+    console.error('Please run the setup script first:')
+    console.error('  ./scripts/setup-font.sh')
+    console.error('')
+    console.error('Or download manually from:')
+    console.error('  https://unifoundry.com/pub/unifont/')
+    process.exit(1)
+  }
+  registerFont(fontPath, { family: 'Unifont' })
 }
 
-const CATEGORY_COLORS: Record<CharCategory, string> = {
-  printable: '#ffffff', // 白
-  control: '#cccccc', // グレー
-  surrogate: '#ffcccc', // 薄い赤
-  unassigned: '#cccccc', // グレー
-  private: '#ffffcc', // 薄い黄
-  noGlyph: '#ffccff', // 薄い紫（フォント未対応）
-}
+export function renderPng(options: GridOptions = {}): {
+  buffer: Buffer
+  stats: RenderStats
+} {
+  const config = resolveConfig(options)
+  const { cols, rows, cellSize, startCodepoint, fontPath, showBackground } =
+    config
+  const total = cols * rows
 
-function render() {
-  const width = COLS * CELL_SIZE // 640px
-  const height = ROWS * CELL_SIZE // 400px
+  ensureFont(fontPath)
+
+  const width = cols * cellSize
+  const height = rows * cellSize
 
   const canvas = createCanvas(width, height)
   const ctx = canvas.getContext('2d')
 
-  // 背景を白に
   ctx.fillStyle = '#ffffff'
   ctx.fillRect(0, 0, width, height)
 
-  ctx.font = '12px Unifont'
+  ctx.font = `${Math.floor(cellSize * 0.75)}px Unifont`
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
 
-  let codepoint = START_CODEPOINT
-  const stats: Record<CharCategory, number> = {
+  let codepoint = startCodepoint
+
+  const stats: RenderStats = {
     printable: 0,
     control: 0,
     surrogate: 0,
@@ -79,58 +59,83 @@ function render() {
     noGlyph: 0,
   }
 
-  // 豆腐（.notdef）検出用: 未定義文字の幅を基準にする
   const notdefWidth = ctx.measureText('\uFFFF').width
 
-  for (let row = 0; row < ROWS; row++) {
-    for (let col = 0; col < COLS; col++) {
-      // サロゲートペア範囲をスキップ
-      if (codepoint >= 0xd800 && codepoint <= 0xdfff) {
-        codepoint = 0xe000
-      }
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+      codepoint = skipSurrogate(codepoint)
 
       const char = String.fromCodePoint(codepoint)
       const category = getCategory(char)
+
       stats[category]++
 
-      const x = col * CELL_SIZE
-      const y = row * CELL_SIZE
+      const x = col * cellSize
+      const y = row * cellSize
 
-      // 背景色
-      ctx.fillStyle = CATEGORY_COLORS[category]
-      ctx.fillRect(x, y, CELL_SIZE, CELL_SIZE)
+      if (showBackground) {
+        ctx.fillStyle = CATEGORY_COLORS[category]
+        ctx.fillRect(x, y, cellSize, cellSize)
+      }
 
-      // 文字描画（printable のみ、豆腐チェック付き）
       if (category === 'printable') {
         const charWidth = ctx.measureText(char).width
+
         if (Math.abs(charWidth - notdefWidth) < 0.1) {
-          // 豆腐（グリフなし）
           stats.printable--
           stats.noGlyph++
-          ctx.fillStyle = CATEGORY_COLORS.noGlyph
-          ctx.fillRect(x, y, CELL_SIZE, CELL_SIZE)
+          if (showBackground) {
+            ctx.fillStyle = CATEGORY_COLORS.noGlyph
+            ctx.fillRect(x, y, cellSize, cellSize)
+          }
         } else {
           ctx.fillStyle = '#000000'
-          ctx.fillText(char, x + CELL_SIZE / 2, y + CELL_SIZE / 2)
+          ctx.fillText(char, x + cellSize / 2, y + cellSize / 2)
         }
       }
 
       codepoint++
-      if (codepoint - START_CODEPOINT >= TOTAL) break
+      if (codepoint - startCodepoint >= total) break
     }
+    if (codepoint - startCodepoint >= total) break
   }
 
-  // PNG出力
   const buffer = canvas.toBuffer('image/png')
-  const outPath = './output/unicode-sample-10pct.png'
 
-  fs.mkdirSync('./output', { recursive: true })
-  fs.writeFileSync(outPath, new Uint8Array(buffer))
-
-  console.log(`Generated: ${outPath}`)
-  console.log(`Size: ${width} x ${height} px`)
-  console.log(`Range: U+${START_CODEPOINT.toString(16).padStart(4, '0')} - U+${(codepoint - 1).toString(16).padStart(4, '0')}`)
-  console.log(`Stats:`, stats)
+  return { buffer, stats }
 }
 
-render()
+export function renderPngToFile(
+  outPath: string,
+  options: GridOptions = {}
+): RenderStats {
+  const config = resolveConfig(options)
+  const { buffer, stats } = renderPng(options)
+
+  const dir = outPath.substring(0, outPath.lastIndexOf('/'))
+
+  if (dir !== '') {
+    fs.mkdirSync(dir, { recursive: true })
+  }
+
+  fs.writeFileSync(outPath, new Uint8Array(buffer))
+
+  const { cols, rows, cellSize, startCodepoint } = config
+  const total = cols * rows
+
+  console.log(`Generated: ${outPath}`)
+  console.log(`Size: ${cols * cellSize} x ${rows * cellSize} px`)
+  const endCodepoint = startCodepoint + total - 1
+
+  const startHex = startCodepoint.toString(16).padStart(4, '0')
+  const endHex = endCodepoint.toString(16).padStart(4, '0')
+
+  console.log(`Range: U+${startHex} - U+${endHex}`)
+  console.log(`Stats:`, stats)
+
+  return stats
+}
+
+if (require.main === module) {
+  renderPngToFile('./output/unicode-sample-10pct.png', { showBackground: true })
+}
