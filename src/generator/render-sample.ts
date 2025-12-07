@@ -3,12 +3,18 @@ import * as fs from 'fs'
 
 // GNU Unifont を登録（BMP全体をカバー）
 const UNIFONT_PATH = './fonts/unifont.otf'
-if (fs.existsSync(UNIFONT_PATH)) {
-  registerFont(UNIFONT_PATH, { family: 'Unifont' })
-  console.log(`Font loaded: ${UNIFONT_PATH}`)
-} else {
-  console.warn('Warning: Unifont not found at', UNIFONT_PATH)
+if (!fs.existsSync(UNIFONT_PATH)) {
+  console.error('Error: Font file not found.')
+  console.error('')
+  console.error('Please run the setup script first:')
+  console.error('  ./scripts/setup-font.sh')
+  console.error('')
+  console.error('Or download manually from:')
+  console.error('  https://unifoundry.com/pub/unifont/')
+  process.exit(1)
 }
+registerFont(UNIFONT_PATH, { family: 'Unifont' })
+console.log(`Font loaded: ${UNIFONT_PATH}`)
 
 const CELL_SIZE = 16
 const COLS = 64
