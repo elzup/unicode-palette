@@ -12,7 +12,6 @@ const require = createRequire(import.meta.url)
 const BLOCK_DIR = 'node_modules/@unicode/unicode-16.0.0/Block'
 const OUTPUT_DIR = 'data'
 const OUTPUT_JSON = `${OUTPUT_DIR}/unicode-blocks.json`
-const OUTPUT_SCHEMA = `${OUTPUT_DIR}/unicode-blocks.schema.json`
 const OUTPUT_CSV = `${OUTPUT_DIR}/unicode-blocks.csv`
 
 // Get all unassigned codepoints
@@ -50,16 +49,16 @@ function getBlockData(
   unassignedSet: Set<number>
 ): UnicodeBlockData | null {
   try {
-    const allCodepoints: number[] = require(
-      `@unicode/unicode-16.0.0/Block/${blockName}/code-points.js`
-    )
+    const allCodepoints: number[] = require(`@unicode/unicode-16.0.0/Block/${blockName}/code-points.js`)
     if (allCodepoints.length === 0) return null
 
     const blockStart = Math.min(...allCodepoints)
     const blockEnd = Math.max(...allCodepoints)
 
     // Filter out unassigned codepoints
-    const definedCodepoints = allCodepoints.filter((cp) => !unassignedSet.has(cp))
+    const definedCodepoints = allCodepoints.filter(
+      (cp) => !unassignedSet.has(cp)
+    )
     const unassignedCount = allCodepoints.length - definedCodepoints.length
 
     const ranges = toRanges(definedCodepoints)
@@ -115,50 +114,9 @@ function main() {
   writeFileSync(OUTPUT_JSON, JSON.stringify(validated, null, 2))
   console.log(`Generated: ${OUTPUT_JSON}`)
 
-  // Write JSON Schema (manually defined for zod v4 compatibility)
-  const jsonSchema = {
-    $schema: 'http://json-schema.org/draft-07/schema#',
-    title: 'UnicodeBlocksData',
-    type: 'object',
-    required: ['version', 'generatedAt', 'totalBlocks', 'bmpBlocks', 'blocks'],
-    properties: {
-      version: { type: 'string' },
-      generatedAt: { type: 'string', format: 'date-time' },
-      totalBlocks: { type: 'integer', minimum: 0 },
-      bmpBlocks: { type: 'integer', minimum: 0 },
-      blocks: {
-        type: 'array',
-        items: {
-          type: 'object',
-          required: ['name', 'displayName', 'blockStart', 'blockEnd', 'definedCount', 'unassignedCount', 'ranges'],
-          properties: {
-            name: { type: 'string' },
-            displayName: { type: 'string' },
-            blockStart: { type: 'integer', minimum: 0 },
-            blockEnd: { type: 'integer', minimum: 0 },
-            definedCount: { type: 'integer', minimum: 0 },
-            unassignedCount: { type: 'integer', minimum: 0 },
-            ranges: {
-              type: 'array',
-              items: {
-                type: 'object',
-                required: ['start', 'end'],
-                properties: {
-                  start: { type: 'integer', minimum: 0 },
-                  end: { type: 'integer', minimum: 0 },
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-  }
-  writeFileSync(OUTPUT_SCHEMA, JSON.stringify(jsonSchema, null, 2))
-  console.log(`Generated: ${OUTPUT_SCHEMA}`)
-
   // Write CSV
-  const csvHeader = 'name,displayName,blockStart,blockEnd,definedCount,unassignedCount,ranges'
+  const csvHeader =
+    'name,displayName,blockStart,blockEnd,definedCount,unassignedCount,ranges'
   const csvRows = blocks.map((b) => {
     const rangesStr = b.ranges.map((r) => `${r.start}-${r.end}`).join(',')
     // Quote fields that contain commas
@@ -187,7 +145,10 @@ function main() {
 
   console.log(`\nTop 5 blocks with unassigned:`)
   for (const b of blocksWithGaps) {
-    const pct = ((b.unassignedCount / (b.blockEnd - b.blockStart + 1)) * 100).toFixed(1)
+    const pct = (
+      (b.unassignedCount / (b.blockEnd - b.blockStart + 1)) *
+      100
+    ).toFixed(1)
     console.log(`  ${b.displayName}: ${b.unassignedCount} (${pct}%)`)
   }
 }
