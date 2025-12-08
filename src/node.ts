@@ -1,9 +1,10 @@
 // Node.js specific exports (file I/O and canvas)
 export * from './index'
 
-export { renderSvgToFile } from './generator/render-sample-svg'
 export {
+  renderSvgToFile,
+  renderScriptTilesToFile,
   renderPng,
   renderPngToFile,
   type RenderStats,
-} from './generator/render-sample'
+} from './node-io'

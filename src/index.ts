@@ -15,15 +15,25 @@ export {
   escapeXml,
   skipSurrogate,
   CATEGORY_COLORS,
-} from './generator/core'
+  resolveConfig,
+  // Unicode blocks
+  UNICODE_BLOCKS,
+  BMP_BLOCKS,
+  getBlockSize,
+  getQuartileChars,
+  getBlockByCodepoint,
+  type UnicodeBlock,
+} from './core'
 
-// Character generation (browser compatible)
-export type { CharInfo, GridData } from './generator/chars'
+// Render utilities (browser compatible)
+export type { CharInfo, GridData, TileOptions, TileData } from './render'
 export {
   generateChars,
   generateGrid,
   generateSvgString,
-} from './generator/chars'
+  generateTileData,
+  generateScriptTilesSvg,
+} from './render'
 
 // Alias
-export { generateSvgString as renderSvg } from './generator/chars'
+export { generateSvgString as renderSvg } from './render'
