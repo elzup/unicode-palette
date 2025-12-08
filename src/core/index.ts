@@ -10,9 +10,19 @@ export {
 
 export {
   UNICODE_BLOCKS,
+  UNICODE_BLOCKS_DATA,
   BMP_BLOCKS,
   getBlockSize,
   getQuartileChars,
   getBlockByCodepoint,
+  getBlockDataByName,
   type UnicodeBlock,
-} from './blocks.generated'
+} from './blocks'
+
+export {
+  type UnicodeBlockData,
+  type UnicodeBlocksData,
+  type CodepointRange,
+  parseUnicodeBlocksData,
+  safeParseUnicodeBlocksData,
+} from './schema'

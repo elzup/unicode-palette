@@ -6,6 +6,7 @@
     "moduleResolution": "node",
     "noUncheckedIndexedAccess": false,
     "noPropertyAccessFromIndexSignature": false,
+    "resolveJsonModule": true,
     "outDir": "lib",
     "baseUrl": ".",
     "declaration": false,
@@ -13,6 +14,6 @@
       "*": ["node_modules/*", "src/types/*"]
     }
   },
-  "include": ["src/**/*"],
-  "exclude": ["src/__test__/**/*", "lib"]
+  "include": ["src/**/*", "data/**/*.json"],
+  "exclude": ["src/__test__/**/*", "src/generator/**/*", "lib"]
 }

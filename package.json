@@ -47,7 +47,10 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "prepublishOnly": "npm run build && npm test",
-    "generate:data": "tsx scripts/generate-unicode-data.ts"
+    "generate:data": "tsx scripts/generate-unicode-data.ts",
+    "render:svg": "tsx src/generator/render-sample-svg.ts",
+    "render:png": "tsx src/generator/render-sample.ts",
+    "render:tiles": "tsx src/generator/render-script-tiles.ts"
   },
   "files": [
     "lib/"
