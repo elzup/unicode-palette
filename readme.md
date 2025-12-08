@@ -59,7 +59,7 @@ block.ranges.flatMap(r => range(r.end - r.start + 1)).slice(0, 20)
 - [x] XML escape handling
 - [x] GNU Unifont support for consistent character width
 - [x] Console output mode (dump-scripts)
-- [x] **Script tile mode** - For each Unicode block, select 4 representative characters (first char from each quartile) and arrange in 2x2 tiles
+- [x] **Script tile mode** - For each Unicode block, select 4 representative characters (from defined ranges, quartile positions) and arrange in 4x1 tiles
 - [x] **Full Unicode block data** - 338 blocks from `@unicode/unicode-16.0.0`
 - [x] **Function abstraction** - Export reusable functions with configurable options
 - [x] **PNG export** - Convert SVG to PNG using canvas
@@ -81,7 +81,7 @@ yarn add unicode-palette
 ### Generate SVG sample
 
 ```bash
-yarn tsx src/generator/render-sample-svg.ts
+yarn render:svg
 ```
 
 Output: `output/unicode-sample-10pct.svg`
@@ -89,7 +89,7 @@ Output: `output/unicode-sample-10pct.svg`
 ### Generate Script Tiles
 
 ```bash
-yarn tsx src/generator/render-script-tiles.ts
+yarn render:tiles
 ```
 
 Output: `output/script-tiles.svg`
@@ -126,27 +126,34 @@ cp fonts/unifont.otf ~/Library/Fonts/  # macOS
 ## Architecture
 
 ```
+data/
+  unicode-blocks.json       # Single source of truth (338 blocks with ranges)
+  unicode-blocks.csv        # CSV export
+  unicode-blocks.schema.json # JSON Schema
 src/
-  index.ts              # Main exports (browser compatible)
-  node.ts               # Node.js exports (file I/O + canvas)
-  unit.ts               # Utility functions
+  index.ts                  # Main exports (browser compatible)
+  node.ts                   # Node.js exports (file I/O + canvas)
   types/
-    index.ts            # Type definitions
+    index.ts                # Type definitions
   core/
-    blocks.generated.ts # Unicode block definitions (338 blocks)
-    category.ts         # Character category detection
-    index.ts            # Core exports
+    blocks.ts               # Unicode blocks (loaded from JSON)
+    category.ts             # Character category detection
+    schema.ts               # Zod schemas for validation
+    index.ts                # Core exports
   render/
-    chars.ts            # Character grid generation
-    script-tiles.ts     # Script tile generation
-    index.ts            # Render exports
+    chars.ts                # Character grid generation
+    script-tiles.ts         # Script tile generation
+    index.ts                # Render exports
   node-io/
-    file.ts             # SVG file output
-    png.ts              # PNG generation (canvas)
-    index.ts            # Node I/O exports
-  generator/            # Legacy scripts (to be migrated)
+    file.ts                 # SVG file output
+    png.ts                  # PNG generation (canvas)
+    index.ts                # Node I/O exports
+  generator/                # Development scripts
+    render-sample-svg.ts    # yarn render:svg
+    render-sample.ts        # yarn render:png
+    render-script-tiles.ts  # yarn render:tiles
 scripts/
-  generate-blocks.ts    # Generate blocks.generated.ts from @unicode/unicode-16.0.0
+  generate-unicode-data.ts  # Generate JSON/CSV from @unicode/unicode-16.0.0
 ```
 
 ## API
@@ -167,11 +174,10 @@ const svg = generateSvgString({
   cellSize: 16,
 })
 
-// Script tiles (2x2 per block)
+// Script tiles (4x1 per block)
 const tiles = generateScriptTilesSvg({
   cellSize: 32,
   cols: 8,
-  bmpOnly: true, // Use BMP_BLOCKS (164 blocks)
 })
 
 // Access Unicode blocks
@@ -198,7 +204,7 @@ renderPngToFile('./output/unicode.png')
 Block data is generated from `@unicode/unicode-16.0.0`:
 
 ```bash
-yarn tsx scripts/generate-blocks.ts
+yarn generate:data
 ```
 
 ## References
@@ -207,6 +213,10 @@ yarn tsx scripts/generate-blocks.ts
 - [@unicode/unicode-16.0.0](https://www.npmjs.com/package/@unicode/unicode-16.0.0)
 - [ISO 15924 (Scripts)](https://unicode.org/iso15924/)
 - [Unicode Character Database](https://www.unicode.org/ucd/)
+
+## Script Tiles Preview
+
+![Script Tiles](output/script-tiles.svg)
 
 ## License
 
