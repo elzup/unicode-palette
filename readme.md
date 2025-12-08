@@ -13,18 +13,14 @@ Unicode character visualization tool - Generate grid-based character maps as SVG
 - [x] Console output mode (dump-scripts)
 - [x] **Script tile mode** - For each Unicode block, select 4 representative characters (first char from each quartile) and arrange in 2x2 tiles
 - [x] **Full Unicode block data** - 338 blocks from `@unicode/unicode-16.0.0`
+- [x] **Function abstraction** - Export reusable functions with configurable options
+- [x] **PNG export** - Convert SVG to PNG using canvas
 
 ### WIP / Planned
 
 - [ ] **Browser support** - Run in browser environment
-- [ ] **Dynamic configuration**
-  - [ ] Column count (characters per row)
-  - [ ] Cell size (pixels per character)
-  - [ ] Output format (SVG / PNG)
 - [ ] **Random sampling mode** - Select random characters (excluding undefined), e.g., 30x20 grid
 - [ ] **CLI mode** - Output to console with formatting
-- [ ] **Function abstraction** - Export reusable functions with configurable options
-- [ ] **PNG export** - Convert SVG to PNG (coordinates should be shared)
 
 ## Install
 
