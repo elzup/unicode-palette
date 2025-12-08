@@ -1,0 +1,6820 @@
+{
+  "version": "16.0.0",
+  "generatedAt": "2025-12-08T05:21:19.398Z",
+  "totalBlocks": 338,
+  "bmpBlocks": 164,
+  "blocks": [
+    {
+      "name": "Basic_Latin",
+      "displayName": "Basic Latin",
+      "blockStart": 0,
+      "blockEnd": 127,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 0,
+          "end": 127
+        }
+      ]
+    },
+    {
+      "name": "Latin_1_Supplement",
+      "displayName": "Latin 1 Supplement",
+      "blockStart": 128,
+      "blockEnd": 255,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 128,
+          "end": 255
+        }
+      ]
+    },
+    {
+      "name": "Latin_Extended_A",
+      "displayName": "Latin Extended A",
+      "blockStart": 256,
+      "blockEnd": 383,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 256,
+          "end": 383
+        }
+      ]
+    },
+    {
+      "name": "Latin_Extended_B",
+      "displayName": "Latin Extended B",
+      "blockStart": 384,
+      "blockEnd": 591,
+      "definedCount": 208,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 384,
+          "end": 591
+        }
+      ]
+    },
+    {
+      "name": "IPA_Extensions",
+      "displayName": "IPA Extensions",
+      "blockStart": 592,
+      "blockEnd": 687,
+      "definedCount": 96,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 592,
+          "end": 687
+        }
+      ]
+    },
+    {
+      "name": "Spacing_Modifier_Letters",
+      "displayName": "Spacing Modifier Letters",
+      "blockStart": 688,
+      "blockEnd": 767,
+      "definedCount": 80,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 688,
+          "end": 767
+        }
+      ]
+    },
+    {
+      "name": "Combining_Diacritical_Marks",
+      "displayName": "Combining Diacritical Marks",
+      "blockStart": 768,
+      "blockEnd": 879,
+      "definedCount": 112,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 768,
+          "end": 879
+        }
+      ]
+    },
+    {
+      "name": "Greek_And_Coptic",
+      "displayName": "Greek And Coptic",
+      "blockStart": 880,
+      "blockEnd": 1023,
+      "definedCount": 135,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 880,
+          "end": 887
+        },
+        {
+          "start": 890,
+          "end": 895
+        },
+        {
+          "start": 900,
+          "end": 906
+        },
+        {
+          "start": 908,
+          "end": 908
+        },
+        {
+          "start": 910,
+          "end": 929
+        },
+        {
+          "start": 931,
+          "end": 1023
+        }
+      ]
+    },
+    {
+      "name": "Cyrillic",
+      "displayName": "Cyrillic",
+      "blockStart": 1024,
+      "blockEnd": 1279,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 1024,
+          "end": 1279
+        }
+      ]
+    },
+    {
+      "name": "Cyrillic_Supplement",
+      "displayName": "Cyrillic Supplement",
+      "blockStart": 1280,
+      "blockEnd": 1327,
+      "definedCount": 48,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 1280,
+          "end": 1327
+        }
+      ]
+    },
+    {
+      "name": "Armenian",
+      "displayName": "Armenian",
+      "blockStart": 1328,
+      "blockEnd": 1423,
+      "definedCount": 91,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 1329,
+          "end": 1366
+        },
+        {
+          "start": 1369,
+          "end": 1418
+        },
+        {
+          "start": 1421,
+          "end": 1423
+        }
+      ]
+    },
+    {
+      "name": "Hebrew",
+      "displayName": "Hebrew",
+      "blockStart": 1424,
+      "blockEnd": 1535,
+      "definedCount": 88,
+      "unassignedCount": 24,
+      "ranges": [
+        {
+          "start": 1425,
+          "end": 1479
+        },
+        {
+          "start": 1488,
+          "end": 1514
+        },
+        {
+          "start": 1519,
+          "end": 1524
+        }
+      ]
+    },
+    {
+      "name": "Arabic",
+      "displayName": "Arabic",
+      "blockStart": 1536,
+      "blockEnd": 1791,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 1536,
+          "end": 1791
+        }
+      ]
+    },
+    {
+      "name": "Syriac",
+      "displayName": "Syriac",
+      "blockStart": 1792,
+      "blockEnd": 1871,
+      "definedCount": 77,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 1792,
+          "end": 1805
+        },
+        {
+          "start": 1807,
+          "end": 1866
+        },
+        {
+          "start": 1869,
+          "end": 1871
+        }
+      ]
+    },
+    {
+      "name": "Arabic_Supplement",
+      "displayName": "Arabic Supplement",
+      "blockStart": 1872,
+      "blockEnd": 1919,
+      "definedCount": 48,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 1872,
+          "end": 1919
+        }
+      ]
+    },
+    {
+      "name": "Thaana",
+      "displayName": "Thaana",
+      "blockStart": 1920,
+      "blockEnd": 1983,
+      "definedCount": 50,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 1920,
+          "end": 1969
+        }
+      ]
+    },
+    {
+      "name": "NKo",
+      "displayName": "NKo",
+      "blockStart": 1984,
+      "blockEnd": 2047,
+      "definedCount": 62,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 1984,
+          "end": 2042
+        },
+        {
+          "start": 2045,
+          "end": 2047
+        }
+      ]
+    },
+    {
+      "name": "Samaritan",
+      "displayName": "Samaritan",
+      "blockStart": 2048,
+      "blockEnd": 2111,
+      "definedCount": 61,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 2048,
+          "end": 2093
+        },
+        {
+          "start": 2096,
+          "end": 2110
+        }
+      ]
+    },
+    {
+      "name": "Mandaic",
+      "displayName": "Mandaic",
+      "blockStart": 2112,
+      "blockEnd": 2143,
+      "definedCount": 29,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 2112,
+          "end": 2139
+        },
+        {
+          "start": 2142,
+          "end": 2142
+        }
+      ]
+    },
+    {
+      "name": "Syriac_Supplement",
+      "displayName": "Syriac Supplement",
+      "blockStart": 2144,
+      "blockEnd": 2159,
+      "definedCount": 11,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 2144,
+          "end": 2154
+        }
+      ]
+    },
+    {
+      "name": "Arabic_Extended_B",
+      "displayName": "Arabic Extended B",
+      "blockStart": 2160,
+      "blockEnd": 2207,
+      "definedCount": 42,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 2160,
+          "end": 2190
+        },
+        {
+          "start": 2192,
+          "end": 2193
+        },
+        {
+          "start": 2199,
+          "end": 2207
+        }
+      ]
+    },
+    {
+      "name": "Arabic_Extended_A",
+      "displayName": "Arabic Extended A",
+      "blockStart": 2208,
+      "blockEnd": 2303,
+      "definedCount": 96,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 2208,
+          "end": 2303
+        }
+      ]
+    },
+    {
+      "name": "Devanagari",
+      "displayName": "Devanagari",
+      "blockStart": 2304,
+      "blockEnd": 2431,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 2304,
+          "end": 2431
+        }
+      ]
+    },
+    {
+      "name": "Bengali",
+      "displayName": "Bengali",
+      "blockStart": 2432,
+      "blockEnd": 2559,
+      "definedCount": 96,
+      "unassignedCount": 32,
+      "ranges": [
+        {
+          "start": 2432,
+          "end": 2435
+        },
+        {
+          "start": 2437,
+          "end": 2444
+        },
+        {
+          "start": 2447,
+          "end": 2448
+        },
+        {
+          "start": 2451,
+          "end": 2472
+        },
+        {
+          "start": 2474,
+          "end": 2480
+        },
+        {
+          "start": 2482,
+          "end": 2482
+        },
+        {
+          "start": 2486,
+          "end": 2489
+        },
+        {
+          "start": 2492,
+          "end": 2500
+        },
+        {
+          "start": 2503,
+          "end": 2504
+        },
+        {
+          "start": 2507,
+          "end": 2510
+        },
+        {
+          "start": 2519,
+          "end": 2519
+        },
+        {
+          "start": 2524,
+          "end": 2525
+        },
+        {
+          "start": 2527,
+          "end": 2531
+        },
+        {
+          "start": 2534,
+          "end": 2558
+        }
+      ]
+    },
+    {
+      "name": "Gurmukhi",
+      "displayName": "Gurmukhi",
+      "blockStart": 2560,
+      "blockEnd": 2687,
+      "definedCount": 80,
+      "unassignedCount": 48,
+      "ranges": [
+        {
+          "start": 2561,
+          "end": 2563
+        },
+        {
+          "start": 2565,
+          "end": 2570
+        },
+        {
+          "start": 2575,
+          "end": 2576
+        },
+        {
+          "start": 2579,
+          "end": 2600
+        },
+        {
+          "start": 2602,
+          "end": 2608
+        },
+        {
+          "start": 2610,
+          "end": 2611
+        },
+        {
+          "start": 2613,
+          "end": 2614
+        },
+        {
+          "start": 2616,
+          "end": 2617
+        },
+        {
+          "start": 2620,
+          "end": 2620
+        },
+        {
+          "start": 2622,
+          "end": 2626
+        },
+        {
+          "start": 2631,
+          "end": 2632
+        },
+        {
+          "start": 2635,
+          "end": 2637
+        },
+        {
+          "start": 2641,
+          "end": 2641
+        },
+        {
+          "start": 2649,
+          "end": 2652
+        },
+        {
+          "start": 2654,
+          "end": 2654
+        },
+        {
+          "start": 2662,
+          "end": 2678
+        }
+      ]
+    },
+    {
+      "name": "Gujarati",
+      "displayName": "Gujarati",
+      "blockStart": 2688,
+      "blockEnd": 2815,
+      "definedCount": 91,
+      "unassignedCount": 37,
+      "ranges": [
+        {
+          "start": 2689,
+          "end": 2691
+        },
+        {
+          "start": 2693,
+          "end": 2701
+        },
+        {
+          "start": 2703,
+          "end": 2705
+        },
+        {
+          "start": 2707,
+          "end": 2728
+        },
+        {
+          "start": 2730,
+          "end": 2736
+        },
+        {
+          "start": 2738,
+          "end": 2739
+        },
+        {
+          "start": 2741,
+          "end": 2745
+        },
+        {
+          "start": 2748,
+          "end": 2757
+        },
+        {
+          "start": 2759,
+          "end": 2761
+        },
+        {
+          "start": 2763,
+          "end": 2765
+        },
+        {
+          "start": 2768,
+          "end": 2768
+        },
+        {
+          "start": 2784,
+          "end": 2787
+        },
+        {
+          "start": 2790,
+          "end": 2801
+        },
+        {
+          "start": 2809,
+          "end": 2815
+        }
+      ]
+    },
+    {
+      "name": "Oriya",
+      "displayName": "Oriya",
+      "blockStart": 2816,
+      "blockEnd": 2943,
+      "definedCount": 91,
+      "unassignedCount": 37,
+      "ranges": [
+        {
+          "start": 2817,
+          "end": 2819
+        },
+        {
+          "start": 2821,
+          "end": 2828
+        },
+        {
+          "start": 2831,
+          "end": 2832
+        },
+        {
+          "start": 2835,
+          "end": 2856
+        },
+        {
+          "start": 2858,
+          "end": 2864
+        },
+        {
+          "start": 2866,
+          "end": 2867
+        },
+        {
+          "start": 2869,
+          "end": 2873
+        },
+        {
+          "start": 2876,
+          "end": 2884
+        },
+        {
+          "start": 2887,
+          "end": 2888
+        },
+        {
+          "start": 2891,
+          "end": 2893
+        },
+        {
+          "start": 2901,
+          "end": 2903
+        },
+        {
+          "start": 2908,
+          "end": 2909
+        },
+        {
+          "start": 2911,
+          "end": 2915
+        },
+        {
+          "start": 2918,
+          "end": 2935
+        }
+      ]
+    },
+    {
+      "name": "Tamil",
+      "displayName": "Tamil",
+      "blockStart": 2944,
+      "blockEnd": 3071,
+      "definedCount": 72,
+      "unassignedCount": 56,
+      "ranges": [
+        {
+          "start": 2946,
+          "end": 2947
+        },
+        {
+          "start": 2949,
+          "end": 2954
+        },
+        {
+          "start": 2958,
+          "end": 2960
+        },
+        {
+          "start": 2962,
+          "end": 2965
+        },
+        {
+          "start": 2969,
+          "end": 2970
+        },
+        {
+          "start": 2972,
+          "end": 2972
+        },
+        {
+          "start": 2974,
+          "end": 2975
+        },
+        {
+          "start": 2979,
+          "end": 2980
+        },
+        {
+          "start": 2984,
+          "end": 2986
+        },
+        {
+          "start": 2990,
+          "end": 3001
+        },
+        {
+          "start": 3006,
+          "end": 3010
+        },
+        {
+          "start": 3014,
+          "end": 3016
+        },
+        {
+          "start": 3018,
+          "end": 3021
+        },
+        {
+          "start": 3024,
+          "end": 3024
+        },
+        {
+          "start": 3031,
+          "end": 3031
+        },
+        {
+          "start": 3046,
+          "end": 3066
+        }
+      ]
+    },
+    {
+      "name": "Telugu",
+      "displayName": "Telugu",
+      "blockStart": 3072,
+      "blockEnd": 3199,
+      "definedCount": 100,
+      "unassignedCount": 28,
+      "ranges": [
+        {
+          "start": 3072,
+          "end": 3084
+        },
+        {
+          "start": 3086,
+          "end": 3088
+        },
+        {
+          "start": 3090,
+          "end": 3112
+        },
+        {
+          "start": 3114,
+          "end": 3129
+        },
+        {
+          "start": 3132,
+          "end": 3140
+        },
+        {
+          "start": 3142,
+          "end": 3144
+        },
+        {
+          "start": 3146,
+          "end": 3149
+        },
+        {
+          "start": 3157,
+          "end": 3158
+        },
+        {
+          "start": 3160,
+          "end": 3162
+        },
+        {
+          "start": 3165,
+          "end": 3165
+        },
+        {
+          "start": 3168,
+          "end": 3171
+        },
+        {
+          "start": 3174,
+          "end": 3183
+        },
+        {
+          "start": 3191,
+          "end": 3199
+        }
+      ]
+    },
+    {
+      "name": "Kannada",
+      "displayName": "Kannada",
+      "blockStart": 3200,
+      "blockEnd": 3327,
+      "definedCount": 91,
+      "unassignedCount": 37,
+      "ranges": [
+        {
+          "start": 3200,
+          "end": 3212
+        },
+        {
+          "start": 3214,
+          "end": 3216
+        },
+        {
+          "start": 3218,
+          "end": 3240
+        },
+        {
+          "start": 3242,
+          "end": 3251
+        },
+        {
+          "start": 3253,
+          "end": 3257
+        },
+        {
+          "start": 3260,
+          "end": 3268
+        },
+        {
+          "start": 3270,
+          "end": 3272
+        },
+        {
+          "start": 3274,
+          "end": 3277
+        },
+        {
+          "start": 3285,
+          "end": 3286
+        },
+        {
+          "start": 3293,
+          "end": 3294
+        },
+        {
+          "start": 3296,
+          "end": 3299
+        },
+        {
+          "start": 3302,
+          "end": 3311
+        },
+        {
+          "start": 3313,
+          "end": 3315
+        }
+      ]
+    },
+    {
+      "name": "Malayalam",
+      "displayName": "Malayalam",
+      "blockStart": 3328,
+      "blockEnd": 3455,
+      "definedCount": 118,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 3328,
+          "end": 3340
+        },
+        {
+          "start": 3342,
+          "end": 3344
+        },
+        {
+          "start": 3346,
+          "end": 3396
+        },
+        {
+          "start": 3398,
+          "end": 3400
+        },
+        {
+          "start": 3402,
+          "end": 3407
+        },
+        {
+          "start": 3412,
+          "end": 3427
+        },
+        {
+          "start": 3430,
+          "end": 3455
+        }
+      ]
+    },
+    {
+      "name": "Sinhala",
+      "displayName": "Sinhala",
+      "blockStart": 3456,
+      "blockEnd": 3583,
+      "definedCount": 91,
+      "unassignedCount": 37,
+      "ranges": [
+        {
+          "start": 3457,
+          "end": 3459
+        },
+        {
+          "start": 3461,
+          "end": 3478
+        },
+        {
+          "start": 3482,
+          "end": 3505
+        },
+        {
+          "start": 3507,
+          "end": 3515
+        },
+        {
+          "start": 3517,
+          "end": 3517
+        },
+        {
+          "start": 3520,
+          "end": 3526
+        },
+        {
+          "start": 3530,
+          "end": 3530
+        },
+        {
+          "start": 3535,
+          "end": 3540
+        },
+        {
+          "start": 3542,
+          "end": 3542
+        },
+        {
+          "start": 3544,
+          "end": 3551
+        },
+        {
+          "start": 3558,
+          "end": 3567
+        },
+        {
+          "start": 3570,
+          "end": 3572
+        }
+      ]
+    },
+    {
+      "name": "Thai",
+      "displayName": "Thai",
+      "blockStart": 3584,
+      "blockEnd": 3711,
+      "definedCount": 87,
+      "unassignedCount": 41,
+      "ranges": [
+        {
+          "start": 3585,
+          "end": 3642
+        },
+        {
+          "start": 3647,
+          "end": 3675
+        }
+      ]
+    },
+    {
+      "name": "Lao",
+      "displayName": "Lao",
+      "blockStart": 3712,
+      "blockEnd": 3839,
+      "definedCount": 83,
+      "unassignedCount": 45,
+      "ranges": [
+        {
+          "start": 3713,
+          "end": 3714
+        },
+        {
+          "start": 3716,
+          "end": 3716
+        },
+        {
+          "start": 3718,
+          "end": 3722
+        },
+        {
+          "start": 3724,
+          "end": 3747
+        },
+        {
+          "start": 3749,
+          "end": 3749
+        },
+        {
+          "start": 3751,
+          "end": 3773
+        },
+        {
+          "start": 3776,
+          "end": 3780
+        },
+        {
+          "start": 3782,
+          "end": 3782
+        },
+        {
+          "start": 3784,
+          "end": 3790
+        },
+        {
+          "start": 3792,
+          "end": 3801
+        },
+        {
+          "start": 3804,
+          "end": 3807
+        }
+      ]
+    },
+    {
+      "name": "Tibetan",
+      "displayName": "Tibetan",
+      "blockStart": 3840,
+      "blockEnd": 4095,
+      "definedCount": 211,
+      "unassignedCount": 45,
+      "ranges": [
+        {
+          "start": 3840,
+          "end": 3911
+        },
+        {
+          "start": 3913,
+          "end": 3948
+        },
+        {
+          "start": 3953,
+          "end": 3991
+        },
+        {
+          "start": 3993,
+          "end": 4028
+        },
+        {
+          "start": 4030,
+          "end": 4044
+        },
+        {
+          "start": 4046,
+          "end": 4058
+        }
+      ]
+    },
+    {
+      "name": "Myanmar",
+      "displayName": "Myanmar",
+      "blockStart": 4096,
+      "blockEnd": 4255,
+      "definedCount": 160,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 4096,
+          "end": 4255
+        }
+      ]
+    },
+    {
+      "name": "Georgian",
+      "displayName": "Georgian",
+      "blockStart": 4256,
+      "blockEnd": 4351,
+      "definedCount": 88,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 4256,
+          "end": 4293
+        },
+        {
+          "start": 4295,
+          "end": 4295
+        },
+        {
+          "start": 4301,
+          "end": 4301
+        },
+        {
+          "start": 4304,
+          "end": 4351
+        }
+      ]
+    },
+    {
+      "name": "Hangul_Jamo",
+      "displayName": "Hangul Jamo",
+      "blockStart": 4352,
+      "blockEnd": 4607,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 4352,
+          "end": 4607
+        }
+      ]
+    },
+    {
+      "name": "Ethiopic",
+      "displayName": "Ethiopic",
+      "blockStart": 4608,
+      "blockEnd": 4991,
+      "definedCount": 358,
+      "unassignedCount": 26,
+      "ranges": [
+        {
+          "start": 4608,
+          "end": 4680
+        },
+        {
+          "start": 4682,
+          "end": 4685
+        },
+        {
+          "start": 4688,
+          "end": 4694
+        },
+        {
+          "start": 4696,
+          "end": 4696
+        },
+        {
+          "start": 4698,
+          "end": 4701
+        },
+        {
+          "start": 4704,
+          "end": 4744
+        },
+        {
+          "start": 4746,
+          "end": 4749
+        },
+        {
+          "start": 4752,
+          "end": 4784
+        },
+        {
+          "start": 4786,
+          "end": 4789
+        },
+        {
+          "start": 4792,
+          "end": 4798
+        },
+        {
+          "start": 4800,
+          "end": 4800
+        },
+        {
+          "start": 4802,
+          "end": 4805
+        },
+        {
+          "start": 4808,
+          "end": 4822
+        },
+        {
+          "start": 4824,
+          "end": 4880
+        },
+        {
+          "start": 4882,
+          "end": 4885
+        },
+        {
+          "start": 4888,
+          "end": 4954
+        },
+        {
+          "start": 4957,
+          "end": 4988
+        }
+      ]
+    },
+    {
+      "name": "Ethiopic_Supplement",
+      "displayName": "Ethiopic Supplement",
+      "blockStart": 4992,
+      "blockEnd": 5023,
+      "definedCount": 26,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 4992,
+          "end": 5017
+        }
+      ]
+    },
+    {
+      "name": "Cherokee",
+      "displayName": "Cherokee",
+      "blockStart": 5024,
+      "blockEnd": 5119,
+      "definedCount": 92,
+      "unassignedCount": 4,
+      "ranges": [
+        {
+          "start": 5024,
+          "end": 5109
+        },
+        {
+          "start": 5112,
+          "end": 5117
+        }
+      ]
+    },
+    {
+      "name": "Unified_Canadian_Aboriginal_Syllabics",
+      "displayName": "Unified Canadian Aboriginal Syllabics",
+      "blockStart": 5120,
+      "blockEnd": 5759,
+      "definedCount": 640,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 5120,
+          "end": 5759
+        }
+      ]
+    },
+    {
+      "name": "Ogham",
+      "displayName": "Ogham",
+      "blockStart": 5760,
+      "blockEnd": 5791,
+      "definedCount": 29,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 5760,
+          "end": 5788
+        }
+      ]
+    },
+    {
+      "name": "Runic",
+      "displayName": "Runic",
+      "blockStart": 5792,
+      "blockEnd": 5887,
+      "definedCount": 89,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 5792,
+          "end": 5880
+        }
+      ]
+    },
+    {
+      "name": "Tagalog",
+      "displayName": "Tagalog",
+      "blockStart": 5888,
+      "blockEnd": 5919,
+      "definedCount": 23,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 5888,
+          "end": 5909
+        },
+        {
+          "start": 5919,
+          "end": 5919
+        }
+      ]
+    },
+    {
+      "name": "Hanunoo",
+      "displayName": "Hanunoo",
+      "blockStart": 5920,
+      "blockEnd": 5951,
+      "definedCount": 23,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 5920,
+          "end": 5942
+        }
+      ]
+    },
+    {
+      "name": "Buhid",
+      "displayName": "Buhid",
+      "blockStart": 5952,
+      "blockEnd": 5983,
+      "definedCount": 20,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 5952,
+          "end": 5971
+        }
+      ]
+    },
+    {
+      "name": "Tagbanwa",
+      "displayName": "Tagbanwa",
+      "blockStart": 5984,
+      "blockEnd": 6015,
+      "definedCount": 18,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 5984,
+          "end": 5996
+        },
+        {
+          "start": 5998,
+          "end": 6000
+        },
+        {
+          "start": 6002,
+          "end": 6003
+        }
+      ]
+    },
+    {
+      "name": "Khmer",
+      "displayName": "Khmer",
+      "blockStart": 6016,
+      "blockEnd": 6143,
+      "definedCount": 114,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 6016,
+          "end": 6109
+        },
+        {
+          "start": 6112,
+          "end": 6121
+        },
+        {
+          "start": 6128,
+          "end": 6137
+        }
+      ]
+    },
+    {
+      "name": "Mongolian",
+      "displayName": "Mongolian",
+      "blockStart": 6144,
+      "blockEnd": 6319,
+      "definedCount": 158,
+      "unassignedCount": 18,
+      "ranges": [
+        {
+          "start": 6144,
+          "end": 6169
+        },
+        {
+          "start": 6176,
+          "end": 6264
+        },
+        {
+          "start": 6272,
+          "end": 6314
+        }
+      ]
+    },
+    {
+      "name": "Unified_Canadian_Aboriginal_Syllabics_Extended",
+      "displayName": "Unified Canadian Aboriginal Syllabics Extended",
+      "blockStart": 6320,
+      "blockEnd": 6399,
+      "definedCount": 70,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 6320,
+          "end": 6389
+        }
+      ]
+    },
+    {
+      "name": "Limbu",
+      "displayName": "Limbu",
+      "blockStart": 6400,
+      "blockEnd": 6479,
+      "definedCount": 68,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 6400,
+          "end": 6430
+        },
+        {
+          "start": 6432,
+          "end": 6443
+        },
+        {
+          "start": 6448,
+          "end": 6459
+        },
+        {
+          "start": 6464,
+          "end": 6464
+        },
+        {
+          "start": 6468,
+          "end": 6479
+        }
+      ]
+    },
+    {
+      "name": "Tai_Le",
+      "displayName": "Tai Le",
+      "blockStart": 6480,
+      "blockEnd": 6527,
+      "definedCount": 35,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 6480,
+          "end": 6509
+        },
+        {
+          "start": 6512,
+          "end": 6516
+        }
+      ]
+    },
+    {
+      "name": "New_Tai_Lue",
+      "displayName": "New Tai Lue",
+      "blockStart": 6528,
+      "blockEnd": 6623,
+      "definedCount": 83,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 6528,
+          "end": 6571
+        },
+        {
+          "start": 6576,
+          "end": 6601
+        },
+        {
+          "start": 6608,
+          "end": 6618
+        },
+        {
+          "start": 6622,
+          "end": 6623
+        }
+      ]
+    },
+    {
+      "name": "Khmer_Symbols",
+      "displayName": "Khmer Symbols",
+      "blockStart": 6624,
+      "blockEnd": 6655,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 6624,
+          "end": 6655
+        }
+      ]
+    },
+    {
+      "name": "Buginese",
+      "displayName": "Buginese",
+      "blockStart": 6656,
+      "blockEnd": 6687,
+      "definedCount": 30,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 6656,
+          "end": 6683
+        },
+        {
+          "start": 6686,
+          "end": 6687
+        }
+      ]
+    },
+    {
+      "name": "Tai_Tham",
+      "displayName": "Tai Tham",
+      "blockStart": 6688,
+      "blockEnd": 6831,
+      "definedCount": 127,
+      "unassignedCount": 17,
+      "ranges": [
+        {
+          "start": 6688,
+          "end": 6750
+        },
+        {
+          "start": 6752,
+          "end": 6780
+        },
+        {
+          "start": 6783,
+          "end": 6793
+        },
+        {
+          "start": 6800,
+          "end": 6809
+        },
+        {
+          "start": 6816,
+          "end": 6829
+        }
+      ]
+    },
+    {
+      "name": "Combining_Diacritical_Marks_Extended",
+      "displayName": "Combining Diacritical Marks Extended",
+      "blockStart": 6832,
+      "blockEnd": 6911,
+      "definedCount": 31,
+      "unassignedCount": 49,
+      "ranges": [
+        {
+          "start": 6832,
+          "end": 6862
+        }
+      ]
+    },
+    {
+      "name": "Balinese",
+      "displayName": "Balinese",
+      "blockStart": 6912,
+      "blockEnd": 7039,
+      "definedCount": 127,
+      "unassignedCount": 1,
+      "ranges": [
+        {
+          "start": 6912,
+          "end": 6988
+        },
+        {
+          "start": 6990,
+          "end": 7039
+        }
+      ]
+    },
+    {
+      "name": "Sundanese",
+      "displayName": "Sundanese",
+      "blockStart": 7040,
+      "blockEnd": 7103,
+      "definedCount": 64,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 7040,
+          "end": 7103
+        }
+      ]
+    },
+    {
+      "name": "Batak",
+      "displayName": "Batak",
+      "blockStart": 7104,
+      "blockEnd": 7167,
+      "definedCount": 56,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 7104,
+          "end": 7155
+        },
+        {
+          "start": 7164,
+          "end": 7167
+        }
+      ]
+    },
+    {
+      "name": "Lepcha",
+      "displayName": "Lepcha",
+      "blockStart": 7168,
+      "blockEnd": 7247,
+      "definedCount": 74,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 7168,
+          "end": 7223
+        },
+        {
+          "start": 7227,
+          "end": 7241
+        },
+        {
+          "start": 7245,
+          "end": 7247
+        }
+      ]
+    },
+    {
+      "name": "Ol_Chiki",
+      "displayName": "Ol Chiki",
+      "blockStart": 7248,
+      "blockEnd": 7295,
+      "definedCount": 48,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 7248,
+          "end": 7295
+        }
+      ]
+    },
+    {
+      "name": "Cyrillic_Extended_C",
+      "displayName": "Cyrillic Extended C",
+      "blockStart": 7296,
+      "blockEnd": 7311,
+      "definedCount": 11,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 7296,
+          "end": 7306
+        }
+      ]
+    },
+    {
+      "name": "Georgian_Extended",
+      "displayName": "Georgian Extended",
+      "blockStart": 7312,
+      "blockEnd": 7359,
+      "definedCount": 46,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 7312,
+          "end": 7354
+        },
+        {
+          "start": 7357,
+          "end": 7359
+        }
+      ]
+    },
+    {
+      "name": "Sundanese_Supplement",
+      "displayName": "Sundanese Supplement",
+      "blockStart": 7360,
+      "blockEnd": 7375,
+      "definedCount": 8,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 7360,
+          "end": 7367
+        }
+      ]
+    },
+    {
+      "name": "Vedic_Extensions",
+      "displayName": "Vedic Extensions",
+      "blockStart": 7376,
+      "blockEnd": 7423,
+      "definedCount": 43,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 7376,
+          "end": 7418
+        }
+      ]
+    },
+    {
+      "name": "Phonetic_Extensions",
+      "displayName": "Phonetic Extensions",
+      "blockStart": 7424,
+      "blockEnd": 7551,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 7424,
+          "end": 7551
+        }
+      ]
+    },
+    {
+      "name": "Phonetic_Extensions_Supplement",
+      "displayName": "Phonetic Extensions Supplement",
+      "blockStart": 7552,
+      "blockEnd": 7615,
+      "definedCount": 64,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 7552,
+          "end": 7615
+        }
+      ]
+    },
+    {
+      "name": "Combining_Diacritical_Marks_Supplement",
+      "displayName": "Combining Diacritical Marks Supplement",
+      "blockStart": 7616,
+      "blockEnd": 7679,
+      "definedCount": 64,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 7616,
+          "end": 7679
+        }
+      ]
+    },
+    {
+      "name": "Latin_Extended_Additional",
+      "displayName": "Latin Extended Additional",
+      "blockStart": 7680,
+      "blockEnd": 7935,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 7680,
+          "end": 7935
+        }
+      ]
+    },
+    {
+      "name": "Greek_Extended",
+      "displayName": "Greek Extended",
+      "blockStart": 7936,
+      "blockEnd": 8191,
+      "definedCount": 233,
+      "unassignedCount": 23,
+      "ranges": [
+        {
+          "start": 7936,
+          "end": 7957
+        },
+        {
+          "start": 7960,
+          "end": 7965
+        },
+        {
+          "start": 7968,
+          "end": 8005
+        },
+        {
+          "start": 8008,
+          "end": 8013
+        },
+        {
+          "start": 8016,
+          "end": 8023
+        },
+        {
+          "start": 8025,
+          "end": 8025
+        },
+        {
+          "start": 8027,
+          "end": 8027
+        },
+        {
+          "start": 8029,
+          "end": 8029
+        },
+        {
+          "start": 8031,
+          "end": 8061
+        },
+        {
+          "start": 8064,
+          "end": 8116
+        },
+        {
+          "start": 8118,
+          "end": 8132
+        },
+        {
+          "start": 8134,
+          "end": 8147
+        },
+        {
+          "start": 8150,
+          "end": 8155
+        },
+        {
+          "start": 8157,
+          "end": 8175
+        },
+        {
+          "start": 8178,
+          "end": 8180
+        },
+        {
+          "start": 8182,
+          "end": 8190
+        }
+      ]
+    },
+    {
+      "name": "General_Punctuation",
+      "displayName": "General Punctuation",
+      "blockStart": 8192,
+      "blockEnd": 8303,
+      "definedCount": 111,
+      "unassignedCount": 1,
+      "ranges": [
+        {
+          "start": 8192,
+          "end": 8292
+        },
+        {
+          "start": 8294,
+          "end": 8303
+        }
+      ]
+    },
+    {
+      "name": "Superscripts_And_Subscripts",
+      "displayName": "Superscripts And Subscripts",
+      "blockStart": 8304,
+      "blockEnd": 8351,
+      "definedCount": 42,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 8304,
+          "end": 8305
+        },
+        {
+          "start": 8308,
+          "end": 8334
+        },
+        {
+          "start": 8336,
+          "end": 8348
+        }
+      ]
+    },
+    {
+      "name": "Currency_Symbols",
+      "displayName": "Currency Symbols",
+      "blockStart": 8352,
+      "blockEnd": 8399,
+      "definedCount": 33,
+      "unassignedCount": 15,
+      "ranges": [
+        {
+          "start": 8352,
+          "end": 8384
+        }
+      ]
+    },
+    {
+      "name": "Combining_Diacritical_Marks_For_Symbols",
+      "displayName": "Combining Diacritical Marks For Symbols",
+      "blockStart": 8400,
+      "blockEnd": 8447,
+      "definedCount": 33,
+      "unassignedCount": 15,
+      "ranges": [
+        {
+          "start": 8400,
+          "end": 8432
+        }
+      ]
+    },
+    {
+      "name": "Letterlike_Symbols",
+      "displayName": "Letterlike Symbols",
+      "blockStart": 8448,
+      "blockEnd": 8527,
+      "definedCount": 80,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 8448,
+          "end": 8527
+        }
+      ]
+    },
+    {
+      "name": "Number_Forms",
+      "displayName": "Number Forms",
+      "blockStart": 8528,
+      "blockEnd": 8591,
+      "definedCount": 60,
+      "unassignedCount": 4,
+      "ranges": [
+        {
+          "start": 8528,
+          "end": 8587
+        }
+      ]
+    },
+    {
+      "name": "Arrows",
+      "displayName": "Arrows",
+      "blockStart": 8592,
+      "blockEnd": 8703,
+      "definedCount": 112,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 8592,
+          "end": 8703
+        }
+      ]
+    },
+    {
+      "name": "Mathematical_Operators",
+      "displayName": "Mathematical Operators",
+      "blockStart": 8704,
+      "blockEnd": 8959,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 8704,
+          "end": 8959
+        }
+      ]
+    },
+    {
+      "name": "Miscellaneous_Technical",
+      "displayName": "Miscellaneous Technical",
+      "blockStart": 8960,
+      "blockEnd": 9215,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 8960,
+          "end": 9215
+        }
+      ]
+    },
+    {
+      "name": "Control_Pictures",
+      "displayName": "Control Pictures",
+      "blockStart": 9216,
+      "blockEnd": 9279,
+      "definedCount": 42,
+      "unassignedCount": 22,
+      "ranges": [
+        {
+          "start": 9216,
+          "end": 9257
+        }
+      ]
+    },
+    {
+      "name": "Optical_Character_Recognition",
+      "displayName": "Optical Character Recognition",
+      "blockStart": 9280,
+      "blockEnd": 9311,
+      "definedCount": 11,
+      "unassignedCount": 21,
+      "ranges": [
+        {
+          "start": 9280,
+          "end": 9290
+        }
+      ]
+    },
+    {
+      "name": "Enclosed_Alphanumerics",
+      "displayName": "Enclosed Alphanumerics",
+      "blockStart": 9312,
+      "blockEnd": 9471,
+      "definedCount": 160,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 9312,
+          "end": 9471
+        }
+      ]
+    },
+    {
+      "name": "Box_Drawing",
+      "displayName": "Box Drawing",
+      "blockStart": 9472,
+      "blockEnd": 9599,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 9472,
+          "end": 9599
+        }
+      ]
+    },
+    {
+      "name": "Block_Elements",
+      "displayName": "Block Elements",
+      "blockStart": 9600,
+      "blockEnd": 9631,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 9600,
+          "end": 9631
+        }
+      ]
+    },
+    {
+      "name": "Geometric_Shapes",
+      "displayName": "Geometric Shapes",
+      "blockStart": 9632,
+      "blockEnd": 9727,
+      "definedCount": 96,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 9632,
+          "end": 9727
+        }
+      ]
+    },
+    {
+      "name": "Miscellaneous_Symbols",
+      "displayName": "Miscellaneous Symbols",
+      "blockStart": 9728,
+      "blockEnd": 9983,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 9728,
+          "end": 9983
+        }
+      ]
+    },
+    {
+      "name": "Dingbats",
+      "displayName": "Dingbats",
+      "blockStart": 9984,
+      "blockEnd": 10175,
+      "definedCount": 192,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 9984,
+          "end": 10175
+        }
+      ]
+    },
+    {
+      "name": "Miscellaneous_Mathematical_Symbols_A",
+      "displayName": "Miscellaneous Mathematical Symbols A",
+      "blockStart": 10176,
+      "blockEnd": 10223,
+      "definedCount": 48,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 10176,
+          "end": 10223
+        }
+      ]
+    },
+    {
+      "name": "Supplemental_Arrows_A",
+      "displayName": "Supplemental Arrows A",
+      "blockStart": 10224,
+      "blockEnd": 10239,
+      "definedCount": 16,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 10224,
+          "end": 10239
+        }
+      ]
+    },
+    {
+      "name": "Braille_Patterns",
+      "displayName": "Braille Patterns",
+      "blockStart": 10240,
+      "blockEnd": 10495,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 10240,
+          "end": 10495
+        }
+      ]
+    },
+    {
+      "name": "Supplemental_Arrows_B",
+      "displayName": "Supplemental Arrows B",
+      "blockStart": 10496,
+      "blockEnd": 10623,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 10496,
+          "end": 10623
+        }
+      ]
+    },
+    {
+      "name": "Miscellaneous_Mathematical_Symbols_B",
+      "displayName": "Miscellaneous Mathematical Symbols B",
+      "blockStart": 10624,
+      "blockEnd": 10751,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 10624,
+          "end": 10751
+        }
+      ]
+    },
+    {
+      "name": "Supplemental_Mathematical_Operators",
+      "displayName": "Supplemental Mathematical Operators",
+      "blockStart": 10752,
+      "blockEnd": 11007,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 10752,
+          "end": 11007
+        }
+      ]
+    },
+    {
+      "name": "Miscellaneous_Symbols_And_Arrows",
+      "displayName": "Miscellaneous Symbols And Arrows",
+      "blockStart": 11008,
+      "blockEnd": 11263,
+      "definedCount": 253,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 11008,
+          "end": 11123
+        },
+        {
+          "start": 11126,
+          "end": 11157
+        },
+        {
+          "start": 11159,
+          "end": 11263
+        }
+      ]
+    },
+    {
+      "name": "Glagolitic",
+      "displayName": "Glagolitic",
+      "blockStart": 11264,
+      "blockEnd": 11359,
+      "definedCount": 96,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 11264,
+          "end": 11359
+        }
+      ]
+    },
+    {
+      "name": "Latin_Extended_C",
+      "displayName": "Latin Extended C",
+      "blockStart": 11360,
+      "blockEnd": 11391,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 11360,
+          "end": 11391
+        }
+      ]
+    },
+    {
+      "name": "Coptic",
+      "displayName": "Coptic",
+      "blockStart": 11392,
+      "blockEnd": 11519,
+      "definedCount": 123,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 11392,
+          "end": 11507
+        },
+        {
+          "start": 11513,
+          "end": 11519
+        }
+      ]
+    },
+    {
+      "name": "Georgian_Supplement",
+      "displayName": "Georgian Supplement",
+      "blockStart": 11520,
+      "blockEnd": 11567,
+      "definedCount": 40,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 11520,
+          "end": 11557
+        },
+        {
+          "start": 11559,
+          "end": 11559
+        },
+        {
+          "start": 11565,
+          "end": 11565
+        }
+      ]
+    },
+    {
+      "name": "Tifinagh",
+      "displayName": "Tifinagh",
+      "blockStart": 11568,
+      "blockEnd": 11647,
+      "definedCount": 59,
+      "unassignedCount": 21,
+      "ranges": [
+        {
+          "start": 11568,
+          "end": 11623
+        },
+        {
+          "start": 11631,
+          "end": 11632
+        },
+        {
+          "start": 11647,
+          "end": 11647
+        }
+      ]
+    },
+    {
+      "name": "Ethiopic_Extended",
+      "displayName": "Ethiopic Extended",
+      "blockStart": 11648,
+      "blockEnd": 11743,
+      "definedCount": 79,
+      "unassignedCount": 17,
+      "ranges": [
+        {
+          "start": 11648,
+          "end": 11670
+        },
+        {
+          "start": 11680,
+          "end": 11686
+        },
+        {
+          "start": 11688,
+          "end": 11694
+        },
+        {
+          "start": 11696,
+          "end": 11702
+        },
+        {
+          "start": 11704,
+          "end": 11710
+        },
+        {
+          "start": 11712,
+          "end": 11718
+        },
+        {
+          "start": 11720,
+          "end": 11726
+        },
+        {
+          "start": 11728,
+          "end": 11734
+        },
+        {
+          "start": 11736,
+          "end": 11742
+        }
+      ]
+    },
+    {
+      "name": "Cyrillic_Extended_A",
+      "displayName": "Cyrillic Extended A",
+      "blockStart": 11744,
+      "blockEnd": 11775,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 11744,
+          "end": 11775
+        }
+      ]
+    },
+    {
+      "name": "Supplemental_Punctuation",
+      "displayName": "Supplemental Punctuation",
+      "blockStart": 11776,
+      "blockEnd": 11903,
+      "definedCount": 94,
+      "unassignedCount": 34,
+      "ranges": [
+        {
+          "start": 11776,
+          "end": 11869
+        }
+      ]
+    },
+    {
+      "name": "CJK_Radicals_Supplement",
+      "displayName": "CJK Radicals Supplement",
+      "blockStart": 11904,
+      "blockEnd": 12031,
+      "definedCount": 115,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 11904,
+          "end": 11929
+        },
+        {
+          "start": 11931,
+          "end": 12019
+        }
+      ]
+    },
+    {
+      "name": "Kangxi_Radicals",
+      "displayName": "Kangxi Radicals",
+      "blockStart": 12032,
+      "blockEnd": 12255,
+      "definedCount": 214,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 12032,
+          "end": 12245
+        }
+      ]
+    },
+    {
+      "name": "Ideographic_Description_Characters",
+      "displayName": "Ideographic Description Characters",
+      "blockStart": 12272,
+      "blockEnd": 12287,
+      "definedCount": 16,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 12272,
+          "end": 12287
+        }
+      ]
+    },
+    {
+      "name": "CJK_Symbols_And_Punctuation",
+      "displayName": "CJK Symbols And Punctuation",
+      "blockStart": 12288,
+      "blockEnd": 12351,
+      "definedCount": 64,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 12288,
+          "end": 12351
+        }
+      ]
+    },
+    {
+      "name": "Hiragana",
+      "displayName": "Hiragana",
+      "blockStart": 12352,
+      "blockEnd": 12447,
+      "definedCount": 93,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 12353,
+          "end": 12438
+        },
+        {
+          "start": 12441,
+          "end": 12447
+        }
+      ]
+    },
+    {
+      "name": "Katakana",
+      "displayName": "Katakana",
+      "blockStart": 12448,
+      "blockEnd": 12543,
+      "definedCount": 96,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 12448,
+          "end": 12543
+        }
+      ]
+    },
+    {
+      "name": "Bopomofo",
+      "displayName": "Bopomofo",
+      "blockStart": 12544,
+      "blockEnd": 12591,
+      "definedCount": 43,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 12549,
+          "end": 12591
+        }
+      ]
+    },
+    {
+      "name": "Hangul_Compatibility_Jamo",
+      "displayName": "Hangul Compatibility Jamo",
+      "blockStart": 12592,
+      "blockEnd": 12687,
+      "definedCount": 94,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 12593,
+          "end": 12686
+        }
+      ]
+    },
+    {
+      "name": "Kanbun",
+      "displayName": "Kanbun",
+      "blockStart": 12688,
+      "blockEnd": 12703,
+      "definedCount": 16,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 12688,
+          "end": 12703
+        }
+      ]
+    },
+    {
+      "name": "Bopomofo_Extended",
+      "displayName": "Bopomofo Extended",
+      "blockStart": 12704,
+      "blockEnd": 12735,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 12704,
+          "end": 12735
+        }
+      ]
+    },
+    {
+      "name": "CJK_Strokes",
+      "displayName": "CJK Strokes",
+      "blockStart": 12736,
+      "blockEnd": 12783,
+      "definedCount": 39,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 12736,
+          "end": 12773
+        },
+        {
+          "start": 12783,
+          "end": 12783
+        }
+      ]
+    },
+    {
+      "name": "Katakana_Phonetic_Extensions",
+      "displayName": "Katakana Phonetic Extensions",
+      "blockStart": 12784,
+      "blockEnd": 12799,
+      "definedCount": 16,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 12784,
+          "end": 12799
+        }
+      ]
+    },
+    {
+      "name": "Enclosed_CJK_Letters_And_Months",
+      "displayName": "Enclosed CJK Letters And Months",
+      "blockStart": 12800,
+      "blockEnd": 13055,
+      "definedCount": 255,
+      "unassignedCount": 1,
+      "ranges": [
+        {
+          "start": 12800,
+          "end": 12830
+        },
+        {
+          "start": 12832,
+          "end": 13055
+        }
+      ]
+    },
+    {
+      "name": "CJK_Compatibility",
+      "displayName": "CJK Compatibility",
+      "blockStart": 13056,
+      "blockEnd": 13311,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 13056,
+          "end": 13311
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_A",
+      "displayName": "CJK Unified Ideographs Extension A",
+      "blockStart": 13312,
+      "blockEnd": 19903,
+      "definedCount": 6592,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 13312,
+          "end": 19903
+        }
+      ]
+    },
+    {
+      "name": "Yijing_Hexagram_Symbols",
+      "displayName": "Yijing Hexagram Symbols",
+      "blockStart": 19904,
+      "blockEnd": 19967,
+      "definedCount": 64,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 19904,
+          "end": 19967
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs",
+      "displayName": "CJK Unified Ideographs",
+      "blockStart": 19968,
+      "blockEnd": 40959,
+      "definedCount": 20992,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 19968,
+          "end": 40959
+        }
+      ]
+    },
+    {
+      "name": "Yi_Syllables",
+      "displayName": "Yi Syllables",
+      "blockStart": 40960,
+      "blockEnd": 42127,
+      "definedCount": 1165,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 40960,
+          "end": 42124
+        }
+      ]
+    },
+    {
+      "name": "Yi_Radicals",
+      "displayName": "Yi Radicals",
+      "blockStart": 42128,
+      "blockEnd": 42191,
+      "definedCount": 55,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 42128,
+          "end": 42182
+        }
+      ]
+    },
+    {
+      "name": "Lisu",
+      "displayName": "Lisu",
+      "blockStart": 42192,
+      "blockEnd": 42239,
+      "definedCount": 48,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 42192,
+          "end": 42239
+        }
+      ]
+    },
+    {
+      "name": "Vai",
+      "displayName": "Vai",
+      "blockStart": 42240,
+      "blockEnd": 42559,
+      "definedCount": 300,
+      "unassignedCount": 20,
+      "ranges": [
+        {
+          "start": 42240,
+          "end": 42539
+        }
+      ]
+    },
+    {
+      "name": "Cyrillic_Extended_B",
+      "displayName": "Cyrillic Extended B",
+      "blockStart": 42560,
+      "blockEnd": 42655,
+      "definedCount": 96,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 42560,
+          "end": 42655
+        }
+      ]
+    },
+    {
+      "name": "Bamum",
+      "displayName": "Bamum",
+      "blockStart": 42656,
+      "blockEnd": 42751,
+      "definedCount": 88,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 42656,
+          "end": 42743
+        }
+      ]
+    },
+    {
+      "name": "Modifier_Tone_Letters",
+      "displayName": "Modifier Tone Letters",
+      "blockStart": 42752,
+      "blockEnd": 42783,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 42752,
+          "end": 42783
+        }
+      ]
+    },
+    {
+      "name": "Latin_Extended_D",
+      "displayName": "Latin Extended D",
+      "blockStart": 42784,
+      "blockEnd": 43007,
+      "definedCount": 199,
+      "unassignedCount": 25,
+      "ranges": [
+        {
+          "start": 42784,
+          "end": 42957
+        },
+        {
+          "start": 42960,
+          "end": 42961
+        },
+        {
+          "start": 42963,
+          "end": 42963
+        },
+        {
+          "start": 42965,
+          "end": 42972
+        },
+        {
+          "start": 42994,
+          "end": 43007
+        }
+      ]
+    },
+    {
+      "name": "Syloti_Nagri",
+      "displayName": "Syloti Nagri",
+      "blockStart": 43008,
+      "blockEnd": 43055,
+      "definedCount": 45,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 43008,
+          "end": 43052
+        }
+      ]
+    },
+    {
+      "name": "Common_Indic_Number_Forms",
+      "displayName": "Common Indic Number Forms",
+      "blockStart": 43056,
+      "blockEnd": 43071,
+      "definedCount": 10,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 43056,
+          "end": 43065
+        }
+      ]
+    },
+    {
+      "name": "Phags_Pa",
+      "displayName": "Phags Pa",
+      "blockStart": 43072,
+      "blockEnd": 43135,
+      "definedCount": 56,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 43072,
+          "end": 43127
+        }
+      ]
+    },
+    {
+      "name": "Saurashtra",
+      "displayName": "Saurashtra",
+      "blockStart": 43136,
+      "blockEnd": 43231,
+      "definedCount": 82,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 43136,
+          "end": 43205
+        },
+        {
+          "start": 43214,
+          "end": 43225
+        }
+      ]
+    },
+    {
+      "name": "Devanagari_Extended",
+      "displayName": "Devanagari Extended",
+      "blockStart": 43232,
+      "blockEnd": 43263,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 43232,
+          "end": 43263
+        }
+      ]
+    },
+    {
+      "name": "Kayah_Li",
+      "displayName": "Kayah Li",
+      "blockStart": 43264,
+      "blockEnd": 43311,
+      "definedCount": 48,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 43264,
+          "end": 43311
+        }
+      ]
+    },
+    {
+      "name": "Rejang",
+      "displayName": "Rejang",
+      "blockStart": 43312,
+      "blockEnd": 43359,
+      "definedCount": 37,
+      "unassignedCount": 11,
+      "ranges": [
+        {
+          "start": 43312,
+          "end": 43347
+        },
+        {
+          "start": 43359,
+          "end": 43359
+        }
+      ]
+    },
+    {
+      "name": "Hangul_Jamo_Extended_A",
+      "displayName": "Hangul Jamo Extended A",
+      "blockStart": 43360,
+      "blockEnd": 43391,
+      "definedCount": 29,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 43360,
+          "end": 43388
+        }
+      ]
+    },
+    {
+      "name": "Javanese",
+      "displayName": "Javanese",
+      "blockStart": 43392,
+      "blockEnd": 43487,
+      "definedCount": 91,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 43392,
+          "end": 43469
+        },
+        {
+          "start": 43471,
+          "end": 43481
+        },
+        {
+          "start": 43486,
+          "end": 43487
+        }
+      ]
+    },
+    {
+      "name": "Myanmar_Extended_B",
+      "displayName": "Myanmar Extended B",
+      "blockStart": 43488,
+      "blockEnd": 43519,
+      "definedCount": 31,
+      "unassignedCount": 1,
+      "ranges": [
+        {
+          "start": 43488,
+          "end": 43518
+        }
+      ]
+    },
+    {
+      "name": "Cham",
+      "displayName": "Cham",
+      "blockStart": 43520,
+      "blockEnd": 43615,
+      "definedCount": 83,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 43520,
+          "end": 43574
+        },
+        {
+          "start": 43584,
+          "end": 43597
+        },
+        {
+          "start": 43600,
+          "end": 43609
+        },
+        {
+          "start": 43612,
+          "end": 43615
+        }
+      ]
+    },
+    {
+      "name": "Myanmar_Extended_A",
+      "displayName": "Myanmar Extended A",
+      "blockStart": 43616,
+      "blockEnd": 43647,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 43616,
+          "end": 43647
+        }
+      ]
+    },
+    {
+      "name": "Tai_Viet",
+      "displayName": "Tai Viet",
+      "blockStart": 43648,
+      "blockEnd": 43743,
+      "definedCount": 72,
+      "unassignedCount": 24,
+      "ranges": [
+        {
+          "start": 43648,
+          "end": 43714
+        },
+        {
+          "start": 43739,
+          "end": 43743
+        }
+      ]
+    },
+    {
+      "name": "Meetei_Mayek_Extensions",
+      "displayName": "Meetei Mayek Extensions",
+      "blockStart": 43744,
+      "blockEnd": 43775,
+      "definedCount": 23,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 43744,
+          "end": 43766
+        }
+      ]
+    },
+    {
+      "name": "Ethiopic_Extended_A",
+      "displayName": "Ethiopic Extended A",
+      "blockStart": 43776,
+      "blockEnd": 43823,
+      "definedCount": 32,
+      "unassignedCount": 16,
+      "ranges": [
+        {
+          "start": 43777,
+          "end": 43782
+        },
+        {
+          "start": 43785,
+          "end": 43790
+        },
+        {
+          "start": 43793,
+          "end": 43798
+        },
+        {
+          "start": 43808,
+          "end": 43814
+        },
+        {
+          "start": 43816,
+          "end": 43822
+        }
+      ]
+    },
+    {
+      "name": "Latin_Extended_E",
+      "displayName": "Latin Extended E",
+      "blockStart": 43824,
+      "blockEnd": 43887,
+      "definedCount": 60,
+      "unassignedCount": 4,
+      "ranges": [
+        {
+          "start": 43824,
+          "end": 43883
+        }
+      ]
+    },
+    {
+      "name": "Cherokee_Supplement",
+      "displayName": "Cherokee Supplement",
+      "blockStart": 43888,
+      "blockEnd": 43967,
+      "definedCount": 80,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 43888,
+          "end": 43967
+        }
+      ]
+    },
+    {
+      "name": "Meetei_Mayek",
+      "displayName": "Meetei Mayek",
+      "blockStart": 43968,
+      "blockEnd": 44031,
+      "definedCount": 56,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 43968,
+          "end": 44013
+        },
+        {
+          "start": 44016,
+          "end": 44025
+        }
+      ]
+    },
+    {
+      "name": "Hangul_Syllables",
+      "displayName": "Hangul Syllables",
+      "blockStart": 44032,
+      "blockEnd": 55215,
+      "definedCount": 11172,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 44032,
+          "end": 55203
+        }
+      ]
+    },
+    {
+      "name": "Hangul_Jamo_Extended_B",
+      "displayName": "Hangul Jamo Extended B",
+      "blockStart": 55216,
+      "blockEnd": 55295,
+      "definedCount": 72,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 55216,
+          "end": 55238
+        },
+        {
+          "start": 55243,
+          "end": 55291
+        }
+      ]
+    },
+    {
+      "name": "High_Surrogates",
+      "displayName": "High Surrogates",
+      "blockStart": 55296,
+      "blockEnd": 56191,
+      "definedCount": 896,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 55296,
+          "end": 56191
+        }
+      ]
+    },
+    {
+      "name": "High_Private_Use_Surrogates",
+      "displayName": "High Private Use Surrogates",
+      "blockStart": 56192,
+      "blockEnd": 56319,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 56192,
+          "end": 56319
+        }
+      ]
+    },
+    {
+      "name": "Low_Surrogates",
+      "displayName": "Low Surrogates",
+      "blockStart": 56320,
+      "blockEnd": 57343,
+      "definedCount": 1024,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 56320,
+          "end": 57343
+        }
+      ]
+    },
+    {
+      "name": "Private_Use_Area",
+      "displayName": "Private Use Area",
+      "blockStart": 57344,
+      "blockEnd": 63743,
+      "definedCount": 6400,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 57344,
+          "end": 63743
+        }
+      ]
+    },
+    {
+      "name": "CJK_Compatibility_Ideographs",
+      "displayName": "CJK Compatibility Ideographs",
+      "blockStart": 63744,
+      "blockEnd": 64255,
+      "definedCount": 472,
+      "unassignedCount": 40,
+      "ranges": [
+        {
+          "start": 63744,
+          "end": 64109
+        },
+        {
+          "start": 64112,
+          "end": 64217
+        }
+      ]
+    },
+    {
+      "name": "Alphabetic_Presentation_Forms",
+      "displayName": "Alphabetic Presentation Forms",
+      "blockStart": 64256,
+      "blockEnd": 64335,
+      "definedCount": 58,
+      "unassignedCount": 22,
+      "ranges": [
+        {
+          "start": 64256,
+          "end": 64262
+        },
+        {
+          "start": 64275,
+          "end": 64279
+        },
+        {
+          "start": 64285,
+          "end": 64310
+        },
+        {
+          "start": 64312,
+          "end": 64316
+        },
+        {
+          "start": 64318,
+          "end": 64318
+        },
+        {
+          "start": 64320,
+          "end": 64321
+        },
+        {
+          "start": 64323,
+          "end": 64324
+        },
+        {
+          "start": 64326,
+          "end": 64335
+        }
+      ]
+    },
+    {
+      "name": "Arabic_Presentation_Forms_A",
+      "displayName": "Arabic Presentation Forms A",
+      "blockStart": 64336,
+      "blockEnd": 65023,
+      "definedCount": 631,
+      "unassignedCount": 57,
+      "ranges": [
+        {
+          "start": 64336,
+          "end": 64450
+        },
+        {
+          "start": 64467,
+          "end": 64911
+        },
+        {
+          "start": 64914,
+          "end": 64967
+        },
+        {
+          "start": 64975,
+          "end": 64975
+        },
+        {
+          "start": 65008,
+          "end": 65023
+        }
+      ]
+    },
+    {
+      "name": "Variation_Selectors",
+      "displayName": "Variation Selectors",
+      "blockStart": 65024,
+      "blockEnd": 65039,
+      "definedCount": 16,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 65024,
+          "end": 65039
+        }
+      ]
+    },
+    {
+      "name": "Vertical_Forms",
+      "displayName": "Vertical Forms",
+      "blockStart": 65040,
+      "blockEnd": 65055,
+      "definedCount": 10,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 65040,
+          "end": 65049
+        }
+      ]
+    },
+    {
+      "name": "Combining_Half_Marks",
+      "displayName": "Combining Half Marks",
+      "blockStart": 65056,
+      "blockEnd": 65071,
+      "definedCount": 16,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 65056,
+          "end": 65071
+        }
+      ]
+    },
+    {
+      "name": "CJK_Compatibility_Forms",
+      "displayName": "CJK Compatibility Forms",
+      "blockStart": 65072,
+      "blockEnd": 65103,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 65072,
+          "end": 65103
+        }
+      ]
+    },
+    {
+      "name": "Small_Form_Variants",
+      "displayName": "Small Form Variants",
+      "blockStart": 65104,
+      "blockEnd": 65135,
+      "definedCount": 26,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 65104,
+          "end": 65106
+        },
+        {
+          "start": 65108,
+          "end": 65126
+        },
+        {
+          "start": 65128,
+          "end": 65131
+        }
+      ]
+    },
+    {
+      "name": "Arabic_Presentation_Forms_B",
+      "displayName": "Arabic Presentation Forms B",
+      "blockStart": 65136,
+      "blockEnd": 65279,
+      "definedCount": 141,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 65136,
+          "end": 65140
+        },
+        {
+          "start": 65142,
+          "end": 65276
+        },
+        {
+          "start": 65279,
+          "end": 65279
+        }
+      ]
+    },
+    {
+      "name": "Halfwidth_And_Fullwidth_Forms",
+      "displayName": "Halfwidth And Fullwidth Forms",
+      "blockStart": 65280,
+      "blockEnd": 65519,
+      "definedCount": 225,
+      "unassignedCount": 15,
+      "ranges": [
+        {
+          "start": 65281,
+          "end": 65470
+        },
+        {
+          "start": 65474,
+          "end": 65479
+        },
+        {
+          "start": 65482,
+          "end": 65487
+        },
+        {
+          "start": 65490,
+          "end": 65495
+        },
+        {
+          "start": 65498,
+          "end": 65500
+        },
+        {
+          "start": 65504,
+          "end": 65510
+        },
+        {
+          "start": 65512,
+          "end": 65518
+        }
+      ]
+    },
+    {
+      "name": "Specials",
+      "displayName": "Specials",
+      "blockStart": 65520,
+      "blockEnd": 65535,
+      "definedCount": 5,
+      "unassignedCount": 11,
+      "ranges": [
+        {
+          "start": 65529,
+          "end": 65533
+        }
+      ]
+    },
+    {
+      "name": "Linear_B_Syllabary",
+      "displayName": "Linear B Syllabary",
+      "blockStart": 65536,
+      "blockEnd": 65663,
+      "definedCount": 88,
+      "unassignedCount": 40,
+      "ranges": [
+        {
+          "start": 65536,
+          "end": 65547
+        },
+        {
+          "start": 65549,
+          "end": 65574
+        },
+        {
+          "start": 65576,
+          "end": 65594
+        },
+        {
+          "start": 65596,
+          "end": 65597
+        },
+        {
+          "start": 65599,
+          "end": 65613
+        },
+        {
+          "start": 65616,
+          "end": 65629
+        }
+      ]
+    },
+    {
+      "name": "Linear_B_Ideograms",
+      "displayName": "Linear B Ideograms",
+      "blockStart": 65664,
+      "blockEnd": 65791,
+      "definedCount": 123,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 65664,
+          "end": 65786
+        }
+      ]
+    },
+    {
+      "name": "Aegean_Numbers",
+      "displayName": "Aegean Numbers",
+      "blockStart": 65792,
+      "blockEnd": 65855,
+      "definedCount": 57,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 65792,
+          "end": 65794
+        },
+        {
+          "start": 65799,
+          "end": 65843
+        },
+        {
+          "start": 65847,
+          "end": 65855
+        }
+      ]
+    },
+    {
+      "name": "Ancient_Greek_Numbers",
+      "displayName": "Ancient Greek Numbers",
+      "blockStart": 65856,
+      "blockEnd": 65935,
+      "definedCount": 79,
+      "unassignedCount": 1,
+      "ranges": [
+        {
+          "start": 65856,
+          "end": 65934
+        }
+      ]
+    },
+    {
+      "name": "Ancient_Symbols",
+      "displayName": "Ancient Symbols",
+      "blockStart": 65936,
+      "blockEnd": 65999,
+      "definedCount": 14,
+      "unassignedCount": 50,
+      "ranges": [
+        {
+          "start": 65936,
+          "end": 65948
+        },
+        {
+          "start": 65952,
+          "end": 65952
+        }
+      ]
+    },
+    {
+      "name": "Phaistos_Disc",
+      "displayName": "Phaistos Disc",
+      "blockStart": 66000,
+      "blockEnd": 66047,
+      "definedCount": 46,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 66000,
+          "end": 66045
+        }
+      ]
+    },
+    {
+      "name": "Lycian",
+      "displayName": "Lycian",
+      "blockStart": 66176,
+      "blockEnd": 66207,
+      "definedCount": 29,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 66176,
+          "end": 66204
+        }
+      ]
+    },
+    {
+      "name": "Carian",
+      "displayName": "Carian",
+      "blockStart": 66208,
+      "blockEnd": 66271,
+      "definedCount": 49,
+      "unassignedCount": 15,
+      "ranges": [
+        {
+          "start": 66208,
+          "end": 66256
+        }
+      ]
+    },
+    {
+      "name": "Coptic_Epact_Numbers",
+      "displayName": "Coptic Epact Numbers",
+      "blockStart": 66272,
+      "blockEnd": 66303,
+      "definedCount": 28,
+      "unassignedCount": 4,
+      "ranges": [
+        {
+          "start": 66272,
+          "end": 66299
+        }
+      ]
+    },
+    {
+      "name": "Old_Italic",
+      "displayName": "Old Italic",
+      "blockStart": 66304,
+      "blockEnd": 66351,
+      "definedCount": 39,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 66304,
+          "end": 66339
+        },
+        {
+          "start": 66349,
+          "end": 66351
+        }
+      ]
+    },
+    {
+      "name": "Gothic",
+      "displayName": "Gothic",
+      "blockStart": 66352,
+      "blockEnd": 66383,
+      "definedCount": 27,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 66352,
+          "end": 66378
+        }
+      ]
+    },
+    {
+      "name": "Old_Permic",
+      "displayName": "Old Permic",
+      "blockStart": 66384,
+      "blockEnd": 66431,
+      "definedCount": 43,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 66384,
+          "end": 66426
+        }
+      ]
+    },
+    {
+      "name": "Ugaritic",
+      "displayName": "Ugaritic",
+      "blockStart": 66432,
+      "blockEnd": 66463,
+      "definedCount": 31,
+      "unassignedCount": 1,
+      "ranges": [
+        {
+          "start": 66432,
+          "end": 66461
+        },
+        {
+          "start": 66463,
+          "end": 66463
+        }
+      ]
+    },
+    {
+      "name": "Old_Persian",
+      "displayName": "Old Persian",
+      "blockStart": 66464,
+      "blockEnd": 66527,
+      "definedCount": 50,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 66464,
+          "end": 66499
+        },
+        {
+          "start": 66504,
+          "end": 66517
+        }
+      ]
+    },
+    {
+      "name": "Deseret",
+      "displayName": "Deseret",
+      "blockStart": 66560,
+      "blockEnd": 66639,
+      "definedCount": 80,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 66560,
+          "end": 66639
+        }
+      ]
+    },
+    {
+      "name": "Shavian",
+      "displayName": "Shavian",
+      "blockStart": 66640,
+      "blockEnd": 66687,
+      "definedCount": 48,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 66640,
+          "end": 66687
+        }
+      ]
+    },
+    {
+      "name": "Osmanya",
+      "displayName": "Osmanya",
+      "blockStart": 66688,
+      "blockEnd": 66735,
+      "definedCount": 40,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 66688,
+          "end": 66717
+        },
+        {
+          "start": 66720,
+          "end": 66729
+        }
+      ]
+    },
+    {
+      "name": "Osage",
+      "displayName": "Osage",
+      "blockStart": 66736,
+      "blockEnd": 66815,
+      "definedCount": 72,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 66736,
+          "end": 66771
+        },
+        {
+          "start": 66776,
+          "end": 66811
+        }
+      ]
+    },
+    {
+      "name": "Elbasan",
+      "displayName": "Elbasan",
+      "blockStart": 66816,
+      "blockEnd": 66863,
+      "definedCount": 40,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 66816,
+          "end": 66855
+        }
+      ]
+    },
+    {
+      "name": "Caucasian_Albanian",
+      "displayName": "Caucasian Albanian",
+      "blockStart": 66864,
+      "blockEnd": 66927,
+      "definedCount": 53,
+      "unassignedCount": 11,
+      "ranges": [
+        {
+          "start": 66864,
+          "end": 66915
+        },
+        {
+          "start": 66927,
+          "end": 66927
+        }
+      ]
+    },
+    {
+      "name": "Vithkuqi",
+      "displayName": "Vithkuqi",
+      "blockStart": 66928,
+      "blockEnd": 67007,
+      "definedCount": 70,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 66928,
+          "end": 66938
+        },
+        {
+          "start": 66940,
+          "end": 66954
+        },
+        {
+          "start": 66956,
+          "end": 66962
+        },
+        {
+          "start": 66964,
+          "end": 66965
+        },
+        {
+          "start": 66967,
+          "end": 66977
+        },
+        {
+          "start": 66979,
+          "end": 66993
+        },
+        {
+          "start": 66995,
+          "end": 67001
+        },
+        {
+          "start": 67003,
+          "end": 67004
+        }
+      ]
+    },
+    {
+      "name": "Todhri",
+      "displayName": "Todhri",
+      "blockStart": 67008,
+      "blockEnd": 67071,
+      "definedCount": 52,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 67008,
+          "end": 67059
+        }
+      ]
+    },
+    {
+      "name": "Linear_A",
+      "displayName": "Linear A",
+      "blockStart": 67072,
+      "blockEnd": 67455,
+      "definedCount": 341,
+      "unassignedCount": 43,
+      "ranges": [
+        {
+          "start": 67072,
+          "end": 67382
+        },
+        {
+          "start": 67392,
+          "end": 67413
+        },
+        {
+          "start": 67424,
+          "end": 67431
+        }
+      ]
+    },
+    {
+      "name": "Latin_Extended_F",
+      "displayName": "Latin Extended F",
+      "blockStart": 67456,
+      "blockEnd": 67519,
+      "definedCount": 57,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 67456,
+          "end": 67461
+        },
+        {
+          "start": 67463,
+          "end": 67504
+        },
+        {
+          "start": 67506,
+          "end": 67514
+        }
+      ]
+    },
+    {
+      "name": "Cypriot_Syllabary",
+      "displayName": "Cypriot Syllabary",
+      "blockStart": 67584,
+      "blockEnd": 67647,
+      "definedCount": 55,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 67584,
+          "end": 67589
+        },
+        {
+          "start": 67592,
+          "end": 67592
+        },
+        {
+          "start": 67594,
+          "end": 67637
+        },
+        {
+          "start": 67639,
+          "end": 67640
+        },
+        {
+          "start": 67644,
+          "end": 67644
+        },
+        {
+          "start": 67647,
+          "end": 67647
+        }
+      ]
+    },
+    {
+      "name": "Imperial_Aramaic",
+      "displayName": "Imperial Aramaic",
+      "blockStart": 67648,
+      "blockEnd": 67679,
+      "definedCount": 31,
+      "unassignedCount": 1,
+      "ranges": [
+        {
+          "start": 67648,
+          "end": 67669
+        },
+        {
+          "start": 67671,
+          "end": 67679
+        }
+      ]
+    },
+    {
+      "name": "Palmyrene",
+      "displayName": "Palmyrene",
+      "blockStart": 67680,
+      "blockEnd": 67711,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 67680,
+          "end": 67711
+        }
+      ]
+    },
+    {
+      "name": "Nabataean",
+      "displayName": "Nabataean",
+      "blockStart": 67712,
+      "blockEnd": 67759,
+      "definedCount": 40,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 67712,
+          "end": 67742
+        },
+        {
+          "start": 67751,
+          "end": 67759
+        }
+      ]
+    },
+    {
+      "name": "Hatran",
+      "displayName": "Hatran",
+      "blockStart": 67808,
+      "blockEnd": 67839,
+      "definedCount": 26,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 67808,
+          "end": 67826
+        },
+        {
+          "start": 67828,
+          "end": 67829
+        },
+        {
+          "start": 67835,
+          "end": 67839
+        }
+      ]
+    },
+    {
+      "name": "Phoenician",
+      "displayName": "Phoenician",
+      "blockStart": 67840,
+      "blockEnd": 67871,
+      "definedCount": 29,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 67840,
+          "end": 67867
+        },
+        {
+          "start": 67871,
+          "end": 67871
+        }
+      ]
+    },
+    {
+      "name": "Lydian",
+      "displayName": "Lydian",
+      "blockStart": 67872,
+      "blockEnd": 67903,
+      "definedCount": 27,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 67872,
+          "end": 67897
+        },
+        {
+          "start": 67903,
+          "end": 67903
+        }
+      ]
+    },
+    {
+      "name": "Meroitic_Hieroglyphs",
+      "displayName": "Meroitic Hieroglyphs",
+      "blockStart": 67968,
+      "blockEnd": 67999,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 67968,
+          "end": 67999
+        }
+      ]
+    },
+    {
+      "name": "Meroitic_Cursive",
+      "displayName": "Meroitic Cursive",
+      "blockStart": 68000,
+      "blockEnd": 68095,
+      "definedCount": 90,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 68000,
+          "end": 68023
+        },
+        {
+          "start": 68028,
+          "end": 68047
+        },
+        {
+          "start": 68050,
+          "end": 68095
+        }
+      ]
+    },
+    {
+      "name": "Kharoshthi",
+      "displayName": "Kharoshthi",
+      "blockStart": 68096,
+      "blockEnd": 68191,
+      "definedCount": 68,
+      "unassignedCount": 28,
+      "ranges": [
+        {
+          "start": 68096,
+          "end": 68099
+        },
+        {
+          "start": 68101,
+          "end": 68102
+        },
+        {
+          "start": 68108,
+          "end": 68115
+        },
+        {
+          "start": 68117,
+          "end": 68119
+        },
+        {
+          "start": 68121,
+          "end": 68149
+        },
+        {
+          "start": 68152,
+          "end": 68154
+        },
+        {
+          "start": 68159,
+          "end": 68168
+        },
+        {
+          "start": 68176,
+          "end": 68184
+        }
+      ]
+    },
+    {
+      "name": "Old_South_Arabian",
+      "displayName": "Old South Arabian",
+      "blockStart": 68192,
+      "blockEnd": 68223,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 68192,
+          "end": 68223
+        }
+      ]
+    },
+    {
+      "name": "Old_North_Arabian",
+      "displayName": "Old North Arabian",
+      "blockStart": 68224,
+      "blockEnd": 68255,
+      "definedCount": 32,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 68224,
+          "end": 68255
+        }
+      ]
+    },
+    {
+      "name": "Manichaean",
+      "displayName": "Manichaean",
+      "blockStart": 68288,
+      "blockEnd": 68351,
+      "definedCount": 51,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 68288,
+          "end": 68326
+        },
+        {
+          "start": 68331,
+          "end": 68342
+        }
+      ]
+    },
+    {
+      "name": "Avestan",
+      "displayName": "Avestan",
+      "blockStart": 68352,
+      "blockEnd": 68415,
+      "definedCount": 61,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 68352,
+          "end": 68405
+        },
+        {
+          "start": 68409,
+          "end": 68415
+        }
+      ]
+    },
+    {
+      "name": "Inscriptional_Parthian",
+      "displayName": "Inscriptional Parthian",
+      "blockStart": 68416,
+      "blockEnd": 68447,
+      "definedCount": 30,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 68416,
+          "end": 68437
+        },
+        {
+          "start": 68440,
+          "end": 68447
+        }
+      ]
+    },
+    {
+      "name": "Inscriptional_Pahlavi",
+      "displayName": "Inscriptional Pahlavi",
+      "blockStart": 68448,
+      "blockEnd": 68479,
+      "definedCount": 27,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 68448,
+          "end": 68466
+        },
+        {
+          "start": 68472,
+          "end": 68479
+        }
+      ]
+    },
+    {
+      "name": "Psalter_Pahlavi",
+      "displayName": "Psalter Pahlavi",
+      "blockStart": 68480,
+      "blockEnd": 68527,
+      "definedCount": 29,
+      "unassignedCount": 19,
+      "ranges": [
+        {
+          "start": 68480,
+          "end": 68497
+        },
+        {
+          "start": 68505,
+          "end": 68508
+        },
+        {
+          "start": 68521,
+          "end": 68527
+        }
+      ]
+    },
+    {
+      "name": "Old_Turkic",
+      "displayName": "Old Turkic",
+      "blockStart": 68608,
+      "blockEnd": 68687,
+      "definedCount": 73,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 68608,
+          "end": 68680
+        }
+      ]
+    },
+    {
+      "name": "Old_Hungarian",
+      "displayName": "Old Hungarian",
+      "blockStart": 68736,
+      "blockEnd": 68863,
+      "definedCount": 108,
+      "unassignedCount": 20,
+      "ranges": [
+        {
+          "start": 68736,
+          "end": 68786
+        },
+        {
+          "start": 68800,
+          "end": 68850
+        },
+        {
+          "start": 68858,
+          "end": 68863
+        }
+      ]
+    },
+    {
+      "name": "Hanifi_Rohingya",
+      "displayName": "Hanifi Rohingya",
+      "blockStart": 68864,
+      "blockEnd": 68927,
+      "definedCount": 50,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 68864,
+          "end": 68903
+        },
+        {
+          "start": 68912,
+          "end": 68921
+        }
+      ]
+    },
+    {
+      "name": "Garay",
+      "displayName": "Garay",
+      "blockStart": 68928,
+      "blockEnd": 69007,
+      "definedCount": 69,
+      "unassignedCount": 11,
+      "ranges": [
+        {
+          "start": 68928,
+          "end": 68965
+        },
+        {
+          "start": 68969,
+          "end": 68997
+        },
+        {
+          "start": 69006,
+          "end": 69007
+        }
+      ]
+    },
+    {
+      "name": "Rumi_Numeral_Symbols",
+      "displayName": "Rumi Numeral Symbols",
+      "blockStart": 69216,
+      "blockEnd": 69247,
+      "definedCount": 31,
+      "unassignedCount": 1,
+      "ranges": [
+        {
+          "start": 69216,
+          "end": 69246
+        }
+      ]
+    },
+    {
+      "name": "Yezidi",
+      "displayName": "Yezidi",
+      "blockStart": 69248,
+      "blockEnd": 69311,
+      "definedCount": 47,
+      "unassignedCount": 17,
+      "ranges": [
+        {
+          "start": 69248,
+          "end": 69289
+        },
+        {
+          "start": 69291,
+          "end": 69293
+        },
+        {
+          "start": 69296,
+          "end": 69297
+        }
+      ]
+    },
+    {
+      "name": "Arabic_Extended_C",
+      "displayName": "Arabic Extended C",
+      "blockStart": 69312,
+      "blockEnd": 69375,
+      "definedCount": 7,
+      "unassignedCount": 57,
+      "ranges": [
+        {
+          "start": 69314,
+          "end": 69316
+        },
+        {
+          "start": 69372,
+          "end": 69375
+        }
+      ]
+    },
+    {
+      "name": "Old_Sogdian",
+      "displayName": "Old Sogdian",
+      "blockStart": 69376,
+      "blockEnd": 69423,
+      "definedCount": 40,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 69376,
+          "end": 69415
+        }
+      ]
+    },
+    {
+      "name": "Sogdian",
+      "displayName": "Sogdian",
+      "blockStart": 69424,
+      "blockEnd": 69487,
+      "definedCount": 42,
+      "unassignedCount": 22,
+      "ranges": [
+        {
+          "start": 69424,
+          "end": 69465
+        }
+      ]
+    },
+    {
+      "name": "Old_Uyghur",
+      "displayName": "Old Uyghur",
+      "blockStart": 69488,
+      "blockEnd": 69551,
+      "definedCount": 26,
+      "unassignedCount": 38,
+      "ranges": [
+        {
+          "start": 69488,
+          "end": 69513
+        }
+      ]
+    },
+    {
+      "name": "Chorasmian",
+      "displayName": "Chorasmian",
+      "blockStart": 69552,
+      "blockEnd": 69599,
+      "definedCount": 28,
+      "unassignedCount": 20,
+      "ranges": [
+        {
+          "start": 69552,
+          "end": 69579
+        }
+      ]
+    },
+    {
+      "name": "Elymaic",
+      "displayName": "Elymaic",
+      "blockStart": 69600,
+      "blockEnd": 69631,
+      "definedCount": 23,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 69600,
+          "end": 69622
+        }
+      ]
+    },
+    {
+      "name": "Brahmi",
+      "displayName": "Brahmi",
+      "blockStart": 69632,
+      "blockEnd": 69759,
+      "definedCount": 115,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 69632,
+          "end": 69709
+        },
+        {
+          "start": 69714,
+          "end": 69749
+        },
+        {
+          "start": 69759,
+          "end": 69759
+        }
+      ]
+    },
+    {
+      "name": "Kaithi",
+      "displayName": "Kaithi",
+      "blockStart": 69760,
+      "blockEnd": 69839,
+      "definedCount": 68,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 69760,
+          "end": 69826
+        },
+        {
+          "start": 69837,
+          "end": 69837
+        }
+      ]
+    },
+    {
+      "name": "Sora_Sompeng",
+      "displayName": "Sora Sompeng",
+      "blockStart": 69840,
+      "blockEnd": 69887,
+      "definedCount": 35,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 69840,
+          "end": 69864
+        },
+        {
+          "start": 69872,
+          "end": 69881
+        }
+      ]
+    },
+    {
+      "name": "Chakma",
+      "displayName": "Chakma",
+      "blockStart": 69888,
+      "blockEnd": 69967,
+      "definedCount": 71,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 69888,
+          "end": 69940
+        },
+        {
+          "start": 69942,
+          "end": 69959
+        }
+      ]
+    },
+    {
+      "name": "Mahajani",
+      "displayName": "Mahajani",
+      "blockStart": 69968,
+      "blockEnd": 70015,
+      "definedCount": 39,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 69968,
+          "end": 70006
+        }
+      ]
+    },
+    {
+      "name": "Sharada",
+      "displayName": "Sharada",
+      "blockStart": 70016,
+      "blockEnd": 70111,
+      "definedCount": 96,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 70016,
+          "end": 70111
+        }
+      ]
+    },
+    {
+      "name": "Sinhala_Archaic_Numbers",
+      "displayName": "Sinhala Archaic Numbers",
+      "blockStart": 70112,
+      "blockEnd": 70143,
+      "definedCount": 20,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 70113,
+          "end": 70132
+        }
+      ]
+    },
+    {
+      "name": "Khojki",
+      "displayName": "Khojki",
+      "blockStart": 70144,
+      "blockEnd": 70223,
+      "definedCount": 65,
+      "unassignedCount": 15,
+      "ranges": [
+        {
+          "start": 70144,
+          "end": 70161
+        },
+        {
+          "start": 70163,
+          "end": 70209
+        }
+      ]
+    },
+    {
+      "name": "Multani",
+      "displayName": "Multani",
+      "blockStart": 70272,
+      "blockEnd": 70319,
+      "definedCount": 38,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 70272,
+          "end": 70278
+        },
+        {
+          "start": 70280,
+          "end": 70280
+        },
+        {
+          "start": 70282,
+          "end": 70285
+        },
+        {
+          "start": 70287,
+          "end": 70301
+        },
+        {
+          "start": 70303,
+          "end": 70313
+        }
+      ]
+    },
+    {
+      "name": "Khudawadi",
+      "displayName": "Khudawadi",
+      "blockStart": 70320,
+      "blockEnd": 70399,
+      "definedCount": 69,
+      "unassignedCount": 11,
+      "ranges": [
+        {
+          "start": 70320,
+          "end": 70378
+        },
+        {
+          "start": 70384,
+          "end": 70393
+        }
+      ]
+    },
+    {
+      "name": "Grantha",
+      "displayName": "Grantha",
+      "blockStart": 70400,
+      "blockEnd": 70527,
+      "definedCount": 86,
+      "unassignedCount": 42,
+      "ranges": [
+        {
+          "start": 70400,
+          "end": 70403
+        },
+        {
+          "start": 70405,
+          "end": 70412
+        },
+        {
+          "start": 70415,
+          "end": 70416
+        },
+        {
+          "start": 70419,
+          "end": 70440
+        },
+        {
+          "start": 70442,
+          "end": 70448
+        },
+        {
+          "start": 70450,
+          "end": 70451
+        },
+        {
+          "start": 70453,
+          "end": 70457
+        },
+        {
+          "start": 70459,
+          "end": 70468
+        },
+        {
+          "start": 70471,
+          "end": 70472
+        },
+        {
+          "start": 70475,
+          "end": 70477
+        },
+        {
+          "start": 70480,
+          "end": 70480
+        },
+        {
+          "start": 70487,
+          "end": 70487
+        },
+        {
+          "start": 70493,
+          "end": 70499
+        },
+        {
+          "start": 70502,
+          "end": 70508
+        },
+        {
+          "start": 70512,
+          "end": 70516
+        }
+      ]
+    },
+    {
+      "name": "Tulu_Tigalari",
+      "displayName": "Tulu Tigalari",
+      "blockStart": 70528,
+      "blockEnd": 70655,
+      "definedCount": 80,
+      "unassignedCount": 48,
+      "ranges": [
+        {
+          "start": 70528,
+          "end": 70537
+        },
+        {
+          "start": 70539,
+          "end": 70539
+        },
+        {
+          "start": 70542,
+          "end": 70542
+        },
+        {
+          "start": 70544,
+          "end": 70581
+        },
+        {
+          "start": 70583,
+          "end": 70592
+        },
+        {
+          "start": 70594,
+          "end": 70594
+        },
+        {
+          "start": 70597,
+          "end": 70597
+        },
+        {
+          "start": 70599,
+          "end": 70602
+        },
+        {
+          "start": 70604,
+          "end": 70613
+        },
+        {
+          "start": 70615,
+          "end": 70616
+        },
+        {
+          "start": 70625,
+          "end": 70626
+        }
+      ]
+    },
+    {
+      "name": "Newa",
+      "displayName": "Newa",
+      "blockStart": 70656,
+      "blockEnd": 70783,
+      "definedCount": 97,
+      "unassignedCount": 31,
+      "ranges": [
+        {
+          "start": 70656,
+          "end": 70747
+        },
+        {
+          "start": 70749,
+          "end": 70753
+        }
+      ]
+    },
+    {
+      "name": "Tirhuta",
+      "displayName": "Tirhuta",
+      "blockStart": 70784,
+      "blockEnd": 70879,
+      "definedCount": 82,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 70784,
+          "end": 70855
+        },
+        {
+          "start": 70864,
+          "end": 70873
+        }
+      ]
+    },
+    {
+      "name": "Siddham",
+      "displayName": "Siddham",
+      "blockStart": 71040,
+      "blockEnd": 71167,
+      "definedCount": 92,
+      "unassignedCount": 36,
+      "ranges": [
+        {
+          "start": 71040,
+          "end": 71093
+        },
+        {
+          "start": 71096,
+          "end": 71133
+        }
+      ]
+    },
+    {
+      "name": "Modi",
+      "displayName": "Modi",
+      "blockStart": 71168,
+      "blockEnd": 71263,
+      "definedCount": 79,
+      "unassignedCount": 17,
+      "ranges": [
+        {
+          "start": 71168,
+          "end": 71236
+        },
+        {
+          "start": 71248,
+          "end": 71257
+        }
+      ]
+    },
+    {
+      "name": "Mongolian_Supplement",
+      "displayName": "Mongolian Supplement",
+      "blockStart": 71264,
+      "blockEnd": 71295,
+      "definedCount": 13,
+      "unassignedCount": 19,
+      "ranges": [
+        {
+          "start": 71264,
+          "end": 71276
+        }
+      ]
+    },
+    {
+      "name": "Takri",
+      "displayName": "Takri",
+      "blockStart": 71296,
+      "blockEnd": 71375,
+      "definedCount": 68,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 71296,
+          "end": 71353
+        },
+        {
+          "start": 71360,
+          "end": 71369
+        }
+      ]
+    },
+    {
+      "name": "Myanmar_Extended_C",
+      "displayName": "Myanmar Extended C",
+      "blockStart": 71376,
+      "blockEnd": 71423,
+      "definedCount": 20,
+      "unassignedCount": 28,
+      "ranges": [
+        {
+          "start": 71376,
+          "end": 71395
+        }
+      ]
+    },
+    {
+      "name": "Ahom",
+      "displayName": "Ahom",
+      "blockStart": 71424,
+      "blockEnd": 71503,
+      "definedCount": 65,
+      "unassignedCount": 15,
+      "ranges": [
+        {
+          "start": 71424,
+          "end": 71450
+        },
+        {
+          "start": 71453,
+          "end": 71467
+        },
+        {
+          "start": 71472,
+          "end": 71494
+        }
+      ]
+    },
+    {
+      "name": "Dogra",
+      "displayName": "Dogra",
+      "blockStart": 71680,
+      "blockEnd": 71759,
+      "definedCount": 60,
+      "unassignedCount": 20,
+      "ranges": [
+        {
+          "start": 71680,
+          "end": 71739
+        }
+      ]
+    },
+    {
+      "name": "Warang_Citi",
+      "displayName": "Warang Citi",
+      "blockStart": 71840,
+      "blockEnd": 71935,
+      "definedCount": 84,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 71840,
+          "end": 71922
+        },
+        {
+          "start": 71935,
+          "end": 71935
+        }
+      ]
+    },
+    {
+      "name": "Dives_Akuru",
+      "displayName": "Dives Akuru",
+      "blockStart": 71936,
+      "blockEnd": 72031,
+      "definedCount": 72,
+      "unassignedCount": 24,
+      "ranges": [
+        {
+          "start": 71936,
+          "end": 71942
+        },
+        {
+          "start": 71945,
+          "end": 71945
+        },
+        {
+          "start": 71948,
+          "end": 71955
+        },
+        {
+          "start": 71957,
+          "end": 71958
+        },
+        {
+          "start": 71960,
+          "end": 71989
+        },
+        {
+          "start": 71991,
+          "end": 71992
+        },
+        {
+          "start": 71995,
+          "end": 72006
+        },
+        {
+          "start": 72016,
+          "end": 72025
+        }
+      ]
+    },
+    {
+      "name": "Nandinagari",
+      "displayName": "Nandinagari",
+      "blockStart": 72096,
+      "blockEnd": 72191,
+      "definedCount": 65,
+      "unassignedCount": 31,
+      "ranges": [
+        {
+          "start": 72096,
+          "end": 72103
+        },
+        {
+          "start": 72106,
+          "end": 72151
+        },
+        {
+          "start": 72154,
+          "end": 72164
+        }
+      ]
+    },
+    {
+      "name": "Zanabazar_Square",
+      "displayName": "Zanabazar Square",
+      "blockStart": 72192,
+      "blockEnd": 72271,
+      "definedCount": 72,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 72192,
+          "end": 72263
+        }
+      ]
+    },
+    {
+      "name": "Soyombo",
+      "displayName": "Soyombo",
+      "blockStart": 72272,
+      "blockEnd": 72367,
+      "definedCount": 83,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 72272,
+          "end": 72354
+        }
+      ]
+    },
+    {
+      "name": "Unified_Canadian_Aboriginal_Syllabics_Extended_A",
+      "displayName": "Unified Canadian Aboriginal Syllabics Extended A",
+      "blockStart": 72368,
+      "blockEnd": 72383,
+      "definedCount": 16,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 72368,
+          "end": 72383
+        }
+      ]
+    },
+    {
+      "name": "Pau_Cin_Hau",
+      "displayName": "Pau Cin Hau",
+      "blockStart": 72384,
+      "blockEnd": 72447,
+      "definedCount": 57,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 72384,
+          "end": 72440
+        }
+      ]
+    },
+    {
+      "name": "Devanagari_Extended_A",
+      "displayName": "Devanagari Extended A",
+      "blockStart": 72448,
+      "blockEnd": 72543,
+      "definedCount": 10,
+      "unassignedCount": 86,
+      "ranges": [
+        {
+          "start": 72448,
+          "end": 72457
+        }
+      ]
+    },
+    {
+      "name": "Sunuwar",
+      "displayName": "Sunuwar",
+      "blockStart": 72640,
+      "blockEnd": 72703,
+      "definedCount": 44,
+      "unassignedCount": 20,
+      "ranges": [
+        {
+          "start": 72640,
+          "end": 72673
+        },
+        {
+          "start": 72688,
+          "end": 72697
+        }
+      ]
+    },
+    {
+      "name": "Bhaiksuki",
+      "displayName": "Bhaiksuki",
+      "blockStart": 72704,
+      "blockEnd": 72815,
+      "definedCount": 97,
+      "unassignedCount": 15,
+      "ranges": [
+        {
+          "start": 72704,
+          "end": 72712
+        },
+        {
+          "start": 72714,
+          "end": 72758
+        },
+        {
+          "start": 72760,
+          "end": 72773
+        },
+        {
+          "start": 72784,
+          "end": 72812
+        }
+      ]
+    },
+    {
+      "name": "Marchen",
+      "displayName": "Marchen",
+      "blockStart": 72816,
+      "blockEnd": 72895,
+      "definedCount": 68,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 72816,
+          "end": 72847
+        },
+        {
+          "start": 72850,
+          "end": 72871
+        },
+        {
+          "start": 72873,
+          "end": 72886
+        }
+      ]
+    },
+    {
+      "name": "Masaram_Gondi",
+      "displayName": "Masaram Gondi",
+      "blockStart": 72960,
+      "blockEnd": 73055,
+      "definedCount": 75,
+      "unassignedCount": 21,
+      "ranges": [
+        {
+          "start": 72960,
+          "end": 72966
+        },
+        {
+          "start": 72968,
+          "end": 72969
+        },
+        {
+          "start": 72971,
+          "end": 73014
+        },
+        {
+          "start": 73018,
+          "end": 73018
+        },
+        {
+          "start": 73020,
+          "end": 73021
+        },
+        {
+          "start": 73023,
+          "end": 73031
+        },
+        {
+          "start": 73040,
+          "end": 73049
+        }
+      ]
+    },
+    {
+      "name": "Gunjala_Gondi",
+      "displayName": "Gunjala Gondi",
+      "blockStart": 73056,
+      "blockEnd": 73135,
+      "definedCount": 63,
+      "unassignedCount": 17,
+      "ranges": [
+        {
+          "start": 73056,
+          "end": 73061
+        },
+        {
+          "start": 73063,
+          "end": 73064
+        },
+        {
+          "start": 73066,
+          "end": 73102
+        },
+        {
+          "start": 73104,
+          "end": 73105
+        },
+        {
+          "start": 73107,
+          "end": 73112
+        },
+        {
+          "start": 73120,
+          "end": 73129
+        }
+      ]
+    },
+    {
+      "name": "Makasar",
+      "displayName": "Makasar",
+      "blockStart": 73440,
+      "blockEnd": 73471,
+      "definedCount": 25,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 73440,
+          "end": 73464
+        }
+      ]
+    },
+    {
+      "name": "Kawi",
+      "displayName": "Kawi",
+      "blockStart": 73472,
+      "blockEnd": 73567,
+      "definedCount": 87,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 73472,
+          "end": 73488
+        },
+        {
+          "start": 73490,
+          "end": 73530
+        },
+        {
+          "start": 73534,
+          "end": 73562
+        }
+      ]
+    },
+    {
+      "name": "Lisu_Supplement",
+      "displayName": "Lisu Supplement",
+      "blockStart": 73648,
+      "blockEnd": 73663,
+      "definedCount": 1,
+      "unassignedCount": 15,
+      "ranges": [
+        {
+          "start": 73648,
+          "end": 73648
+        }
+      ]
+    },
+    {
+      "name": "Tamil_Supplement",
+      "displayName": "Tamil Supplement",
+      "blockStart": 73664,
+      "blockEnd": 73727,
+      "definedCount": 51,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 73664,
+          "end": 73713
+        },
+        {
+          "start": 73727,
+          "end": 73727
+        }
+      ]
+    },
+    {
+      "name": "Cuneiform",
+      "displayName": "Cuneiform",
+      "blockStart": 73728,
+      "blockEnd": 74751,
+      "definedCount": 922,
+      "unassignedCount": 102,
+      "ranges": [
+        {
+          "start": 73728,
+          "end": 74649
+        }
+      ]
+    },
+    {
+      "name": "Cuneiform_Numbers_And_Punctuation",
+      "displayName": "Cuneiform Numbers And Punctuation",
+      "blockStart": 74752,
+      "blockEnd": 74879,
+      "definedCount": 116,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 74752,
+          "end": 74862
+        },
+        {
+          "start": 74864,
+          "end": 74868
+        }
+      ]
+    },
+    {
+      "name": "Early_Dynastic_Cuneiform",
+      "displayName": "Early Dynastic Cuneiform",
+      "blockStart": 74880,
+      "blockEnd": 75087,
+      "definedCount": 196,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 74880,
+          "end": 75075
+        }
+      ]
+    },
+    {
+      "name": "Cypro_Minoan",
+      "displayName": "Cypro Minoan",
+      "blockStart": 77712,
+      "blockEnd": 77823,
+      "definedCount": 99,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 77712,
+          "end": 77810
+        }
+      ]
+    },
+    {
+      "name": "Egyptian_Hieroglyphs",
+      "displayName": "Egyptian Hieroglyphs",
+      "blockStart": 77824,
+      "blockEnd": 78895,
+      "definedCount": 1072,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 77824,
+          "end": 78895
+        }
+      ]
+    },
+    {
+      "name": "Egyptian_Hieroglyph_Format_Controls",
+      "displayName": "Egyptian Hieroglyph Format Controls",
+      "blockStart": 78896,
+      "blockEnd": 78943,
+      "definedCount": 38,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 78896,
+          "end": 78933
+        }
+      ]
+    },
+    {
+      "name": "Egyptian_Hieroglyphs_Extended_A",
+      "displayName": "Egyptian Hieroglyphs Extended A",
+      "blockStart": 78944,
+      "blockEnd": 82943,
+      "definedCount": 3995,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 78944,
+          "end": 82938
+        }
+      ]
+    },
+    {
+      "name": "Anatolian_Hieroglyphs",
+      "displayName": "Anatolian Hieroglyphs",
+      "blockStart": 82944,
+      "blockEnd": 83583,
+      "definedCount": 583,
+      "unassignedCount": 57,
+      "ranges": [
+        {
+          "start": 82944,
+          "end": 83526
+        }
+      ]
+    },
+    {
+      "name": "Gurung_Khema",
+      "displayName": "Gurung Khema",
+      "blockStart": 90368,
+      "blockEnd": 90431,
+      "definedCount": 58,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 90368,
+          "end": 90425
+        }
+      ]
+    },
+    {
+      "name": "Bamum_Supplement",
+      "displayName": "Bamum Supplement",
+      "blockStart": 92160,
+      "blockEnd": 92735,
+      "definedCount": 569,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 92160,
+          "end": 92728
+        }
+      ]
+    },
+    {
+      "name": "Mro",
+      "displayName": "Mro",
+      "blockStart": 92736,
+      "blockEnd": 92783,
+      "definedCount": 43,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 92736,
+          "end": 92766
+        },
+        {
+          "start": 92768,
+          "end": 92777
+        },
+        {
+          "start": 92782,
+          "end": 92783
+        }
+      ]
+    },
+    {
+      "name": "Tangsa",
+      "displayName": "Tangsa",
+      "blockStart": 92784,
+      "blockEnd": 92879,
+      "definedCount": 89,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 92784,
+          "end": 92862
+        },
+        {
+          "start": 92864,
+          "end": 92873
+        }
+      ]
+    },
+    {
+      "name": "Bassa_Vah",
+      "displayName": "Bassa Vah",
+      "blockStart": 92880,
+      "blockEnd": 92927,
+      "definedCount": 36,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 92880,
+          "end": 92909
+        },
+        {
+          "start": 92912,
+          "end": 92917
+        }
+      ]
+    },
+    {
+      "name": "Pahawh_Hmong",
+      "displayName": "Pahawh Hmong",
+      "blockStart": 92928,
+      "blockEnd": 93071,
+      "definedCount": 127,
+      "unassignedCount": 17,
+      "ranges": [
+        {
+          "start": 92928,
+          "end": 92997
+        },
+        {
+          "start": 93008,
+          "end": 93017
+        },
+        {
+          "start": 93019,
+          "end": 93025
+        },
+        {
+          "start": 93027,
+          "end": 93047
+        },
+        {
+          "start": 93053,
+          "end": 93071
+        }
+      ]
+    },
+    {
+      "name": "Kirat_Rai",
+      "displayName": "Kirat Rai",
+      "blockStart": 93504,
+      "blockEnd": 93567,
+      "definedCount": 58,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 93504,
+          "end": 93561
+        }
+      ]
+    },
+    {
+      "name": "Medefaidrin",
+      "displayName": "Medefaidrin",
+      "blockStart": 93760,
+      "blockEnd": 93855,
+      "definedCount": 91,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 93760,
+          "end": 93850
+        }
+      ]
+    },
+    {
+      "name": "Miao",
+      "displayName": "Miao",
+      "blockStart": 93952,
+      "blockEnd": 94111,
+      "definedCount": 149,
+      "unassignedCount": 11,
+      "ranges": [
+        {
+          "start": 93952,
+          "end": 94026
+        },
+        {
+          "start": 94031,
+          "end": 94087
+        },
+        {
+          "start": 94095,
+          "end": 94111
+        }
+      ]
+    },
+    {
+      "name": "Ideographic_Symbols_And_Punctuation",
+      "displayName": "Ideographic Symbols And Punctuation",
+      "blockStart": 94176,
+      "blockEnd": 94207,
+      "definedCount": 7,
+      "unassignedCount": 25,
+      "ranges": [
+        {
+          "start": 94176,
+          "end": 94180
+        },
+        {
+          "start": 94192,
+          "end": 94193
+        }
+      ]
+    },
+    {
+      "name": "Tangut",
+      "displayName": "Tangut",
+      "blockStart": 94208,
+      "blockEnd": 100351,
+      "definedCount": 6136,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 94208,
+          "end": 100343
+        }
+      ]
+    },
+    {
+      "name": "Tangut_Components",
+      "displayName": "Tangut Components",
+      "blockStart": 100352,
+      "blockEnd": 101119,
+      "definedCount": 768,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 100352,
+          "end": 101119
+        }
+      ]
+    },
+    {
+      "name": "Khitan_Small_Script",
+      "displayName": "Khitan Small Script",
+      "blockStart": 101120,
+      "blockEnd": 101631,
+      "definedCount": 471,
+      "unassignedCount": 41,
+      "ranges": [
+        {
+          "start": 101120,
+          "end": 101589
+        },
+        {
+          "start": 101631,
+          "end": 101631
+        }
+      ]
+    },
+    {
+      "name": "Tangut_Supplement",
+      "displayName": "Tangut Supplement",
+      "blockStart": 101632,
+      "blockEnd": 101759,
+      "definedCount": 9,
+      "unassignedCount": 119,
+      "ranges": [
+        {
+          "start": 101632,
+          "end": 101640
+        }
+      ]
+    },
+    {
+      "name": "Kana_Extended_B",
+      "displayName": "Kana Extended B",
+      "blockStart": 110576,
+      "blockEnd": 110591,
+      "definedCount": 13,
+      "unassignedCount": 3,
+      "ranges": [
+        {
+          "start": 110576,
+          "end": 110579
+        },
+        {
+          "start": 110581,
+          "end": 110587
+        },
+        {
+          "start": 110589,
+          "end": 110590
+        }
+      ]
+    },
+    {
+      "name": "Kana_Supplement",
+      "displayName": "Kana Supplement",
+      "blockStart": 110592,
+      "blockEnd": 110847,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 110592,
+          "end": 110847
+        }
+      ]
+    },
+    {
+      "name": "Kana_Extended_A",
+      "displayName": "Kana Extended A",
+      "blockStart": 110848,
+      "blockEnd": 110895,
+      "definedCount": 35,
+      "unassignedCount": 13,
+      "ranges": [
+        {
+          "start": 110848,
+          "end": 110882
+        }
+      ]
+    },
+    {
+      "name": "Small_Kana_Extension",
+      "displayName": "Small Kana Extension",
+      "blockStart": 110896,
+      "blockEnd": 110959,
+      "definedCount": 9,
+      "unassignedCount": 55,
+      "ranges": [
+        {
+          "start": 110898,
+          "end": 110898
+        },
+        {
+          "start": 110928,
+          "end": 110930
+        },
+        {
+          "start": 110933,
+          "end": 110933
+        },
+        {
+          "start": 110948,
+          "end": 110951
+        }
+      ]
+    },
+    {
+      "name": "Nushu",
+      "displayName": "Nushu",
+      "blockStart": 110960,
+      "blockEnd": 111359,
+      "definedCount": 396,
+      "unassignedCount": 4,
+      "ranges": [
+        {
+          "start": 110960,
+          "end": 111355
+        }
+      ]
+    },
+    {
+      "name": "Duployan",
+      "displayName": "Duployan",
+      "blockStart": 113664,
+      "blockEnd": 113823,
+      "definedCount": 143,
+      "unassignedCount": 17,
+      "ranges": [
+        {
+          "start": 113664,
+          "end": 113770
+        },
+        {
+          "start": 113776,
+          "end": 113788
+        },
+        {
+          "start": 113792,
+          "end": 113800
+        },
+        {
+          "start": 113808,
+          "end": 113817
+        },
+        {
+          "start": 113820,
+          "end": 113823
+        }
+      ]
+    },
+    {
+      "name": "Shorthand_Format_Controls",
+      "displayName": "Shorthand Format Controls",
+      "blockStart": 113824,
+      "blockEnd": 113839,
+      "definedCount": 4,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 113824,
+          "end": 113827
+        }
+      ]
+    },
+    {
+      "name": "Symbols_For_Legacy_Computing_Supplement",
+      "displayName": "Symbols For Legacy Computing Supplement",
+      "blockStart": 117760,
+      "blockEnd": 118463,
+      "definedCount": 686,
+      "unassignedCount": 18,
+      "ranges": [
+        {
+          "start": 117760,
+          "end": 118009
+        },
+        {
+          "start": 118016,
+          "end": 118451
+        }
+      ]
+    },
+    {
+      "name": "Znamenny_Musical_Notation",
+      "displayName": "Znamenny Musical Notation",
+      "blockStart": 118528,
+      "blockEnd": 118735,
+      "definedCount": 185,
+      "unassignedCount": 23,
+      "ranges": [
+        {
+          "start": 118528,
+          "end": 118573
+        },
+        {
+          "start": 118576,
+          "end": 118598
+        },
+        {
+          "start": 118608,
+          "end": 118723
+        }
+      ]
+    },
+    {
+      "name": "Byzantine_Musical_Symbols",
+      "displayName": "Byzantine Musical Symbols",
+      "blockStart": 118784,
+      "blockEnd": 119039,
+      "definedCount": 246,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 118784,
+          "end": 119029
+        }
+      ]
+    },
+    {
+      "name": "Musical_Symbols",
+      "displayName": "Musical Symbols",
+      "blockStart": 119040,
+      "blockEnd": 119295,
+      "definedCount": 233,
+      "unassignedCount": 23,
+      "ranges": [
+        {
+          "start": 119040,
+          "end": 119078
+        },
+        {
+          "start": 119081,
+          "end": 119274
+        }
+      ]
+    },
+    {
+      "name": "Ancient_Greek_Musical_Notation",
+      "displayName": "Ancient Greek Musical Notation",
+      "blockStart": 119296,
+      "blockEnd": 119375,
+      "definedCount": 70,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 119296,
+          "end": 119365
+        }
+      ]
+    },
+    {
+      "name": "Kaktovik_Numerals",
+      "displayName": "Kaktovik Numerals",
+      "blockStart": 119488,
+      "blockEnd": 119519,
+      "definedCount": 20,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 119488,
+          "end": 119507
+        }
+      ]
+    },
+    {
+      "name": "Mayan_Numerals",
+      "displayName": "Mayan Numerals",
+      "blockStart": 119520,
+      "blockEnd": 119551,
+      "definedCount": 20,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 119520,
+          "end": 119539
+        }
+      ]
+    },
+    {
+      "name": "Tai_Xuan_Jing_Symbols",
+      "displayName": "Tai Xuan Jing Symbols",
+      "blockStart": 119552,
+      "blockEnd": 119647,
+      "definedCount": 87,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 119552,
+          "end": 119638
+        }
+      ]
+    },
+    {
+      "name": "Counting_Rod_Numerals",
+      "displayName": "Counting Rod Numerals",
+      "blockStart": 119648,
+      "blockEnd": 119679,
+      "definedCount": 25,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 119648,
+          "end": 119672
+        }
+      ]
+    },
+    {
+      "name": "Mathematical_Alphanumeric_Symbols",
+      "displayName": "Mathematical Alphanumeric Symbols",
+      "blockStart": 119808,
+      "blockEnd": 120831,
+      "definedCount": 996,
+      "unassignedCount": 28,
+      "ranges": [
+        {
+          "start": 119808,
+          "end": 119892
+        },
+        {
+          "start": 119894,
+          "end": 119964
+        },
+        {
+          "start": 119966,
+          "end": 119967
+        },
+        {
+          "start": 119970,
+          "end": 119970
+        },
+        {
+          "start": 119973,
+          "end": 119974
+        },
+        {
+          "start": 119977,
+          "end": 119980
+        },
+        {
+          "start": 119982,
+          "end": 119993
+        },
+        {
+          "start": 119995,
+          "end": 119995
+        },
+        {
+          "start": 119997,
+          "end": 120003
+        },
+        {
+          "start": 120005,
+          "end": 120069
+        },
+        {
+          "start": 120071,
+          "end": 120074
+        },
+        {
+          "start": 120077,
+          "end": 120084
+        },
+        {
+          "start": 120086,
+          "end": 120092
+        },
+        {
+          "start": 120094,
+          "end": 120121
+        },
+        {
+          "start": 120123,
+          "end": 120126
+        },
+        {
+          "start": 120128,
+          "end": 120132
+        },
+        {
+          "start": 120134,
+          "end": 120134
+        },
+        {
+          "start": 120138,
+          "end": 120144
+        },
+        {
+          "start": 120146,
+          "end": 120485
+        },
+        {
+          "start": 120488,
+          "end": 120779
+        },
+        {
+          "start": 120782,
+          "end": 120831
+        }
+      ]
+    },
+    {
+      "name": "Sutton_SignWriting",
+      "displayName": "Sutton SignWriting",
+      "blockStart": 120832,
+      "blockEnd": 121519,
+      "definedCount": 672,
+      "unassignedCount": 16,
+      "ranges": [
+        {
+          "start": 120832,
+          "end": 121483
+        },
+        {
+          "start": 121499,
+          "end": 121503
+        },
+        {
+          "start": 121505,
+          "end": 121519
+        }
+      ]
+    },
+    {
+      "name": "Latin_Extended_G",
+      "displayName": "Latin Extended G",
+      "blockStart": 122624,
+      "blockEnd": 122879,
+      "definedCount": 37,
+      "unassignedCount": 219,
+      "ranges": [
+        {
+          "start": 122624,
+          "end": 122654
+        },
+        {
+          "start": 122661,
+          "end": 122666
+        }
+      ]
+    },
+    {
+      "name": "Glagolitic_Supplement",
+      "displayName": "Glagolitic Supplement",
+      "blockStart": 122880,
+      "blockEnd": 122927,
+      "definedCount": 38,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 122880,
+          "end": 122886
+        },
+        {
+          "start": 122888,
+          "end": 122904
+        },
+        {
+          "start": 122907,
+          "end": 122913
+        },
+        {
+          "start": 122915,
+          "end": 122916
+        },
+        {
+          "start": 122918,
+          "end": 122922
+        }
+      ]
+    },
+    {
+      "name": "Cyrillic_Extended_D",
+      "displayName": "Cyrillic Extended D",
+      "blockStart": 122928,
+      "blockEnd": 123023,
+      "definedCount": 63,
+      "unassignedCount": 33,
+      "ranges": [
+        {
+          "start": 122928,
+          "end": 122989
+        },
+        {
+          "start": 123023,
+          "end": 123023
+        }
+      ]
+    },
+    {
+      "name": "Nyiakeng_Puachue_Hmong",
+      "displayName": "Nyiakeng Puachue Hmong",
+      "blockStart": 123136,
+      "blockEnd": 123215,
+      "definedCount": 71,
+      "unassignedCount": 9,
+      "ranges": [
+        {
+          "start": 123136,
+          "end": 123180
+        },
+        {
+          "start": 123184,
+          "end": 123197
+        },
+        {
+          "start": 123200,
+          "end": 123209
+        },
+        {
+          "start": 123214,
+          "end": 123215
+        }
+      ]
+    },
+    {
+      "name": "Toto",
+      "displayName": "Toto",
+      "blockStart": 123536,
+      "blockEnd": 123583,
+      "definedCount": 31,
+      "unassignedCount": 17,
+      "ranges": [
+        {
+          "start": 123536,
+          "end": 123566
+        }
+      ]
+    },
+    {
+      "name": "Wancho",
+      "displayName": "Wancho",
+      "blockStart": 123584,
+      "blockEnd": 123647,
+      "definedCount": 59,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 123584,
+          "end": 123641
+        },
+        {
+          "start": 123647,
+          "end": 123647
+        }
+      ]
+    },
+    {
+      "name": "Nag_Mundari",
+      "displayName": "Nag Mundari",
+      "blockStart": 124112,
+      "blockEnd": 124159,
+      "definedCount": 42,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 124112,
+          "end": 124153
+        }
+      ]
+    },
+    {
+      "name": "Ol_Onal",
+      "displayName": "Ol Onal",
+      "blockStart": 124368,
+      "blockEnd": 124415,
+      "definedCount": 44,
+      "unassignedCount": 4,
+      "ranges": [
+        {
+          "start": 124368,
+          "end": 124410
+        },
+        {
+          "start": 124415,
+          "end": 124415
+        }
+      ]
+    },
+    {
+      "name": "Ethiopic_Extended_B",
+      "displayName": "Ethiopic Extended B",
+      "blockStart": 124896,
+      "blockEnd": 124927,
+      "definedCount": 28,
+      "unassignedCount": 4,
+      "ranges": [
+        {
+          "start": 124896,
+          "end": 124902
+        },
+        {
+          "start": 124904,
+          "end": 124907
+        },
+        {
+          "start": 124909,
+          "end": 124910
+        },
+        {
+          "start": 124912,
+          "end": 124926
+        }
+      ]
+    },
+    {
+      "name": "Mende_Kikakui",
+      "displayName": "Mende Kikakui",
+      "blockStart": 124928,
+      "blockEnd": 125151,
+      "definedCount": 213,
+      "unassignedCount": 11,
+      "ranges": [
+        {
+          "start": 124928,
+          "end": 125124
+        },
+        {
+          "start": 125127,
+          "end": 125142
+        }
+      ]
+    },
+    {
+      "name": "Adlam",
+      "displayName": "Adlam",
+      "blockStart": 125184,
+      "blockEnd": 125279,
+      "definedCount": 88,
+      "unassignedCount": 8,
+      "ranges": [
+        {
+          "start": 125184,
+          "end": 125259
+        },
+        {
+          "start": 125264,
+          "end": 125273
+        },
+        {
+          "start": 125278,
+          "end": 125279
+        }
+      ]
+    },
+    {
+      "name": "Indic_Siyaq_Numbers",
+      "displayName": "Indic Siyaq Numbers",
+      "blockStart": 126064,
+      "blockEnd": 126143,
+      "definedCount": 68,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 126065,
+          "end": 126132
+        }
+      ]
+    },
+    {
+      "name": "Ottoman_Siyaq_Numbers",
+      "displayName": "Ottoman Siyaq Numbers",
+      "blockStart": 126208,
+      "blockEnd": 126287,
+      "definedCount": 61,
+      "unassignedCount": 19,
+      "ranges": [
+        {
+          "start": 126209,
+          "end": 126269
+        }
+      ]
+    },
+    {
+      "name": "Arabic_Mathematical_Alphabetic_Symbols",
+      "displayName": "Arabic Mathematical Alphabetic Symbols",
+      "blockStart": 126464,
+      "blockEnd": 126719,
+      "definedCount": 143,
+      "unassignedCount": 113,
+      "ranges": [
+        {
+          "start": 126464,
+          "end": 126467
+        },
+        {
+          "start": 126469,
+          "end": 126495
+        },
+        {
+          "start": 126497,
+          "end": 126498
+        },
+        {
+          "start": 126500,
+          "end": 126500
+        },
+        {
+          "start": 126503,
+          "end": 126503
+        },
+        {
+          "start": 126505,
+          "end": 126514
+        },
+        {
+          "start": 126516,
+          "end": 126519
+        },
+        {
+          "start": 126521,
+          "end": 126521
+        },
+        {
+          "start": 126523,
+          "end": 126523
+        },
+        {
+          "start": 126530,
+          "end": 126530
+        },
+        {
+          "start": 126535,
+          "end": 126535
+        },
+        {
+          "start": 126537,
+          "end": 126537
+        },
+        {
+          "start": 126539,
+          "end": 126539
+        },
+        {
+          "start": 126541,
+          "end": 126543
+        },
+        {
+          "start": 126545,
+          "end": 126546
+        },
+        {
+          "start": 126548,
+          "end": 126548
+        },
+        {
+          "start": 126551,
+          "end": 126551
+        },
+        {
+          "start": 126553,
+          "end": 126553
+        },
+        {
+          "start": 126555,
+          "end": 126555
+        },
+        {
+          "start": 126557,
+          "end": 126557
+        },
+        {
+          "start": 126559,
+          "end": 126559
+        },
+        {
+          "start": 126561,
+          "end": 126562
+        },
+        {
+          "start": 126564,
+          "end": 126564
+        },
+        {
+          "start": 126567,
+          "end": 126570
+        },
+        {
+          "start": 126572,
+          "end": 126578
+        },
+        {
+          "start": 126580,
+          "end": 126583
+        },
+        {
+          "start": 126585,
+          "end": 126588
+        },
+        {
+          "start": 126590,
+          "end": 126590
+        },
+        {
+          "start": 126592,
+          "end": 126601
+        },
+        {
+          "start": 126603,
+          "end": 126619
+        },
+        {
+          "start": 126625,
+          "end": 126627
+        },
+        {
+          "start": 126629,
+          "end": 126633
+        },
+        {
+          "start": 126635,
+          "end": 126651
+        },
+        {
+          "start": 126704,
+          "end": 126705
+        }
+      ]
+    },
+    {
+      "name": "Mahjong_Tiles",
+      "displayName": "Mahjong Tiles",
+      "blockStart": 126976,
+      "blockEnd": 127023,
+      "definedCount": 44,
+      "unassignedCount": 4,
+      "ranges": [
+        {
+          "start": 126976,
+          "end": 127019
+        }
+      ]
+    },
+    {
+      "name": "Domino_Tiles",
+      "displayName": "Domino Tiles",
+      "blockStart": 127024,
+      "blockEnd": 127135,
+      "definedCount": 100,
+      "unassignedCount": 12,
+      "ranges": [
+        {
+          "start": 127024,
+          "end": 127123
+        }
+      ]
+    },
+    {
+      "name": "Playing_Cards",
+      "displayName": "Playing Cards",
+      "blockStart": 127136,
+      "blockEnd": 127231,
+      "definedCount": 82,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 127136,
+          "end": 127150
+        },
+        {
+          "start": 127153,
+          "end": 127167
+        },
+        {
+          "start": 127169,
+          "end": 127183
+        },
+        {
+          "start": 127185,
+          "end": 127221
+        }
+      ]
+    },
+    {
+      "name": "Enclosed_Alphanumeric_Supplement",
+      "displayName": "Enclosed Alphanumeric Supplement",
+      "blockStart": 127232,
+      "blockEnd": 127487,
+      "definedCount": 200,
+      "unassignedCount": 56,
+      "ranges": [
+        {
+          "start": 127232,
+          "end": 127405
+        },
+        {
+          "start": 127462,
+          "end": 127487
+        }
+      ]
+    },
+    {
+      "name": "Enclosed_Ideographic_Supplement",
+      "displayName": "Enclosed Ideographic Supplement",
+      "blockStart": 127488,
+      "blockEnd": 127743,
+      "definedCount": 64,
+      "unassignedCount": 192,
+      "ranges": [
+        {
+          "start": 127488,
+          "end": 127490
+        },
+        {
+          "start": 127504,
+          "end": 127547
+        },
+        {
+          "start": 127552,
+          "end": 127560
+        },
+        {
+          "start": 127568,
+          "end": 127569
+        },
+        {
+          "start": 127584,
+          "end": 127589
+        }
+      ]
+    },
+    {
+      "name": "Miscellaneous_Symbols_And_Pictographs",
+      "displayName": "Miscellaneous Symbols And Pictographs",
+      "blockStart": 127744,
+      "blockEnd": 128511,
+      "definedCount": 768,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 127744,
+          "end": 128511
+        }
+      ]
+    },
+    {
+      "name": "Emoticons",
+      "displayName": "Emoticons",
+      "blockStart": 128512,
+      "blockEnd": 128591,
+      "definedCount": 80,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 128512,
+          "end": 128591
+        }
+      ]
+    },
+    {
+      "name": "Ornamental_Dingbats",
+      "displayName": "Ornamental Dingbats",
+      "blockStart": 128592,
+      "blockEnd": 128639,
+      "definedCount": 48,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 128592,
+          "end": 128639
+        }
+      ]
+    },
+    {
+      "name": "Transport_And_Map_Symbols",
+      "displayName": "Transport And Map Symbols",
+      "blockStart": 128640,
+      "blockEnd": 128767,
+      "definedCount": 118,
+      "unassignedCount": 10,
+      "ranges": [
+        {
+          "start": 128640,
+          "end": 128727
+        },
+        {
+          "start": 128732,
+          "end": 128748
+        },
+        {
+          "start": 128752,
+          "end": 128764
+        }
+      ]
+    },
+    {
+      "name": "Alchemical_Symbols",
+      "displayName": "Alchemical Symbols",
+      "blockStart": 128768,
+      "blockEnd": 128895,
+      "definedCount": 124,
+      "unassignedCount": 4,
+      "ranges": [
+        {
+          "start": 128768,
+          "end": 128886
+        },
+        {
+          "start": 128891,
+          "end": 128895
+        }
+      ]
+    },
+    {
+      "name": "Geometric_Shapes_Extended",
+      "displayName": "Geometric Shapes Extended",
+      "blockStart": 128896,
+      "blockEnd": 129023,
+      "definedCount": 103,
+      "unassignedCount": 25,
+      "ranges": [
+        {
+          "start": 128896,
+          "end": 128985
+        },
+        {
+          "start": 128992,
+          "end": 129003
+        },
+        {
+          "start": 129008,
+          "end": 129008
+        }
+      ]
+    },
+    {
+      "name": "Supplemental_Arrows_C",
+      "displayName": "Supplemental Arrows C",
+      "blockStart": 129024,
+      "blockEnd": 129279,
+      "definedCount": 162,
+      "unassignedCount": 94,
+      "ranges": [
+        {
+          "start": 129024,
+          "end": 129035
+        },
+        {
+          "start": 129040,
+          "end": 129095
+        },
+        {
+          "start": 129104,
+          "end": 129113
+        },
+        {
+          "start": 129120,
+          "end": 129159
+        },
+        {
+          "start": 129168,
+          "end": 129197
+        },
+        {
+          "start": 129200,
+          "end": 129211
+        },
+        {
+          "start": 129216,
+          "end": 129217
+        }
+      ]
+    },
+    {
+      "name": "Supplemental_Symbols_And_Pictographs",
+      "displayName": "Supplemental Symbols And Pictographs",
+      "blockStart": 129280,
+      "blockEnd": 129535,
+      "definedCount": 256,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 129280,
+          "end": 129535
+        }
+      ]
+    },
+    {
+      "name": "Chess_Symbols",
+      "displayName": "Chess Symbols",
+      "blockStart": 129536,
+      "blockEnd": 129647,
+      "definedCount": 98,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 129536,
+          "end": 129619
+        },
+        {
+          "start": 129632,
+          "end": 129645
+        }
+      ]
+    },
+    {
+      "name": "Symbols_And_Pictographs_Extended_A",
+      "displayName": "Symbols And Pictographs Extended A",
+      "blockStart": 129648,
+      "blockEnd": 129791,
+      "definedCount": 114,
+      "unassignedCount": 30,
+      "ranges": [
+        {
+          "start": 129648,
+          "end": 129660
+        },
+        {
+          "start": 129664,
+          "end": 129673
+        },
+        {
+          "start": 129679,
+          "end": 129734
+        },
+        {
+          "start": 129742,
+          "end": 129756
+        },
+        {
+          "start": 129759,
+          "end": 129769
+        },
+        {
+          "start": 129776,
+          "end": 129784
+        }
+      ]
+    },
+    {
+      "name": "Symbols_For_Legacy_Computing",
+      "displayName": "Symbols For Legacy Computing",
+      "blockStart": 129792,
+      "blockEnd": 130047,
+      "definedCount": 249,
+      "unassignedCount": 7,
+      "ranges": [
+        {
+          "start": 129792,
+          "end": 129938
+        },
+        {
+          "start": 129940,
+          "end": 130041
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_B",
+      "displayName": "CJK Unified Ideographs Extension B",
+      "blockStart": 131072,
+      "blockEnd": 173791,
+      "definedCount": 42720,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 131072,
+          "end": 173791
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_C",
+      "displayName": "CJK Unified Ideographs Extension C",
+      "blockStart": 173824,
+      "blockEnd": 177983,
+      "definedCount": 4154,
+      "unassignedCount": 6,
+      "ranges": [
+        {
+          "start": 173824,
+          "end": 177977
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_D",
+      "displayName": "CJK Unified Ideographs Extension D",
+      "blockStart": 177984,
+      "blockEnd": 178207,
+      "definedCount": 222,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 177984,
+          "end": 178205
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_E",
+      "displayName": "CJK Unified Ideographs Extension E",
+      "blockStart": 178208,
+      "blockEnd": 183983,
+      "definedCount": 5762,
+      "unassignedCount": 14,
+      "ranges": [
+        {
+          "start": 178208,
+          "end": 183969
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_F",
+      "displayName": "CJK Unified Ideographs Extension F",
+      "blockStart": 183984,
+      "blockEnd": 191471,
+      "definedCount": 7473,
+      "unassignedCount": 15,
+      "ranges": [
+        {
+          "start": 183984,
+          "end": 191456
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_I",
+      "displayName": "CJK Unified Ideographs Extension I",
+      "blockStart": 191472,
+      "blockEnd": 192095,
+      "definedCount": 622,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 191472,
+          "end": 192093
+        }
+      ]
+    },
+    {
+      "name": "CJK_Compatibility_Ideographs_Supplement",
+      "displayName": "CJK Compatibility Ideographs Supplement",
+      "blockStart": 194560,
+      "blockEnd": 195103,
+      "definedCount": 542,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 194560,
+          "end": 195101
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_G",
+      "displayName": "CJK Unified Ideographs Extension G",
+      "blockStart": 196608,
+      "blockEnd": 201551,
+      "definedCount": 4939,
+      "unassignedCount": 5,
+      "ranges": [
+        {
+          "start": 196608,
+          "end": 201546
+        }
+      ]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_H",
+      "displayName": "CJK Unified Ideographs Extension H",
+      "blockStart": 201552,
+      "blockEnd": 205743,
+      "definedCount": 4192,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 201552,
+          "end": 205743
+        }
+      ]
+    },
+    {
+      "name": "Tags",
+      "displayName": "Tags",
+      "blockStart": 917504,
+      "blockEnd": 917631,
+      "definedCount": 97,
+      "unassignedCount": 31,
+      "ranges": [
+        {
+          "start": 917505,
+          "end": 917505
+        },
+        {
+          "start": 917536,
+          "end": 917631
+        }
+      ]
+    },
+    {
+      "name": "Variation_Selectors_Supplement",
+      "displayName": "Variation Selectors Supplement",
+      "blockStart": 917760,
+      "blockEnd": 917999,
+      "definedCount": 240,
+      "unassignedCount": 0,
+      "ranges": [
+        {
+          "start": 917760,
+          "end": 917999
+        }
+      ]
+    },
+    {
+      "name": "Supplementary_Private_Use_Area_A",
+      "displayName": "Supplementary Private Use Area A",
+      "blockStart": 983040,
+      "blockEnd": 1048575,
+      "definedCount": 65534,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 983040,
+          "end": 1048573
+        }
+      ]
+    },
+    {
+      "name": "Supplementary_Private_Use_Area_B",
+      "displayName": "Supplementary Private Use Area B",
+      "blockStart": 1048576,
+      "blockEnd": 1114111,
+      "definedCount": 65534,
+      "unassignedCount": 2,
+      "ranges": [
+        {
+          "start": 1048576,
+          "end": 1114109
+        }
+      ]
+    }
+  ]
+}

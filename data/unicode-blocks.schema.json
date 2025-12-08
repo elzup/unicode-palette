@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UnicodeBlocksData",
+  "type": "object",
+  "required": [
+    "version",
+    "generatedAt",
+    "totalBlocks",
+    "bmpBlocks",
+    "blocks"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "totalBlocks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "bmpBlocks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "displayName",
+          "blockStart",
+          "blockEnd",
+          "definedCount",
+          "unassignedCount",
+          "ranges"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "blockStart": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "blockEnd": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "definedCount": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "unassignedCount": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "ranges": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "start",
+                "end"
+              ],
+              "properties": {
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -80,5 +80,9 @@
     "canvas": {
       "optional": true
     }
+  },
+  "dependencies": {
+    "zod": "^4.1.13",
+    "zod-to-json-schema": "^3.25.0"
   }
 }
