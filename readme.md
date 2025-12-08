@@ -2,6 +2,54 @@
 
 Unicode character visualization tool - Generate grid-based character maps as SVG/PNG.
 
+## Unicode Block Data
+
+This repository includes pre-generated Unicode block data (Unicode 16.0.0, 338 blocks) that can be used directly:
+
+| File                                                               | Description                              |
+| ------------------------------------------------------------------ | ---------------------------------------- |
+| [data/unicode-blocks.json](data/unicode-blocks.json)               | Full block data with ranges              |
+| [data/unicode-blocks.csv](data/unicode-blocks.csv)                 | Tabular format for spreadsheets/analysis |
+| [data/unicode-blocks.schema.json](data/unicode-blocks.schema.json) | JSON Schema for validation               |
+
+Each block includes: name, display name, code point range, defined/unassigned counts, and character ranges.
+
+
+
+```rb
+require 'json'
+block = JSON.parse(File.read('data/unicode-blocks.json'))['blocks'].find{|b| b['name']=='Bopomofo'}\
+puts (0...20).map{|i| (block['blockStart']+i).chr('UTF-8')}.join
+㄀㄁㄂㄃㄄ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓ #  Note:  ㄀~㄄ are unassigned
+puts block['ranges'].flat_map{|r| (r['start']..r['end']).to_a}.first(20).pack('U*')
+ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘ # filter out unassigned
+```
+
+```sh
+$ jq -r '.blocks[] | select(.name=="Tifinagh") | [range(.blockStart; .blockStart+20)] | implode' unicode-blocks.json
+ⴰⴱⴲⴳⴴⴵⴶⴷⴸⴹⴺⴻⴼⴽⴾⴿⵀⵁⵂⵃ
+
+jq -r '.blocks[] | select(.name=="Superscripts_And_Subscripts") | [.ranges[] | range(.start; .end+1)] | .[:20] | implode' data/unicode-blocks.json
+⁰ⁱ⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ₀₁₂₃₄₅
+```
+
+
+```js
+const data = require('./data/unicode-blocks.json')
+const block = data.blocks.find(b => b.name === 'Greek_And_Coptic')
+const toChar = cp => String.fromCodePoint(cp)
+const range = (n) => [...Array(n).keys()]
+
+// Simple: from blockStart (may include unassigned holes)
+range(20).map(i => toChar(block.blockStart + i)).join('')
+// ͰͱͲͳʹ͵Ͷͷ͸͹ͺͻͼͽ;Ϳ΀΁΂΃
+
+// Using ranges: only defined characters (no holes)
+block.ranges.flatMap(r => range(r.end - r.start + 1)).slice(0, 20)
+  .map(i => toChar(r.start + i)).join('')
+// ͰͱͲͳʹ͵Ͷͷͺͻͼͽ;Ϳ΄΅Ά·ΈΉ
+```
+
 ## Features
 
 ### Implemented
