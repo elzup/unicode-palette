@@ -35,13 +35,40 @@ export function getBlockSize(block: UnicodeBlock): number {
 }
 
 export function getQuartileChars(block: UnicodeBlock): number[] {
-  const size = getBlockSize(block)
-  const quartileSize = Math.floor(size / 4)
+  // Use ranges to get only defined codepoints (skip unassigned)
+  const blockData = getBlockDataByName(block.name)
+  if (!blockData || blockData.ranges.length === 0) {
+    // Fallback to simple calculation if no ranges
+    const size = getBlockSize(block)
+    const quartileSize = Math.floor(size / 4)
+    return [
+      block.start,
+      block.start + quartileSize,
+      block.start + quartileSize * 2,
+      block.start + quartileSize * 3,
+    ]
+  }
+
+  // Collect all defined codepoints from ranges
+  const definedCodepoints: number[] = []
+  for (const range of blockData.ranges) {
+    for (let cp = range.start; cp <= range.end; cp++) {
+      definedCodepoints.push(cp)
+    }
+  }
+
+  if (definedCodepoints.length === 0) {
+    return [block.start, block.start, block.start, block.start]
+  }
+
+  // Pick 4 codepoints at quartile positions
+  const total = definedCodepoints.length
+  const quartileSize = Math.floor(total / 4)
   return [
-    block.start,
-    block.start + quartileSize,
-    block.start + quartileSize * 2,
-    block.start + quartileSize * 3,
+    definedCodepoints[0],
+    definedCodepoints[Math.min(quartileSize, total - 1)],
+    definedCodepoints[Math.min(quartileSize * 2, total - 1)],
+    definedCodepoints[Math.min(quartileSize * 3, total - 1)],
   ]
 }
 

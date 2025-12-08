@@ -44,13 +44,15 @@ export function generateScriptTilesSvg(options: TileOptions = {}): string {
   const { cellSize, cols, fontPath, blocks } = { ...DEFAULT_TILE_OPTIONS, ...options }
   const tileData = generateTileData(blocks)
 
-  const tileSize = cellSize * 2 // 2x2 tile
+  // 4x1 layout: 4 characters horizontally
+  const tileWidth = cellSize * 4
+  const tileHeight = cellSize
   const tilePadding = 4
-  const labelHeight = 14
-  const totalTileHeight = tileSize + labelHeight + tilePadding
+  const labelHeight = 12
+  const totalTileHeight = tileHeight + labelHeight + tilePadding
 
   const rows = Math.ceil(tileData.length / cols)
-  const width = cols * (tileSize + tilePadding)
+  const width = cols * (tileWidth + tilePadding)
   const height = rows * totalTileHeight
 
   const tiles: string[] = []
@@ -58,16 +60,16 @@ export function generateScriptTilesSvg(options: TileOptions = {}): string {
   tileData.forEach((tile, index) => {
     const col = index % cols
     const row = Math.floor(index / cols)
-    const x = col * (tileSize + tilePadding)
+    const x = col * (tileWidth + tilePadding)
     const y = row * totalTileHeight
 
     // Background
-    tiles.push(`<rect x="${x}" y="${y}" width="${tileSize}" height="${tileSize}" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>`)
+    tiles.push(`<rect x="${x}" y="${y}" width="${tileWidth}" height="${tileHeight}" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>`)
 
-    // 2x2 characters
+    // 4x1 characters (horizontal layout)
     tile.chars.forEach((charInfo, i) => {
-      const cx = x + (i % 2) * cellSize + cellSize / 2
-      const cy = y + Math.floor(i / 2) * cellSize + cellSize * 0.75
+      const cx = x + i * cellSize + cellSize / 2
+      const cy = y + cellSize * 0.75
 
       if (charInfo.printable) {
         tiles.push(`<text x="${cx}" y="${cy}" class="char">${escapeXml(charInfo.char)}</text>`)
@@ -78,9 +80,9 @@ export function generateScriptTilesSvg(options: TileOptions = {}): string {
       }
     })
 
-    // Label
-    const labelY = y + tileSize + labelHeight - 2
-    tiles.push(`<text x="${x + tileSize / 2}" y="${labelY}" class="label">${escapeXml(tile.block.name)}</text>`)
+    // Label (centered under tile)
+    const labelY = y + tileHeight + labelHeight - 2
+    tiles.push(`<text x="${x + tileWidth / 2}" y="${labelY}" class="label">${escapeXml(tile.block.displayName)}</text>`)
   })
 
   return `<?xml version="1.0" encoding="UTF-8"?>

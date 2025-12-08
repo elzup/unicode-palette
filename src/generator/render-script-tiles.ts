@@ -8,7 +8,7 @@ mkdirSync(OUTPUT_DIR, { recursive: true })
 
 const svg = generateScriptTilesSvg({
   cellSize: 32,
-  cols: 7,
+  cols: 8,
 })
 
 writeFileSync(OUTPUT_FILE, svg)
