@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="544" height="1722" viewBox="0 0 544 1722">
+  <style>
+    @font-face {
+      font-family: 'Unifont';
+      src: url('./fonts/unifont.otf') format('opentype');
+    }
+    .char {
+      font-family: 'Unifont', monospace;
+      font-size: 22px;
+      text-anchor: middle;
+    }
+    .hex {
+      font-family: monospace;
+      font-size: 8px;
+      text-anchor: middle;
+      fill: #999;
+    }
+    .label {
+      font-family: sans-serif;
+      font-size: 8px;
+      text-anchor: middle;
+      fill: #666;
+    }
+  </style>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect x="0" y="0" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="24" class="hex">0000</text>
+  <text x="48" y="24" class="char"> </text>
+  <text x="16" y="56" class="char">@</text>
+  <text x="48" y="56" class="char">`</text>
+  <text x="32" y="76" class="label">Basic Latin</text>
+  <rect x="68" y="0" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="24" class="hex">0080</text>
+  <text x="116" y="24" class="char"> </text>
+  <text x="84" y="56" class="char">À</text>
+  <text x="116" y="56" class="char">à</text>
+  <text x="100" y="76" class="label">Latin 1 Supplement</text>
+  <rect x="136" y="0" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="24" class="char">Ā</text>
+  <text x="184" y="24" class="char">Ġ</text>
+  <text x="152" y="56" class="char">ŀ</text>
+  <text x="184" y="56" class="char">Š</text>
+  <text x="168" y="76" class="label">Latin Extended A</text>
+  <rect x="204" y="0" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="24" class="char">ƀ</text>
+  <text x="252" y="24" class="char">ƴ</text>
+  <text x="220" y="56" class="char">Ǩ</text>
+  <text x="252" y="56" class="char">Ȝ</text>
+  <text x="236" y="76" class="label">Latin Extended B</text>
+  <rect x="272" y="0" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="24" class="char">ɐ</text>
+  <text x="320" y="24" class="char">ɨ</text>
+  <text x="288" y="56" class="char">ʀ</text>
+  <text x="320" y="56" class="char">ʘ</text>
+  <text x="304" y="76" class="label">IPA Extensions</text>
+  <rect x="340" y="0" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="24" class="char">ʰ</text>
+  <text x="388" y="24" class="char">˄</text>
+  <text x="356" y="56" class="char">˘</text>
+  <text x="388" y="56" class="char">ˬ</text>
+  <text x="372" y="76" class="label">Spacing Modifier Letters</text>
+  <rect x="408" y="0" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="24" class="char">̀</text>
+  <text x="456" y="24" class="char">̜</text>
+  <text x="424" y="56" class="char"≯</text>
+  <text x="456" y="56" class="char">͔</text>
+  <text x="440" y="76" class="label">Combining Diacritical Marks</text>
+  <rect x="476" y="0" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="24" class="char">Ͱ</text>
+  <text x="524" y="24" class="char">Ι</text>
+  <text x="492" y="56" class="char">λ</text>
+  <text x="524" y="56" class="char">Ϝ</text>
+  <text x="508" y="76" class="label">Greek And Coptic</text>
+  <rect x="0" y="82" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="106" class="char">Ѐ</text>
+  <text x="48" y="106" class="char">р</text>
+  <text x="16" y="138" class="char">Ҁ</text>
+  <text x="48" y="138" class="char">Ӏ</text>
+  <text x="32" y="158" class="label">Cyrillic</text>
+  <rect x="68" y="82" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="106" class="char">Ԁ</text>
+  <text x="116" y="106" class="char">Ԍ</text>
+  <text x="84" y="138" class="char">Ԙ</text>
+  <text x="116" y="138" class="char">Ԥ</text>
+  <text x="100" y="158" class="label">Cyrillic Supplement</text>
+  <rect x="136" y="82" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="106" class="char">Ա</text>
+  <text x="184" y="106" class="char">Շ</text>
+  <text x="152" y="138" class="char">՟</text>
+  <text x="184" y="138" class="char">յ</text>
+  <text x="168" y="158" class="label">Armenian</text>
+  <rect x="204" y="82" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="106" class="char">֑</text>
+  <text x="252" y="106" class="char">֧</text>
+  <text x="220" y="138" class="char">ֽ</text>
+  <text x="252" y="138" class="char">כ</text>
+  <text x="236" y="158" class="label">Hebrew</text>
+  <rect x="272" y="82" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="106" class="char">؀</text>
+  <text x="320" y="106" class="char">ـ</text>
+  <text x="288" y="138" class="char">ڀ</text>
+  <text x="320" y="138" class="char">ۀ</text>
+  <text x="304" y="158" class="label">Arabic</text>
+  <rect x="340" y="82" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="106" class="char">܀</text>
+  <text x="388" y="106" class="char">ܔ</text>
+  <text x="356" y="138" class="char">ܧ</text>
+  <text x="388" y="138" class="char">ܺ</text>
+  <text x="372" y="158" class="label">Syriac</text>
+  <rect x="408" y="82" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="106" class="char">ݐ</text>
+  <text x="456" y="106" class="char">ݜ</text>
+  <text x="424" y="138" class="char">ݨ</text>
+  <text x="456" y="138" class="char">ݴ</text>
+  <text x="440" y="158" class="label">Arabic Supplement</text>
+  <rect x="476" y="82" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="106" class="char">ހ</text>
+  <text x="524" y="106" class="char">ތ</text>
+  <text x="492" y="138" class="char">ޘ</text>
+  <text x="524" y="138" class="char">ޤ</text>
+  <text x="508" y="158" class="label">Thaana</text>
+  <rect x="0" y="164" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="188" class="char">߀</text>
+  <text x="48" y="188" class="char">ߏ</text>
+  <text x="16" y="220" class="char">ߞ</text>
+  <text x="48" y="220" class="char">߭</text>
+  <text x="32" y="240" class="label">NKo</text>
+  <rect x="68" y="164" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="188" class="char">ࠀ</text>
+  <text x="116" y="188" class="char">ࠏ</text>
+  <text x="84" y="220" class="char">ࠞ</text>
+  <text x="116" y="220" class="char">࠭</text>
+  <text x="100" y="240" class="label">Samaritan</text>
+  <rect x="136" y="164" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="188" class="char">ࡀ</text>
+  <text x="184" y="188" class="char">ࡇ</text>
+  <text x="152" y="220" class="char">ࡎ</text>
+  <text x="184" y="220" class="char">ࡕ</text>
+  <text x="168" y="240" class="label">Mandaic</text>
+  <rect x="204" y="164" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="188" class="char">ࡠ</text>
+  <text x="252" y="188" class="char">ࡢ</text>
+  <text x="220" y="220" class="char">ࡤ</text>
+  <text x="252" y="220" class="char">ࡦ</text>
+  <text x="236" y="240" class="label">Syriac Supplement</text>
+  <rect x="272" y="164" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="188" class="char">ࡰ</text>
+  <text x="320" y="188" class="char">ࡺ</text>
+  <text x="288" y="220" class="char">ࢄ</text>
+  <text x="320" y="220" class="char">ࢎ</text>
+  <text x="304" y="240" class="label">Arabic Extended B</text>
+  <rect x="340" y="164" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="188" class="char">ࢠ</text>
+  <text x="388" y="188" class="char">ࢸ</text>
+  <text x="356" y="220" class="char">࣐</text>
+  <text x="388" y="220" class="char">ࣨ</text>
+  <text x="372" y="240" class="label">Arabic Extended A</text>
+  <rect x="408" y="164" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="188" class="char">ऀ</text>
+  <text x="456" y="188" class="char">ठ</text>
+  <text x="424" y="220" class="char">ी</text>
+  <text x="456" y="220" class="char">ॠ</text>
+  <text x="440" y="240" class="label">Devanagari</text>
+  <rect x="476" y="164" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="188" class="char">ঀ</text>
+  <text x="524" y="188" class="char">ঝ</text>
+  <text x="492" y="220" class="char">়</text>
+  <text x="524" y="220" class="char">১</text>
+  <text x="508" y="240" class="label">Bengali</text>
+  <rect x="0" y="246" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="270" class="char">ਁ</text>
+  <text x="48" y="270" class="char">ਜ</text>
+  <text x="16" y="302" class="char">ਲ</text>
+  <text x="48" y="302" class="char">ਜ਼</text>
+  <text x="32" y="322" class="label">Gurmukhi</text>
+  <rect x="68" y="246" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="270" class="char">ઁ</text>
+  <text x="116" y="270" class="char">ચ</text>
+  <text x="84" y="302" class="char">લ</text>
+  <text x="116" y="302" class="char">્</text>
+  <text x="100" y="322" class="label">Gujarati</text>
+  <rect x="136" y="246" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="270" class="char">ଁ</text>
+  <text x="184" y="270" class="char">ଜ</text>
+  <text x="152" y="302" class="char">ଵ</text>
+  <text x="184" y="302" class="char">ଡ଼</text>
+  <text x="168" y="322" class="label">Oriya</text>
+  <rect x="204" y="246" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="270" class="char">ஂ</text>
+  <text x="252" y="270" class="char">ஞ</text>
+  <text x="220" y="302" class="char">ஹ</text>
+  <text x="252" y="302" class="char">௩</text>
+  <text x="236" y="322" class="label">Tamil</text>
+  <rect x="272" y="246" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="270" class="char">ఀ</text>
+  <text x="320" y="270" class="char">ఛ</text>
+  <text x="288" y="302" class="char">వ</text>
+  <text x="320" y="302" class="char">ౚ</text>
+  <text x="304" y="322" class="label">Telugu</text>
+  <rect x="340" y="246" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="270" class="char">ಀ</text>
+  <text x="388" y="270" class="char">ಘ</text>
+  <text x="356" y="302" class="char">ಯ</text>
+  <text x="388" y="302" class="char">ೊ</text>
+  <text x="372" y="322" class="label">Kannada</text>
+  <rect x="408" y="246" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="270" class="char">ഀ</text>
+  <text x="456" y="270" class="char">ട</text>
+  <text x="424" y="302" class="char">഼</text>
+  <text x="456" y="302" class="char">ൟ</text>
+  <text x="440" y="322" class="label">Malayalam</text>
+  <rect x="476" y="246" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="270" class="char">ඁ</text>
+  <text x="524" y="270" class="char">ඛ</text>
+  <text x="492" y="302" class="char">න</text>
+  <text x="524" y="302" class="char">ි</text>
+  <text x="508" y="322" class="label">Sinhala</text>
+  <rect x="0" y="328" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="352" class="char">ก</text>
+  <text x="48" y="352" class="char">ถ</text>
+  <text x="16" y="384" class="char">ห</text>
+  <text x="48" y="384" class="char">ไ</text>
+  <text x="32" y="404" class="label">Thai</text>
+  <rect x="68" y="328" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="352" class="char">ກ</text>
+  <text x="116" y="352" class="char">ຘ</text>
+  <text x="84" y="384" class="char">ຮ</text>
+  <text x="116" y="384" class="char">ໄ</text>
+  <text x="100" y="404" class="label">Lao</text>
+  <rect x="136" y="328" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="352" class="char">ༀ</text>
+  <text x="184" y="352" class="char">༴</text>
+  <text x="152" y="384" class="char">ཀྵ</text>
+  <text x="184" y="384" class="char">ྡྷ</text>
+  <text x="168" y="404" class="label">Tibetan</text>
+  <rect x="204" y="328" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="352" class="char">က</text>
+  <text x="252" y="352" class="char">ဨ</text>
+  <text x="220" y="384" class="char">ၐ</text>
+  <text x="252" y="384" class="char">ၸ</text>
+  <text x="236" y="404" class="label">Myanmar</text>
+  <rect x="272" y="328" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="352" class="char">Ⴀ</text>
+  <text x="320" y="352" class="char">Ⴖ</text>
+  <text x="288" y="384" class="char">ე</text>
+  <text x="320" y="384" class="char">ც</text>
+  <text x="304" y="404" class="label">Georgian</text>
+  <rect x="340" y="328" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="352" class="char">ᄀ</text>
+  <text x="388" y="352" class="char">ᅀ</text>
+  <text x="356" y="384" class="char">ᆀ</text>
+  <text x="388" y="384" class="char">ᇀ</text>
+  <text x="372" y="404" class="label">Hangul Jamo</text>
+  <rect x="408" y="328" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="352" class="char">ሀ</text>
+  <text x="456" y="352" class="char">በ</text>
+  <text x="424" y="384" class="char">ዀ</text>
+  <text x="456" y="384" class="char">ጠ</text>
+  <text x="440" y="404" class="label">Ethiopic</text>
+  <rect x="476" y="328" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="352" class="char">ᎀ</text>
+  <text x="524" y="352" class="char">ᎆ</text>
+  <text x="492" y="384" class="char">ᎌ</text>
+  <text x="524" y="384" class="char">᎒</text>
+  <text x="508" y="404" class="label">Ethiopic Supplement</text>
+  <rect x="0" y="410" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="434" class="char">Ꭰ</text>
+  <text x="48" y="434" class="char">Ꮇ</text>
+  <text x="16" y="466" class="char">Ꮞ</text>
+  <text x="48" y="466" class="char">Ꮵ</text>
+  <text x="32" y="486" class="label">Cherokee</text>
+  <rect x="68" y="410" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="434" class="char">᐀</text>
+  <text x="116" y="434" class="char">ᒠ</text>
+  <text x="84" y="466" class="char">ᕀ</text>
+  <text x="116" y="466" class="char">ᗠ</text>
+  <text x="100" y="486" class="label">Unified Canadian Aboriginal Syllabics</text>
+  <rect x="136" y="410" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="434" class="char"> </text>
+  <text x="184" y="434" class="char">ᚇ</text>
+  <text x="152" y="466" class="char">ᚎ</text>
+  <text x="184" y="466" class="char">ᚕ</text>
+  <text x="168" y="486" class="label">Ogham</text>
+  <rect x="204" y="410" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="434" class="char">ᚠ</text>
+  <text x="252" y="434" class="char">ᚶ</text>
+  <text x="220" y="466" class="char">ᛌ</text>
+  <text x="252" y="466" class="char">ᛢ</text>
+  <text x="236" y="486" class="label">Runic</text>
+  <rect x="272" y="410" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="434" class="char">ᜀ</text>
+  <text x="320" y="434" class="char">ᜅ</text>
+  <text x="288" y="466" class="char">ᜊ</text>
+  <text x="320" y="466" class="char">ᜏ</text>
+  <text x="304" y="486" class="label">Tagalog</text>
+  <rect x="340" y="410" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="434" class="char">ᜠ</text>
+  <text x="388" y="434" class="char">ᜥ</text>
+  <text x="356" y="466" class="char">ᜪ</text>
+  <text x="388" y="466" class="char">ᜯ</text>
+  <text x="372" y="486" class="label">Hanunoo</text>
+  <rect x="408" y="410" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="434" class="char">ᝀ</text>
+  <text x="456" y="434" class="char">ᝅ</text>
+  <text x="424" y="466" class="char">ᝊ</text>
+  <text x="456" y="466" class="char">ᝏ</text>
+  <text x="440" y="486" class="label">Buhid</text>
+  <rect x="476" y="410" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="434" class="char">ᝠ</text>
+  <text x="524" y="434" class="char">ᝤ</text>
+  <text x="492" y="466" class="char">ᝨ</text>
+  <text x="524" y="466" class="char">ᝬ</text>
+  <text x="508" y="486" class="label">Tagbanwa</text>
+  <rect x="0" y="492" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="516" class="char">ក</text>
+  <text x="48" y="516" class="char">វ</text>
+  <text x="16" y="548" class="char">ី</text>
+  <text x="48" y="548" class="char">។</text>
+  <text x="32" y="568" class="label">Khmer</text>
+  <rect x="68" y="492" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="516" class="char">᠀</text>
+  <text x="116" y="516" class="char">ᠭ</text>
+  <text x="84" y="548" class="char">ᡔ</text>
+  <text x="116" y="548" class="char">ᢂ</text>
+  <text x="100" y="568" class="label">Mongolian</text>
+  <rect x="136" y="492" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="516" class="char">ᢰ</text>
+  <text x="184" y="516" class="char">ᣁ</text>
+  <text x="152" y="548" class="char">ᣒ</text>
+  <text x="184" y="548" class="char">ᣣ</text>
+  <text x="168" y="568" class="label">Unified Canadian Aboriginal Syllabics Extended</text>
+  <rect x="204" y="492" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="516" class="char">ᤀ</text>
+  <text x="252" y="516" class="char">ᤑ</text>
+  <text x="220" y="548" class="char">ᤣ</text>
+  <text x="252" y="548" class="char">ᤸ</text>
+  <text x="236" y="568" class="label">Limbu</text>
+  <rect x="272" y="492" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="516" class="char">ᥐ</text>
+  <text x="320" y="516" class="char">ᥘ</text>
+  <text x="288" y="548" class="char">ᥠ</text>
+  <text x="320" y="548" class="char">ᥨ</text>
+  <text x="304" y="568" class="label">Tai Le</text>
+  <rect x="340" y="492" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="516" class="char">ᦀ</text>
+  <text x="388" y="516" class="char">ᦔ</text>
+  <text x="356" y="548" class="char">ᦨ</text>
+  <text x="388" y="548" class="char">ᧀ</text>
+  <text x="372" y="568" class="label">New Tai Lue</text>
+  <rect x="408" y="492" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="516" class="char">᧠</text>
+  <text x="456" y="516" class="char">᧨</text>
+  <text x="424" y="548" class="char">᧰</text>
+  <text x="456" y="548" class="char">᧸</text>
+  <text x="440" y="568" class="label">Khmer Symbols</text>
+  <rect x="476" y="492" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="516" class="char">ᨀ</text>
+  <text x="524" y="516" class="char">ᨇ</text>
+  <text x="492" y="548" class="char">ᨎ</text>
+  <text x="524" y="548" class="char">ᨕ</text>
+  <text x="508" y="568" class="label">Buginese</text>
+  <rect x="0" y="574" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="598" class="char">ᨠ</text>
+  <text x="48" y="598" class="char">ᨿ</text>
+  <text x="16" y="630" class="char">ᩞ</text>
+  <text x="48" y="630" class="char">᪀</text>
+  <text x="32" y="650" class="label">Tai Tham</text>
+  <rect x="68" y="574" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="598" class="char">᪰</text>
+  <text x="116" y="598" class="char">᪷</text>
+  <text x="84" y="630" class="char">᪾</text>
+  <text x="116" y="630" class="char">᫅</text>
+  <text x="100" y="650" class="label">Combining Diacritical Marks Extended</text>
+  <rect x="136" y="574" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="598" class="char">ᬀ</text>
+  <text x="184" y="598" class="char">ᬟ</text>
+  <text x="152" y="630" class="char">ᬾ</text>
+  <text x="184" y="630" class="char">᭞</text>
+  <text x="168" y="650" class="label">Balinese</text>
+  <rect x="204" y="574" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="598" class="char">ᮀ</text>
+  <text x="252" y="598" class="char">ᮐ</text>
+  <text x="220" y="630" class="char">ᮠ</text>
+  <text x="252" y="630" class="char">᮰</text>
+  <text x="236" y="650" class="label">Sundanese</text>
+  <rect x="272" y="574" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="598" class="char">ᯀ</text>
+  <text x="320" y="598" class="char">ᯎ</text>
+  <text x="288" y="630" class="char">ᯜ</text>
+  <text x="320" y="630" class="char">ᯪ</text>
+  <text x="304" y="650" class="label">Batak</text>
+  <rect x="340" y="574" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="598" class="char">ᰀ</text>
+  <text x="388" y="598" class="char">ᰒ</text>
+  <text x="356" y="630" class="char">ᰤ</text>
+  <text x="388" y="630" class="char">ᰶ</text>
+  <text x="372" y="650" class="label">Lepcha</text>
+  <rect x="408" y="574" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="598" class="char">᱐</text>
+  <text x="456" y="598" class="char">ᱜ</text>
+  <text x="424" y="630" class="char">ᱨ</text>
+  <text x="456" y="630" class="char">ᱴ</text>
+  <text x="440" y="650" class="label">Ol Chiki</text>
+  <rect x="476" y="574" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="598" class="char">ᲀ</text>
+  <text x="524" y="598" class="char">ᲂ</text>
+  <text x="492" y="630" class="char">ᲄ</text>
+  <text x="524" y="630" class="char">ᲆ</text>
+  <text x="508" y="650" class="label">Cyrillic Extended C</text>
+  <rect x="0" y="656" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="680" class="char">Ა</text>
+  <text x="48" y="680" class="char">Მ</text>
+  <text x="16" y="712" class="char">Ღ</text>
+  <text x="48" y="712" class="char">Ჱ</text>
+  <text x="32" y="732" class="label">Georgian Extended</text>
+  <rect x="68" y="656" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="680" class="char">᳀</text>
+  <text x="116" y="680" class="char">᳂</text>
+  <text x="84" y="712" class="char">᳄</text>
+  <text x="116" y="712" class="char">᳆</text>
+  <text x="100" y="732" class="label">Sundanese Supplement</text>
+  <rect x="136" y="656" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="680" class="char">᳐</text>
+  <text x="184" y="680" class="char">᳚</text>
+  <text x="152" y="712" class="char">᳤</text>
+  <text x="184" y="712" class="char">ᳮ</text>
+  <text x="168" y="732" class="label">Vedic Extensions</text>
+  <rect x="204" y="656" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="680" class="char">ᴀ</text>
+  <text x="252" y="680" class="char">ᴠ</text>
+  <text x="220" y="712" class="char">ᵀ</text>
+  <text x="252" y="712" class="char">ᵠ</text>
+  <text x="236" y="732" class="label">Phonetic Extensions</text>
+  <rect x="272" y="656" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="680" class="char">ᶀ</text>
+  <text x="320" y="680" class="char">ᶐ</text>
+  <text x="288" y="712" class="char">ᶠ</text>
+  <text x="320" y="712" class="char">ᶰ</text>
+  <text x="304" y="732" class="label">Phonetic Extensions Supplement</text>
+  <rect x="340" y="656" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="680" class="char">᷀</text>
+  <text x="388" y="680" class="char">᷐</text>
+  <text x="356" y="712" class="char">ᷠ</text>
+  <text x="388" y="712" class="char">ᷰ</text>
+  <text x="372" y="732" class="label">Combining Diacritical Marks Supplement</text>
+  <rect x="408" y="656" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="680" class="char">Ḁ</text>
+  <text x="456" y="680" class="char">Ṁ</text>
+  <text x="424" y="712" class="char">Ẁ</text>
+  <text x="456" y="712" class="char">Ề</text>
+  <text x="440" y="732" class="label">Latin Extended Additional</text>
+  <rect x="476" y="656" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="680" class="char">ἀ</text>
+  <text x="524" y="680" class="char">Ἶ</text>
+  <text x="492" y="712" class="char">ᾂ</text>
+  <text x="524" y="712" class="char">᾽</text>
+  <text x="508" y="732" class="label">Greek Extended</text>
+  <rect x="0" y="738" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="762" class="char"> </text>
+  <text x="48" y="762" class="char">‛</text>
+  <text x="16" y="794" class="char">‶</text>
+  <text x="48" y="794" class="char">⁑</text>
+  <text x="32" y="814" class="label">General Punctuation</text>
+  <rect x="68" y="738" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="762" class="char">⁰</text>
+  <text x="116" y="762" class="char">⁼</text>
+  <text x="84" y="794" class="char">₆</text>
+  <text x="116" y="794" class="char">ₑ</text>
+  <text x="100" y="814" class="label">Superscripts And Subscripts</text>
+  <rect x="136" y="738" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="762" class="char">₠</text>
+  <text x="184" y="762" class="char">₨</text>
+  <text x="152" y="794" class="char">₰</text>
+  <text x="184" y="794" class="char">₸</text>
+  <text x="168" y="814" class="label">Currency Symbols</text>
+  <rect x="204" y="738" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="762" class="char">⃐</text>
+  <text x="252" y="762" class="char">⃘</text>
+  <text x="220" y="794" class="char">⃠</text>
+  <text x="252" y="794" class="char">⃨</text>
+  <text x="236" y="814" class="label">Combining Diacritical Marks For Symbols</text>
+  <rect x="272" y="738" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="762" class="char">℀</text>
+  <text x="320" y="762" class="char">℔</text>
+  <text x="288" y="794" class="char">ℨ</text>
+  <text x="320" y="794" class="char">ℼ</text>
+  <text x="304" y="814" class="label">Letterlike Symbols</text>
+  <rect x="340" y="738" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="762" class="char">⅐</text>
+  <text x="388" y="762" class="char">⅟</text>
+  <text x="356" y="794" class="char">Ⅾ</text>
+  <text x="388" y="794" class="char">ⅽ</text>
+  <text x="372" y="814" class="label">Number Forms</text>
+  <rect x="408" y="738" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="762" class="char">←</text>
+  <text x="456" y="762" class="char">↬</text>
+  <text x="424" y="794" class="char">⇈</text>
+  <text x="456" y="794" class="char">⇤</text>
+  <text x="440" y="814" class="label">Arrows</text>
+  <rect x="476" y="738" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="762" class="char">∀</text>
+  <text x="524" y="762" class="char">≀</text>
+  <text x="492" y="794" class="char">⊀</text>
+  <text x="524" y="794" class="char">⋀</text>
+  <text x="508" y="814" class="label">Mathematical Operators</text>
+  <rect x="0" y="820" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="844" class="char">⌀</text>
+  <text x="48" y="844" class="char">⍀</text>
+  <text x="16" y="876" class="char">⎀</text>
+  <text x="48" y="876" class="char">⏀</text>
+  <text x="32" y="896" class="label">Miscellaneous Technical</text>
+  <rect x="68" y="820" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="844" class="char">␀</text>
+  <text x="116" y="844" class="char">␊</text>
+  <text x="84" y="876" class="char">␔</text>
+  <text x="116" y="876" class="char">␞</text>
+  <text x="100" y="896" class="label">Control Pictures</text>
+  <rect x="136" y="820" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="844" class="char">⑀</text>
+  <text x="184" y="844" class="char">⑂</text>
+  <text x="152" y="876" class="char">⑄</text>
+  <text x="184" y="876" class="char">⑆</text>
+  <text x="168" y="896" class="label">Optical Character Recognition</text>
+  <rect x="204" y="820" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="844" class="char">①</text>
+  <text x="252" y="844" class="char">⒈</text>
+  <text x="220" y="876" class="char">⒰</text>
+  <text x="252" y="876" class="char">ⓘ</text>
+  <text x="236" y="896" class="label">Enclosed Alphanumerics</text>
+  <rect x="272" y="820" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="844" class="char">─</text>
+  <text x="320" y="844" class="char">┠</text>
+  <text x="288" y="876" class="char">╀</text>
+  <text x="320" y="876" class="char">╠</text>
+  <text x="304" y="896" class="label">Box Drawing</text>
+  <rect x="340" y="820" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="844" class="char">▀</text>
+  <text x="388" y="844" class="char">█</text>
+  <text x="356" y="876" class="char">▐</text>
+  <text x="388" y="876" class="char">▘</text>
+  <text x="372" y="896" class="label">Block Elements</text>
+  <rect x="408" y="820" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="844" class="char">■</text>
+  <text x="456" y="844" class="char">▸</text>
+  <text x="424" y="876" class="char">◐</text>
+  <text x="456" y="876" class="char">◨</text>
+  <text x="440" y="896" class="label">Geometric Shapes</text>
+  <rect x="476" y="820" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="844" class="char">☀</text>
+  <text x="524" y="844" class="char">♀</text>
+  <text x="492" y="876" class="char">⚀</text>
+  <text x="524" y="876" class="char">⛀</text>
+  <text x="508" y="896" class="label">Miscellaneous Symbols</text>
+  <rect x="0" y="902" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="926" class="char">✀</text>
+  <text x="48" y="926" class="char">✰</text>
+  <text x="16" y="958" class="char">❠</text>
+  <text x="48" y="958" class="char">➐</text>
+  <text x="32" y="978" class="label">Dingbats</text>
+  <rect x="68" y="902" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="926" class="char">⟀</text>
+  <text x="116" y="926" class="char">⟌</text>
+  <text x="84" y="958" class="char">⟘</text>
+  <text x="116" y="958" class="char">⟤</text>
+  <text x="100" y="978" class="label">Miscellaneous Mathematical Symbols A</text>
+  <rect x="136" y="902" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="926" class="char">⟰</text>
+  <text x="184" y="926" class="char">⟴</text>
+  <text x="152" y="958" class="char">⟸</text>
+  <text x="184" y="958" class="char">⟼</text>
+  <text x="168" y="978" class="label">Supplemental Arrows A</text>
+  <rect x="204" y="902" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="926" class="char">⠀</text>
+  <text x="252" y="926" class="char">⡀</text>
+  <text x="220" y="958" class="char">⢀</text>
+  <text x="252" y="958" class="char">⣀</text>
+  <text x="236" y="978" class="label">Braille Patterns</text>
+  <rect x="272" y="902" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="926" class="char">⤀</text>
+  <text x="320" y="926" class="char">⤠</text>
+  <text x="288" y="958" class="char">⥀</text>
+  <text x="320" y="958" class="char">⥠</text>
+  <text x="304" y="978" class="label">Supplemental Arrows B</text>
+  <rect x="340" y="902" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="926" class="char">⦀</text>
+  <text x="388" y="926" class="char">⦠</text>
+  <text x="356" y="958" class="char">⧀</text>
+  <text x="388" y="958" class="char">⧠</text>
+  <text x="372" y="978" class="label">Miscellaneous Mathematical Symbols B</text>
+  <rect x="408" y="902" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="926" class="char">⨀</text>
+  <text x="456" y="926" class="char">⩀</text>
+  <text x="424" y="958" class="char">⪀</text>
+  <text x="456" y="958" class="char">⫀</text>
+  <text x="440" y="978" class="label">Supplemental Mathematical Operators</text>
+  <rect x="476" y="902" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="926" class="char">⬀</text>
+  <text x="524" y="926" class="char">⬿</text>
+  <text x="492" y="958" class="char">⮀</text>
+  <text x="524" y="958" class="char">⯀</text>
+  <text x="508" y="978" class="label">Miscellaneous Symbols And Arrows</text>
+  <rect x="0" y="984" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="1008" class="char">Ⰰ</text>
+  <text x="48" y="1008" class="char">Ⱈ</text>
+  <text x="16" y="1040" class="char">ⰰ</text>
+  <text x="48" y="1040" class="char">ⱈ</text>
+  <text x="32" y="1060" class="label">Glagolitic</text>
+  <rect x="68" y="984" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="1008" class="char">Ⱡ</text>
+  <text x="116" y="1008" class="char">ⱨ</text>
+  <text x="84" y="1040" class="char">Ɒ</text>
+  <text x="116" y="1040" class="char">ⱸ</text>
+  <text x="100" y="1060" class="label">Latin Extended C</text>
+  <rect x="136" y="984" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="1008" class="char">Ⲁ</text>
+  <text x="184" y="1008" class="char">Ⲟ</text>
+  <text x="152" y="1040" class="char">Ⲽ</text>
+  <text x="184" y="1040" class="char">Ⳛ</text>
+  <text x="168" y="1060" class="label">Coptic</text>
+  <rect x="204" y="984" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="1008" class="char">ⴀ</text>
+  <text x="252" y="1008" class="char">ⴊ</text>
+  <text x="220" y="1040" class="char">ⴔ</text>
+  <text x="252" y="1040" class="char">ⴞ</text>
+  <text x="236" y="1060" class="label">Georgian Supplement</text>
+  <rect x="272" y="984" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="1008" class="char">ⴰ</text>
+  <text x="320" y="1008" class="char">ⴾ</text>
+  <text x="288" y="1040" class="char">ⵌ</text>
+  <text x="320" y="1040" class="char">ⵚ</text>
+  <text x="304" y="1060" class="label">Tifinagh</text>
+  <rect x="340" y="984" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="1008" class="char">ⶀ</text>
+  <text x="388" y="1008" class="char">ⶓ</text>
+  <text x="356" y="1040" class="char">ⶱ</text>
+  <text x="388" y="1040" class="char">ⷆ</text>
+  <text x="372" y="1060" class="label">Ethiopic Extended</text>
+  <rect x="408" y="984" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="1008" class="char">ⷠ</text>
+  <text x="456" y="1008" class="char">ⷨ</text>
+  <text x="424" y="1040" class="char">ⷰ</text>
+  <text x="456" y="1040" class="char">ⷸ</text>
+  <text x="440" y="1060" class="label">Cyrillic Extended A</text>
+  <rect x="476" y="984" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="1008" class="char">⸀</text>
+  <text x="524" y="1008" class="char">⸗</text>
+  <text x="492" y="1040" class="char">⸮</text>
+  <text x="524" y="1040" class="char">⹅</text>
+  <text x="508" y="1060" class="label">Supplemental Punctuation</text>
+  <rect x="0" y="1066" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="1090" class="char">⺀</text>
+  <text x="48" y="1090" class="char">⺝</text>
+  <text x="16" y="1122" class="char">⺹</text>
+  <text x="48" y="1122" class="char">⻕</text>
+  <text x="32" y="1142" class="label">CJK Radicals Supplement</text>
+  <rect x="68" y="1066" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="1090" class="char">⼀</text>
+  <text x="116" y="1090" class="char">⼵</text>
+  <text x="84" y="1122" class="char">⽪</text>
+  <text x="116" y="1122" class="char">⾟</text>
+  <text x="100" y="1142" class="label">Kangxi Radicals</text>
+  <rect x="136" y="1066" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="1090" class="char">⿰</text>
+  <text x="184" y="1090" class="char">⿴</text>
+  <text x="152" y="1122" class="char">⿸</text>
+  <text x="184" y="1122" class="char">⿼</text>
+  <text x="168" y="1142" class="label">Ideographic Description Characters</text>
+  <rect x="204" y="1066" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="1090" class="char">　</text>
+  <text x="252" y="1090" class="char">【</text>
+  <text x="220" y="1122" class="char">〠</text>
+  <text x="252" y="1122" class="char">〰</text>
+  <text x="236" y="1142" class="label">CJK Symbols And Punctuation</text>
+  <rect x="272" y="1066" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="1090" class="char">ぁ</text>
+  <text x="320" y="1090" class="char">じ</text>
+  <text x="288" y="1122" class="char">は</text>
+  <text x="320" y="1122" class="char">ゆ</text>
+  <text x="304" y="1142" class="label">Hiragana</text>
+  <rect x="340" y="1066" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="1090" class="char">゠</text>
+  <text x="388" y="1090" class="char">ジ</text>
+  <text x="356" y="1122" class="char">バ</text>
+  <text x="388" y="1122" class="char">ヨ</text>
+  <text x="372" y="1142" class="label">Katakana</text>
+  <rect x="408" y="1066" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="1090" class="char">ㄅ</text>
+  <text x="456" y="1090" class="char">ㄏ</text>
+  <text x="424" y="1122" class="char">ㄙ</text>
+  <text x="456" y="1122" class="char">ㄣ</text>
+  <text x="440" y="1142" class="label">Bopomofo</text>
+  <rect x="476" y="1066" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="1090" class="char">ㄱ</text>
+  <text x="524" y="1090" class="char">ㅈ</text>
+  <text x="492" y="1122" class="char">ㅟ</text>
+  <text x="524" y="1122" class="char">ㅶ</text>
+  <text x="508" y="1142" class="label">Hangul Compatibility Jamo</text>
+  <rect x="0" y="1148" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="1172" class="char">㆐</text>
+  <text x="48" y="1172" class="char">㆔</text>
+  <text x="16" y="1204" class="char">㆘</text>
+  <text x="48" y="1204" class="char">㆜</text>
+  <text x="32" y="1224" class="label">Kanbun</text>
+  <rect x="68" y="1148" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="1172" class="char">ㆠ</text>
+  <text x="116" y="1172" class="char">ㆨ</text>
+  <text x="84" y="1204" class="char">ㆰ</text>
+  <text x="116" y="1204" class="char">ㆸ</text>
+  <text x="100" y="1224" class="label">Bopomofo Extended</text>
+  <rect x="136" y="1148" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="1172" class="char">㇀</text>
+  <text x="184" y="1172" class="char">㇉</text>
+  <text x="152" y="1204" class="char">㇒</text>
+  <text x="184" y="1204" class="char">㇛</text>
+  <text x="168" y="1224" class="label">CJK Strokes</text>
+  <rect x="204" y="1148" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="1172" class="char">ㇰ</text>
+  <text x="252" y="1172" class="char">ㇴ</text>
+  <text x="220" y="1204" class="char">ㇸ</text>
+  <text x="252" y="1204" class="char">ㇼ</text>
+  <text x="236" y="1224" class="label">Katakana Phonetic Extensions</text>
+  <rect x="272" y="1148" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="1172" class="char">㈀</text>
+  <text x="320" y="1172" class="char">㉀</text>
+  <text x="288" y="1204" class="char">㉿</text>
+  <text x="320" y="1204" class="char">㊾</text>
+  <text x="304" y="1224" class="label">Enclosed CJK Letters And Months</text>
+  <rect x="340" y="1148" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="1172" class="char">㌀</text>
+  <text x="388" y="1172" class="char">㍀</text>
+  <text x="356" y="1204" class="char">㎀</text>
+  <text x="388" y="1204" class="char">㏀</text>
+  <text x="372" y="1224" class="label">CJK Compatibility</text>
+  <rect x="408" y="1148" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="1172" class="char">㐀</text>
+  <text x="456" y="1172" class="char">㩰</text>
+  <text x="424" y="1204" class="char">䃠</text>
+  <text x="456" y="1204" class="char">䝐</text>
+  <text x="440" y="1224" class="label">CJK Unified Ideographs Extension A</text>
+  <rect x="476" y="1148" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="1172" class="char">䷀</text>
+  <text x="524" y="1172" class="char">䷐</text>
+  <text x="492" y="1204" class="char">䷠</text>
+  <text x="524" y="1204" class="char">䷰</text>
+  <text x="508" y="1224" class="label">Yijing Hexagram Symbols</text>
+  <rect x="0" y="1230" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="1254" class="char">一</text>
+  <text x="48" y="1254" class="char">技</text>
+  <text x="16" y="1286" class="char">眀</text>
+  <text x="48" y="1286" class="char">讀</text>
+  <text x="32" y="1306" class="label">CJK Unified Ideographs</text>
+  <rect x="68" y="1230" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="1254" class="char">ꀀ</text>
+  <text x="116" y="1254" class="char">ꄣ</text>
+  <text x="84" y="1286" class="char">ꉆ</text>
+  <text x="116" y="1286" class="char">ꍩ</text>
+  <text x="100" y="1306" class="label">Yi Syllables</text>
+  <rect x="136" y="1230" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="1254" class="char">꒐</text>
+  <text x="184" y="1254" class="char">꒝</text>
+  <text x="152" y="1286" class="char">꒪</text>
+  <text x="184" y="1286" class="char">꒷</text>
+  <text x="168" y="1306" class="label">Yi Radicals</text>
+  <rect x="204" y="1230" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="1254" class="char">ꓐ</text>
+  <text x="252" y="1254" class="char">ꓜ</text>
+  <text x="220" y="1286" class="char">ꓨ</text>
+  <text x="252" y="1286" class="char">ꓴ</text>
+  <text x="236" y="1306" class="label">Lisu</text>
+  <rect x="272" y="1230" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="1254" class="char">ꔀ</text>
+  <text x="320" y="1254" class="char">ꕋ</text>
+  <text x="288" y="1286" class="char">ꖖ</text>
+  <text x="320" y="1286" class="char">ꗡ</text>
+  <text x="304" y="1306" class="label">Vai</text>
+  <rect x="340" y="1230" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="1254" class="char">Ꙁ</text>
+  <text x="388" y="1254" class="char">Ꙙ</text>
+  <text x="356" y="1286" class="char">꙰</text>
+  <text x="388" y="1286" class="char">Ꚉ</text>
+  <text x="372" y="1306" class="label">Cyrillic Extended B</text>
+  <rect x="408" y="1230" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="1254" class="char">ꚠ</text>
+  <text x="456" y="1254" class="char">ꚶ</text>
+  <text x="424" y="1286" class="char">ꛌ</text>
+  <text x="456" y="1286" class="char">ꛢ</text>
+  <text x="440" y="1306" class="label">Bamum</text>
+  <rect x="476" y="1230" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="1254" class="char">꜀</text>
+  <text x="524" y="1254" class="char">꜈</text>
+  <text x="492" y="1286" class="char">꜐</text>
+  <text x="524" y="1286" class="char">ꜘ</text>
+  <text x="508" y="1306" class="label">Modifier Tone Letters</text>
+  <rect x="0" y="1312" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="1336" class="char">꜠</text>
+  <text x="48" y="1336" class="char">ꝑ</text>
+  <text x="16" y="1368" class="char">Ꞃ</text>
+  <text x="48" y="1368" class="char">Ꭓ</text>
+  <text x="32" y="1388" class="label">Latin Extended D</text>
+  <rect x="68" y="1312" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="1336" class="char">ꠀ</text>
+  <text x="116" y="1336" class="char">ꠋ</text>
+  <text x="84" y="1368" class="char">ꠖ</text>
+  <text x="116" y="1368" class="char">ꠡ</text>
+  <text x="100" y="1388" class="label">Syloti Nagri</text>
+  <rect x="136" y="1312" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="1336" class="char">꠰</text>
+  <text x="184" y="1336" class="char">꠲</text>
+  <text x="152" y="1368" class="char">꠴</text>
+  <text x="184" y="1368" class="char">꠶</text>
+  <text x="168" y="1388" class="label">Common Indic Number Forms</text>
+  <rect x="204" y="1312" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="1336" class="char">ꡀ</text>
+  <text x="252" y="1336" class="char">ꡎ</text>
+  <text x="220" y="1368" class="char">ꡜ</text>
+  <text x="252" y="1368" class="char">ꡪ</text>
+  <text x="236" y="1388" class="label">Phags Pa</text>
+  <rect x="272" y="1312" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="1336" class="char">ꢀ</text>
+  <text x="320" y="1336" class="char">ꢔ</text>
+  <text x="288" y="1368" class="char">ꢨ</text>
+  <text x="320" y="1368" class="char">ꢼ</text>
+  <text x="304" y="1388" class="label">Saurashtra</text>
+  <rect x="340" y="1312" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="1336" class="char">꣠</text>
+  <text x="388" y="1336" class="char">꣨</text>
+  <text x="356" y="1368" class="char">꣰</text>
+  <text x="388" y="1368" class="char">꣸</text>
+  <text x="372" y="1388" class="label">Devanagari Extended</text>
+  <rect x="408" y="1312" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="1336" class="char">꤀</text>
+  <text x="456" y="1336" class="char">ꤌ</text>
+  <text x="424" y="1368" class="char">ꤘ</text>
+  <text x="456" y="1368" class="char">ꤤ</text>
+  <text x="440" y="1388" class="label">Kayah Li</text>
+  <rect x="476" y="1312" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="1336" class="char">ꤰ</text>
+  <text x="524" y="1336" class="char">ꤹ</text>
+  <text x="492" y="1368" class="char">ꥂ</text>
+  <text x="524" y="1368" class="char">ꥋ</text>
+  <text x="508" y="1388" class="label">Rejang</text>
+  <rect x="0" y="1394" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="1418" class="char">ꥠ</text>
+  <text x="48" y="1418" class="char">ꥧ</text>
+  <text x="16" y="1450" class="char">ꥮ</text>
+  <text x="48" y="1450" class="char">ꥵ</text>
+  <text x="32" y="1470" class="label">Hangul Jamo Extended A</text>
+  <rect x="68" y="1394" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="1418" class="char">ꦀ</text>
+  <text x="116" y="1418" class="char">ꦖ</text>
+  <text x="84" y="1450" class="char">ꦬ</text>
+  <text x="116" y="1450" class="char">꧂</text>
+  <text x="100" y="1470" class="label">Javanese</text>
+  <rect x="136" y="1394" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="1418" class="char">ꧠ</text>
+  <text x="184" y="1418" class="char">ꧧ</text>
+  <text x="152" y="1450" class="char">ꧮ</text>
+  <text x="184" y="1450" class="char">꧵</text>
+  <text x="168" y="1470" class="label">Myanmar Extended B</text>
+  <rect x="204" y="1394" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="1418" class="char">ꨀ</text>
+  <text x="252" y="1418" class="char">ꨔ</text>
+  <text x="220" y="1450" class="char">ꨨ</text>
+  <text x="252" y="1450" class="char">ꩅ</text>
+  <text x="236" y="1470" class="label">Cham</text>
+  <rect x="272" y="1394" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="1418" class="char">ꩠ</text>
+  <text x="320" y="1418" class="char">ꩨ</text>
+  <text x="288" y="1450" class="char">ꩰ</text>
+  <text x="320" y="1450" class="char">꩸</text>
+  <text x="304" y="1470" class="label">Myanmar Extended A</text>
+  <rect x="340" y="1394" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="1418" class="char">ꪀ</text>
+  <text x="388" y="1418" class="char">ꪒ</text>
+  <text x="356" y="1450" class="char">ꪤ</text>
+  <text x="388" y="1450" class="char">ꪶ</text>
+  <text x="372" y="1470" class="label">Tai Viet</text>
+  <rect x="408" y="1394" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="1418" class="char">ꫠ</text>
+  <text x="456" y="1418" class="char">ꫥ</text>
+  <text x="424" y="1450" class="char">ꫪ</text>
+  <text x="456" y="1450" class="char">ꫯ</text>
+  <text x="440" y="1470" class="label">Meetei Mayek Extensions</text>
+  <rect x="476" y="1394" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="1418" class="char">ꬁ</text>
+  <text x="524" y="1418" class="char">ꬋ</text>
+  <text x="492" y="1450" class="char">ꬕ</text>
+  <text x="524" y="1450" class="char">ꬦ</text>
+  <text x="508" y="1470" class="label">Ethiopic Extended A</text>
+  <rect x="0" y="1476" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="1500" class="char">ꬰ</text>
+  <text x="48" y="1500" class="char">ꬿ</text>
+  <text x="16" y="1532" class="char">ꭎ</text>
+  <text x="48" y="1532" class="char">ꭝ</text>
+  <text x="32" y="1552" class="label">Latin Extended E</text>
+  <rect x="68" y="1476" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="1500" class="char">ꭰ</text>
+  <text x="116" y="1500" class="char">ꮄ</text>
+  <text x="84" y="1532" class="char">ꮘ</text>
+  <text x="116" y="1532" class="char">ꮬ</text>
+  <text x="100" y="1552" class="label">Cherokee Supplement</text>
+  <rect x="136" y="1476" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="1500" class="char">ꯀ</text>
+  <text x="184" y="1500" class="char">ꯎ</text>
+  <text x="152" y="1532" class="char">ꯜ</text>
+  <text x="184" y="1532" class="char">ꯪ</text>
+  <text x="168" y="1552" class="label">Meetei Mayek</text>
+  <rect x="204" y="1476" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="1500" class="char">가</text>
+  <text x="252" y="1500" class="char">뛩</text>
+  <text x="220" y="1532" class="char">쇒</text>
+  <text x="252" y="1532" class="char">첻</text>
+  <text x="236" y="1552" class="label">Hangul Syllables</text>
+  <rect x="272" y="1476" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="1500" class="char">ힰ</text>
+  <text x="320" y="1500" class="char">ퟂ</text>
+  <text x="288" y="1532" class="char">ퟘ</text>
+  <text x="320" y="1532" class="char">ퟪ</text>
+  <text x="304" y="1552" class="label">Hangul Jamo Extended B</text>
+  <rect x="340" y="1476" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="1500" class="hex">D800</text>
+  <text x="388" y="1500" class="hex">D8E0</text>
+  <text x="356" y="1532" class="hex">D9C0</text>
+  <text x="388" y="1532" class="hex">DAA0</text>
+  <text x="372" y="1552" class="label">High Surrogates</text>
+  <rect x="408" y="1476" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="1500" class="hex">DB80</text>
+  <text x="456" y="1500" class="hex">DBA0</text>
+  <text x="424" y="1532" class="hex">DBC0</text>
+  <text x="456" y="1532" class="hex">DBE0</text>
+  <text x="440" y="1552" class="label">High Private Use Surrogates</text>
+  <rect x="476" y="1476" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="1500" class="hex">DC00</text>
+  <text x="524" y="1500" class="hex">DD00</text>
+  <text x="492" y="1532" class="hex">DE00</text>
+  <text x="524" y="1532" class="hex">DF00</text>
+  <text x="508" y="1552" class="label">Low Surrogates</text>
+  <rect x="0" y="1558" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="1582" class="hex">E000</text>
+  <text x="48" y="1582" class="hex">E640</text>
+  <text x="16" y="1614" class="hex">EC80</text>
+  <text x="48" y="1614" class="hex">F2C0</text>
+  <text x="32" y="1634" class="label">Private Use Area</text>
+  <rect x="68" y="1558" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="1582" class="char">豈</text>
+  <text x="116" y="1582" class="char">略</text>
+  <text x="84" y="1614" class="char">溺</text>
+  <text x="116" y="1614" class="char">謁</text>
+  <text x="100" y="1634" class="label">CJK Compatibility Ideographs</text>
+  <rect x="136" y="1558" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="1582" class="char">ﬀ</text>
+  <text x="184" y="1582" class="char">ײַ</text>
+  <text x="152" y="1614" class="char">שּׂ</text>
+  <text x="184" y="1614" class="char">לּ</text>
+  <text x="168" y="1634" class="label">Alphabetic Presentation Forms</text>
+  <rect x="204" y="1558" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="1582" class="char">ﭐ</text>
+  <text x="252" y="1582" class="char">ﯽ</text>
+  <text x="220" y="1614" class="char">ﲚ</text>
+  <text x="252" y="1614" class="char">ﴷ</text>
+  <text x="236" y="1634" class="label">Arabic Presentation Forms A</text>
+  <rect x="272" y="1558" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="288" y="1582" class="char">︀</text>
+  <text x="320" y="1582" class="char">︄</text>
+  <text x="288" y="1614" class="char">︈</text>
+  <text x="320" y="1614" class="char">︌</text>
+  <text x="304" y="1634" class="label">Variation Selectors</text>
+  <rect x="340" y="1558" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="356" y="1582" class="char">︐</text>
+  <text x="388" y="1582" class="char">︒</text>
+  <text x="356" y="1614" class="char">︔</text>
+  <text x="388" y="1614" class="char">︖</text>
+  <text x="372" y="1634" class="label">Vertical Forms</text>
+  <rect x="408" y="1558" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="424" y="1582" class="char">︠</text>
+  <text x="456" y="1582" class="char">︤</text>
+  <text x="424" y="1614" class="char">︨</text>
+  <text x="456" y="1614" class="char">︬</text>
+  <text x="440" y="1634" class="label">Combining Half Marks</text>
+  <rect x="476" y="1558" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="492" y="1582" class="char">︰</text>
+  <text x="524" y="1582" class="char">︸</text>
+  <text x="492" y="1614" class="char">﹀</text>
+  <text x="524" y="1614" class="char">﹈</text>
+  <text x="508" y="1634" class="label">CJK Compatibility Forms</text>
+  <rect x="0" y="1640" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="16" y="1664" class="char">﹐</text>
+  <text x="48" y="1664" class="char">﹗</text>
+  <text x="16" y="1696" class="char">﹝</text>
+  <text x="48" y="1696" class="char">﹣</text>
+  <text x="32" y="1716" class="label">Small Form Variants</text>
+  <rect x="68" y="1640" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="84" y="1664" class="char">ﹰ</text>
+  <text x="116" y="1664" class="char">ﺔ</text>
+  <text x="84" y="1696" class="char">ﺷ</text>
+  <text x="116" y="1696" class="char">ﻚ</text>
+  <text x="100" y="1716" class="label">Arabic Presentation Forms B</text>
+  <rect x="136" y="1640" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="152" y="1664" class="char">！</text>
+  <text x="184" y="1664" class="char">Ｙ</text>
+  <text x="152" y="1696" class="char">ｱ</text>
+  <text x="184" y="1696" class="char">ﾩ</text>
+  <text x="168" y="1716" class="label">Halfwidth And Fullwidth Forms</text>
+  <rect x="204" y="1640" width="64" height="64" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <text x="220" y="1664" class="char">￹</text>
+  <text x="252" y="1664" class="char">￺</text>
+  <text x="220" y="1696" class="char">￻</text>
+  <text x="252" y="1696" class="char">￼</text>
+  <text x="236" y="1716" class="label">Specials</text>
+</svg>

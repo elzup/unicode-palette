@@ -20,9 +20,12 @@ Each block includes: name, display name, code point range, defined/unassigned co
 require 'json'
 block = JSON.parse(File.read('data/unicode-blocks.json'))['blocks'].find{|b| b['name']=='Bopomofo'}\
 puts (0...20).map{|i| (block['blockStart']+i).chr('UTF-8')}.join
-㄀㄁㄂㄃㄄ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓ #  Note:  ㄀~㄄ are unassigned
+# ㄀㄁㄂㄃㄄ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓ
+#  Note:  ㄀~㄄ are unassigned
+
+# filter out unassigned
 puts block['ranges'].flat_map{|r| (r['start']..r['end']).to_a}.first(20).pack('U*')
-ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘ # filter out unassigned
+# ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘ
 ```
 
 ```sh
@@ -68,46 +71,62 @@ block.ranges.flatMap(r => range(r.end - r.start + 1)).slice(0, 20)
 
 - [ ] **Browser support** - Run in browser environment
 - [ ] **Random sampling mode** - Select random characters (excluding undefined), e.g., 30x20 grid
-- [ ] **CLI mode** - Output to console with formatting
 
 ## Install
 
 ```bash
-yarn add unicode-palette
+pnpm add unicode-palette
 ```
 
-## Usage
-
-### Generate SVG sample
+## CLI
 
 ```bash
-yarn render:svg
+# Print to console (default: U+0000-00FF)
+unicode-palette print
+
+# Print specific range
+unicode-palette print 3040-309F
+
+# Print by block name
+unicode-palette print Hiragana
+
+# Output to file (auto-detect format by extension)
+unicode-palette print 0000-00FF -o output.svg
+unicode-palette print 0000-00FF -o output.png
+
+# With options
+unicode-palette print 0000-00FF -c 32 -b  # 32 cols, with background colors
+
+# List available block names
+unicode-palette print --list
+
+# Generate script tiles
+unicode-palette tiles -o tiles.svg -c 8
 ```
 
-Output: `output/unicode-sample-10pct.svg`
+### Example Output
 
-### Generate Script Tiles
-
-```bash
-yarn render:tiles
 ```
+$ unicode-palette print 3040-309F
+ ぁあぃいぅうぇえぉおかがきぎく
+ぐけげこごさざしじすずせぜそぞた
+だちぢっつづてでとどなにぬねのは
+ばぱひびぴふぶぷへべぺほぼぽまみ
+むめもゃやゅゆょよらりるれろゎわ
+ゐゑをんゔゕゖ  ゙゚゛゜ゝゞゟ
 
-Output: `output/script-tiles.svg`
-
-### Dump to console
-
-```bash
-yarn tsx src/generator/dump-scripts.ts
+$ unicode-palette print Hiragana -c 10
+ ぁあぃいぅうぇえぉ
+おかがきぎくぐけげこ
+ごさざしじすずせぜそ
+ぞただちぢっつづてで
+とどなにぬねのはばぱ
+ひびぴふぶぷへべぺほ
+ぼぽまみむめもゃやゅ
+ゆょよらりるれろゎわ
+ゐゑをんゔゕゖ  ゙
+゚゛゜ゝゞゟ
 ```
-
-## Configuration (Current Defaults)
-
-| Parameter | Value | Description                    |
-| --------- | ----- | ------------------------------ |
-| CELL_SIZE | 16    | Pixel size per character       |
-| COLS      | 64    | Characters per row             |
-| ROWS      | 104   | Number of rows                 |
-| TOTAL     | 6656  | Total characters (~10% of BMP) |
 
 ## Font Setup
 
@@ -133,27 +152,10 @@ data/
 src/
   index.ts                  # Main exports (browser compatible)
   node.ts                   # Node.js exports (file I/O + canvas)
-  types/
-    index.ts                # Type definitions
-  core/
-    blocks.ts               # Unicode blocks (loaded from JSON)
-    category.ts             # Character category detection
-    schema.ts               # Zod schemas for validation
-    index.ts                # Core exports
-  render/
-    chars.ts                # Character grid generation
-    script-tiles.ts         # Script tile generation
-    index.ts                # Render exports
-  node-io/
-    file.ts                 # SVG file output
-    png.ts                  # PNG generation (canvas)
-    index.ts                # Node I/O exports
-  generator/                # Development scripts
-    render-sample-svg.ts    # yarn render:svg
-    render-sample.ts        # yarn render:png
-    render-script-tiles.ts  # yarn render:tiles
-scripts/
-  generate-unicode-data.ts  # Generate JSON/CSV from @unicode/unicode-16.0.0
+  cli/                      # CLI commands
+  core/                     # Unicode blocks, category detection
+  render/                   # SVG/character generation
+  node-io/                  # File I/O, PNG generation
 ```
 
 ## API
@@ -204,7 +206,7 @@ renderPngToFile('./output/unicode.png')
 Block data is generated from `@unicode/unicode-16.0.0`:
 
 ```bash
-yarn generate:data
+pnpm generate:data
 ```
 
 ## References

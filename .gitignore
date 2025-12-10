@@ -4,3 +4,4 @@ lib
 fonts/
 output/*
 !output/script-tiles.svg
+dist/
