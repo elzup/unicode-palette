@@ -1,5 +1,6 @@
 import { readdirSync, writeFileSync, mkdirSync } from 'node:fs'
 import { createRequire } from 'node:module'
+import prettier from 'prettier'
 import {
   UnicodeBlocksDataSchema,
   type UnicodeBlockData,
@@ -12,6 +13,7 @@ const require = createRequire(import.meta.url)
 const BLOCK_DIR = 'node_modules/@unicode/unicode-17.0.0/Block'
 const OUTPUT_DIR = 'data'
 const OUTPUT_JSON = `${OUTPUT_DIR}/unicode-blocks.json`
+const OUTPUT_JSON_MIN = `${OUTPUT_DIR}/unicode-blocks.min.json`
 const OUTPUT_CSV = `${OUTPUT_DIR}/unicode-blocks.csv`
 
 // Get all unassigned codepoints
@@ -78,7 +80,7 @@ function getBlockData(
   }
 }
 
-function main() {
+async function main() {
   mkdirSync(OUTPUT_DIR, { recursive: true })
 
   const unassignedSet = getUnassignedSet()
@@ -110,9 +112,15 @@ function main() {
   // Validate with zod
   const validated = UnicodeBlocksDataSchema.parse(output)
 
-  // Write JSON
-  writeFileSync(OUTPUT_JSON, JSON.stringify(validated, null, 2))
+  // Write JSON (prettified with prettier)
+  const jsonStr = JSON.stringify(validated)
+  const prettified = await prettier.format(jsonStr, { parser: 'json' })
+  writeFileSync(OUTPUT_JSON, prettified)
   console.log(`Generated: ${OUTPUT_JSON}`)
+
+  // Write minified JSON
+  writeFileSync(OUTPUT_JSON_MIN, JSON.stringify(validated))
+  console.log(`Generated: ${OUTPUT_JSON_MIN}`)
 
   // Write CSV
   const csvHeader =

@@ -43,7 +43,8 @@
     "generate:data": "tsx scripts/generate-unicode-data.ts"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "data/unicode-blocks.min.json"
   ],
   "sideEffects": false,
   "devDependencies": {
@@ -51,6 +52,7 @@
     "@types/node": "^22.0.0",
     "@unicode/unicode-17.0.0": "^1.6.16",
     "oxlint": "^1.0.0",
+    "prettier": "^3.7.4",
     "tsx": "^4.21.0",
     "typescript": "^5.0.0",
     "unbuild": "^3.6.1",
