@@ -1,0 +1,349 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`generateChars > snapshot: chars from Basic Latin (printable range) 1`] = `
+[
+  {
+    "category": "printable",
+    "char": " ",
+    "codepoint": "0020",
+  },
+  {
+    "category": "printable",
+    "char": "!",
+    "codepoint": "0021",
+  },
+  {
+    "category": "printable",
+    "char": """,
+    "codepoint": "0022",
+  },
+  {
+    "category": "printable",
+    "char": "#",
+    "codepoint": "0023",
+  },
+  {
+    "category": "printable",
+    "char": "$",
+    "codepoint": "0024",
+  },
+  {
+    "category": "printable",
+    "char": "%",
+    "codepoint": "0025",
+  },
+  {
+    "category": "printable",
+    "char": "&",
+    "codepoint": "0026",
+  },
+  {
+    "category": "printable",
+    "char": "'",
+    "codepoint": "0027",
+  },
+  {
+    "category": "printable",
+    "char": "(",
+    "codepoint": "0028",
+  },
+  {
+    "category": "printable",
+    "char": ")",
+    "codepoint": "0029",
+  },
+  {
+    "category": "printable",
+    "char": "*",
+    "codepoint": "002a",
+  },
+  {
+    "category": "printable",
+    "char": "+",
+    "codepoint": "002b",
+  },
+  {
+    "category": "printable",
+    "char": ",",
+    "codepoint": "002c",
+  },
+  {
+    "category": "printable",
+    "char": "-",
+    "codepoint": "002d",
+  },
+  {
+    "category": "printable",
+    "char": ".",
+    "codepoint": "002e",
+  },
+  {
+    "category": "printable",
+    "char": "/",
+    "codepoint": "002f",
+  },
+]
+`;
+
+exports[`generateChars > snapshot: chars from Hiragana 1`] = `
+[
+  {
+    "category": "unassigned",
+    "char": "぀",
+    "codepoint": "3040",
+  },
+  {
+    "category": "printable",
+    "char": "ぁ",
+    "codepoint": "3041",
+  },
+  {
+    "category": "printable",
+    "char": "あ",
+    "codepoint": "3042",
+  },
+  {
+    "category": "printable",
+    "char": "ぃ",
+    "codepoint": "3043",
+  },
+  {
+    "category": "printable",
+    "char": "い",
+    "codepoint": "3044",
+  },
+  {
+    "category": "printable",
+    "char": "ぅ",
+    "codepoint": "3045",
+  },
+  {
+    "category": "printable",
+    "char": "う",
+    "codepoint": "3046",
+  },
+  {
+    "category": "printable",
+    "char": "ぇ",
+    "codepoint": "3047",
+  },
+  {
+    "category": "printable",
+    "char": "え",
+    "codepoint": "3048",
+  },
+  {
+    "category": "printable",
+    "char": "ぉ",
+    "codepoint": "3049",
+  },
+  {
+    "category": "printable",
+    "char": "お",
+    "codepoint": "304a",
+  },
+  {
+    "category": "printable",
+    "char": "か",
+    "codepoint": "304b",
+  },
+  {
+    "category": "printable",
+    "char": "が",
+    "codepoint": "304c",
+  },
+  {
+    "category": "printable",
+    "char": "き",
+    "codepoint": "304d",
+  },
+  {
+    "category": "printable",
+    "char": "ぎ",
+    "codepoint": "304e",
+  },
+  {
+    "category": "printable",
+    "char": "く",
+    "codepoint": "304f",
+  },
+]
+`;
+
+exports[`generateChars > snapshot: first 16 chars from U+0000 1`] = `
+[
+  {
+    "category": "control",
+    "codepoint": "0000",
+  },
+  {
+    "category": "control",
+    "codepoint": "0001",
+  },
+  {
+    "category": "control",
+    "codepoint": "0002",
+  },
+  {
+    "category": "control",
+    "codepoint": "0003",
+  },
+  {
+    "category": "control",
+    "codepoint": "0004",
+  },
+  {
+    "category": "control",
+    "codepoint": "0005",
+  },
+  {
+    "category": "control",
+    "codepoint": "0006",
+  },
+  {
+    "category": "control",
+    "codepoint": "0007",
+  },
+  {
+    "category": "control",
+    "codepoint": "0008",
+  },
+  {
+    "category": "control",
+    "codepoint": "0009",
+  },
+  {
+    "category": "control",
+    "codepoint": "000a",
+  },
+  {
+    "category": "control",
+    "codepoint": "000b",
+  },
+  {
+    "category": "control",
+    "codepoint": "000c",
+  },
+  {
+    "category": "control",
+    "codepoint": "000d",
+  },
+  {
+    "category": "control",
+    "codepoint": "000e",
+  },
+  {
+    "category": "control",
+    "codepoint": "000f",
+  },
+]
+`;
+
+exports[`generateGrid > snapshot: small grid structure 1`] = `
+{
+  "chars": [
+    [
+      {
+        "char": "A",
+        "codepoint": "0041",
+      },
+      {
+        "char": "B",
+        "codepoint": "0042",
+      },
+      {
+        "char": "C",
+        "codepoint": "0043",
+      },
+      {
+        "char": "D",
+        "codepoint": "0044",
+      },
+    ],
+    [
+      {
+        "char": "E",
+        "codepoint": "0045",
+      },
+      {
+        "char": "F",
+        "codepoint": "0046",
+      },
+      {
+        "char": "G",
+        "codepoint": "0047",
+      },
+      {
+        "char": "H",
+        "codepoint": "0048",
+      },
+    ],
+  ],
+  "config": {
+    "cellSize": 16,
+    "cols": 4,
+    "height": 32,
+    "rows": 2,
+    "width": 64,
+  },
+}
+`;
+
+exports[`generateSvgString > snapshot: SVG from Hiragana 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="32" viewBox="0 0 128 32">
+  <style>
+    @font-face {
+      font-family: 'Unifont';
+      src: url('undefined') format('opentype');
+    }
+    text {
+      font-family: 'Unifont', monospace;
+      font-size: 12px;
+      text-anchor: middle;
+    }
+  </style>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="8 24 40 56 72 88 104 120" y="12.8">あぃいぅうぇえぉ</text>
+  <text x="8 24 40 56 72 88 104 120" y="28.8">おかがきぎくぐけ</text>
+</svg>"
+`;
+
+exports[`generateSvgString > snapshot: SVG with special characters 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="16" viewBox="0 0 64 16">
+  <style>
+    @font-face {
+      font-family: 'Unifont';
+      src: url('undefined') format('opentype');
+    }
+    text {
+      font-family: 'Unifont', monospace;
+      font-size: 12px;
+      text-anchor: middle;
+    }
+  </style>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="8 24 40 56" y="12.8">&lt;=&gt;?</text>
+</svg>"
+`;
+
+exports[`generateSvgString > snapshot: small SVG output 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="32" viewBox="0 0 64 32">
+  <style>
+    @font-face {
+      font-family: 'Unifont';
+      src: url('undefined') format('opentype');
+    }
+    text {
+      font-family: 'Unifont', monospace;
+      font-size: 12px;
+      text-anchor: middle;
+    }
+  </style>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="8 24 40 56" y="12.8">ABCD</text>
+  <text x="8 24 40 56" y="28.8">EFGH</text>
+</svg>"
+`;

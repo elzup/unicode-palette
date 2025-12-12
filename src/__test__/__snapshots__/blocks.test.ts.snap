@@ -1,0 +1,270 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BMP_BLOCKS > snapshot: first 10 BMP blocks 1`] = `
+[
+  {
+    "displayName": "Basic Latin",
+    "end": 127,
+    "name": "Basic_Latin",
+    "start": 0,
+  },
+  {
+    "displayName": "Latin 1 Supplement",
+    "end": 255,
+    "name": "Latin_1_Supplement",
+    "start": 128,
+  },
+  {
+    "displayName": "Latin Extended A",
+    "end": 383,
+    "name": "Latin_Extended_A",
+    "start": 256,
+  },
+  {
+    "displayName": "Latin Extended B",
+    "end": 591,
+    "name": "Latin_Extended_B",
+    "start": 384,
+  },
+  {
+    "displayName": "IPA Extensions",
+    "end": 687,
+    "name": "IPA_Extensions",
+    "start": 592,
+  },
+  {
+    "displayName": "Spacing Modifier Letters",
+    "end": 767,
+    "name": "Spacing_Modifier_Letters",
+    "start": 688,
+  },
+  {
+    "displayName": "Combining Diacritical Marks",
+    "end": 879,
+    "name": "Combining_Diacritical_Marks",
+    "start": 768,
+  },
+  {
+    "displayName": "Greek And Coptic",
+    "end": 1023,
+    "name": "Greek_And_Coptic",
+    "start": 880,
+  },
+  {
+    "displayName": "Cyrillic",
+    "end": 1279,
+    "name": "Cyrillic",
+    "start": 1024,
+  },
+  {
+    "displayName": "Cyrillic Supplement",
+    "end": 1327,
+    "name": "Cyrillic_Supplement",
+    "start": 1280,
+  },
+]
+`;
+
+exports[`UNICODE_BLOCKS > snapshot: block count 1`] = `
+{
+  "bmpBlocks": 164,
+  "totalBlocks": 338,
+}
+`;
+
+exports[`UNICODE_BLOCKS > snapshot: first 10 blocks 1`] = `
+[
+  {
+    "displayName": "Basic Latin",
+    "end": 127,
+    "name": "Basic_Latin",
+    "start": 0,
+  },
+  {
+    "displayName": "Latin 1 Supplement",
+    "end": 255,
+    "name": "Latin_1_Supplement",
+    "start": 128,
+  },
+  {
+    "displayName": "Latin Extended A",
+    "end": 383,
+    "name": "Latin_Extended_A",
+    "start": 256,
+  },
+  {
+    "displayName": "Latin Extended B",
+    "end": 591,
+    "name": "Latin_Extended_B",
+    "start": 384,
+  },
+  {
+    "displayName": "IPA Extensions",
+    "end": 687,
+    "name": "IPA_Extensions",
+    "start": 592,
+  },
+  {
+    "displayName": "Spacing Modifier Letters",
+    "end": 767,
+    "name": "Spacing_Modifier_Letters",
+    "start": 688,
+  },
+  {
+    "displayName": "Combining Diacritical Marks",
+    "end": 879,
+    "name": "Combining_Diacritical_Marks",
+    "start": 768,
+  },
+  {
+    "displayName": "Greek And Coptic",
+    "end": 1023,
+    "name": "Greek_And_Coptic",
+    "start": 880,
+  },
+  {
+    "displayName": "Cyrillic",
+    "end": 1279,
+    "name": "Cyrillic",
+    "start": 1024,
+  },
+  {
+    "displayName": "Cyrillic Supplement",
+    "end": 1327,
+    "name": "Cyrillic_Supplement",
+    "start": 1280,
+  },
+]
+`;
+
+exports[`getBlockByCodepoint > snapshot: block lookup results 1`] = `
+[
+  {
+    "blockName": "Basic_Latin",
+    "codepoint": "0041",
+  },
+  {
+    "blockName": "Hiragana",
+    "codepoint": "3042",
+  },
+  {
+    "blockName": "Katakana",
+    "codepoint": "30a2",
+  },
+  {
+    "blockName": "CJK_Unified_Ideographs",
+    "codepoint": "4e00",
+  },
+  {
+    "blockName": "Emoticons",
+    "codepoint": "1f600",
+  },
+  {
+    "blockName": "Private_Use_Area",
+    "codepoint": "e000",
+  },
+]
+`;
+
+exports[`getBlockDataByName > snapshot: block data for Basic Latin 1`] = `
+{
+  "blockEnd": 127,
+  "blockStart": 0,
+  "definedCount": 128,
+  "displayName": "Basic Latin",
+  "name": "Basic_Latin",
+  "ranges": [
+    {
+      "end": 127,
+      "start": 0,
+    },
+  ],
+  "unassignedCount": 0,
+}
+`;
+
+exports[`getBlockSize > snapshot: sizes of first 10 blocks 1`] = `
+[
+  {
+    "name": "Basic_Latin",
+    "size": 128,
+  },
+  {
+    "name": "Latin_1_Supplement",
+    "size": 128,
+  },
+  {
+    "name": "Latin_Extended_A",
+    "size": 128,
+  },
+  {
+    "name": "Latin_Extended_B",
+    "size": 208,
+  },
+  {
+    "name": "IPA_Extensions",
+    "size": 96,
+  },
+  {
+    "name": "Spacing_Modifier_Letters",
+    "size": 80,
+  },
+  {
+    "name": "Combining_Diacritical_Marks",
+    "size": 112,
+  },
+  {
+    "name": "Greek_And_Coptic",
+    "size": 144,
+  },
+  {
+    "name": "Cyrillic",
+    "size": 256,
+  },
+  {
+    "name": "Cyrillic_Supplement",
+    "size": 48,
+  },
+]
+`;
+
+exports[`getQuartileChars > snapshot: quartile chars for common blocks 1`] = `
+[
+  {
+    "name": "Basic_Latin",
+    "quartiles": [
+      "0000",
+      "0020",
+      "0040",
+      "0060",
+    ],
+  },
+  {
+    "name": "Hiragana",
+    "quartiles": [
+      "3041",
+      "3058",
+      "306f",
+      "3086",
+    ],
+  },
+  {
+    "name": "Katakana",
+    "quartiles": [
+      "30a0",
+      "30b8",
+      "30d0",
+      "30e8",
+    ],
+  },
+  {
+    "name": "CJK_Unified_Ideographs",
+    "quartiles": [
+      "4e00",
+      "6280",
+      "7700",
+      "8b80",
+    ],
+  },
+]
+`;

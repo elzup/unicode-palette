@@ -1,0 +1,168 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CATEGORY_COLORS > snapshot: all category colors 1`] = `
+{
+  "control": "#cccccc",
+  "noGlyph": "#ffccff",
+  "printable": "#ffffff",
+  "private": "#ffffcc",
+  "surrogate": "#ffcccc",
+  "unassigned": "#cccccc",
+}
+`;
+
+exports[`escapeXml > snapshot: escape results 1`] = `
+[
+  {
+    "input": "<",
+    "output": "&lt;",
+  },
+  {
+    "input": ">",
+    "output": "&gt;",
+  },
+  {
+    "input": "&",
+    "output": "&amp;",
+  },
+  {
+    "input": """,
+    "output": "&quot;",
+  },
+  {
+    "input": "'",
+    "output": "&apos;",
+  },
+  {
+    "input": "A",
+    "output": "A",
+  },
+  {
+    "input": "あ",
+    "output": "あ",
+  },
+  {
+    "input": "漢",
+    "output": "漢",
+  },
+  {
+    "input": " ",
+    "output": " ",
+  },
+]
+`;
+
+exports[`getCategory > snapshot: category results for various characters 1`] = `
+[
+  {
+    "category": "printable",
+    "char": "0041",
+  },
+  {
+    "category": "printable",
+    "char": "3042",
+  },
+  {
+    "category": "printable",
+    "char": "6f22",
+  },
+  {
+    "category": "printable",
+    "char": "1f389",
+  },
+  {
+    "category": "control",
+    "char": "0000",
+  },
+  {
+    "category": "control",
+    "char": "001f",
+  },
+  {
+    "category": "private",
+    "char": "e000",
+  },
+  {
+    "category": "unassigned",
+    "char": "0378",
+  },
+  {
+    "category": "printable",
+    "char": "0020",
+  },
+  {
+    "category": "printable",
+    "char": "0021",
+  },
+  {
+    "category": "printable",
+    "char": "007e",
+  },
+]
+`;
+
+exports[`resolveConfig > should merge options with defaults 1`] = `
+{
+  "cellSize": 16,
+  "cols": 32,
+  "fontPath": undefined,
+  "rows": 16,
+  "showBackground": false,
+  "startCodepoint": 0,
+}
+`;
+
+exports[`resolveConfig > should override all options 1`] = `
+{
+  "cellSize": 32,
+  "cols": 16,
+  "fontPath": "/custom/font.otf",
+  "rows": 8,
+  "showBackground": true,
+  "startCodepoint": 12288,
+}
+`;
+
+exports[`resolveConfig > should return default config when no options provided 1`] = `
+{
+  "cellSize": 16,
+  "cols": 64,
+  "fontPath": undefined,
+  "rows": 104,
+  "showBackground": false,
+  "startCodepoint": 0,
+}
+`;
+
+exports[`skipSurrogate > snapshot: skipSurrogate results 1`] = `
+[
+  {
+    "input": "0000",
+    "output": "0000",
+  },
+  {
+    "input": "d7ff",
+    "output": "d7ff",
+  },
+  {
+    "input": "d800",
+    "output": "e000",
+  },
+  {
+    "input": "dc00",
+    "output": "e000",
+  },
+  {
+    "input": "dfff",
+    "output": "e000",
+  },
+  {
+    "input": "e000",
+    "output": "e000",
+  },
+  {
+    "input": "ffff",
+    "output": "ffff",
+  },
+]
+`;

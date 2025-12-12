@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`parseUnicodeBlocksData > snapshot: parsed data structure 1`] = `
+{
+  "bmpBlocks": 164,
+  "firstBlock": {
+    "blockEnd": 127,
+    "blockStart": 0,
+    "definedCount": 128,
+    "displayName": "Basic Latin",
+    "name": "Basic_Latin",
+    "ranges": [
+      {
+        "end": 127,
+        "start": 0,
+      },
+    ],
+    "unassignedCount": 0,
+  },
+  "totalBlocks": 338,
+  "version": "16.0.0",
+}
+`;
