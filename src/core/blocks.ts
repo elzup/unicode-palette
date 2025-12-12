@@ -1,5 +1,5 @@
 // Unicode block data loaded from JSON (single source of truth)
-import blocksData from '../../data/unicode-blocks.json'
+import blocksData from '../../data/unicode-blocks.min.json'
 import type { UnicodeBlockData, UnicodeBlocksData } from './schema'
 
 // Re-export the full data
