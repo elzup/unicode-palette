@@ -35,8 +35,7 @@ export const printCommand = defineCommand({
     cols: {
       type: 'string',
       alias: 'c',
-      description: 'Number of columns',
-      default: '16',
+      description: 'Number of columns (default: all in one line)',
     },
     list: {
       type: 'boolean',
@@ -79,8 +78,8 @@ export const printCommand = defineCommand({
       }
     }
 
-    const cols = parseInt(args.cols, 10)
     const total = end - start + 1
+    const cols = args.cols ? parseInt(args.cols, 10) : total
     const rows = Math.ceil(total / cols)
 
     const chars = generateChars({

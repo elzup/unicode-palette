@@ -10,8 +10,14 @@ $ npx unicode-palette random Box_Drawing -s 5x5
 ┽═╔╛┧
 ┖╈╨│┎
 
-$ npx unicode-palette print 25E7-25FB -c 30
+$ npx unicode-palette print 25E7-25FB
 ◧◨◩◪◫◬◭◮◯◰◱◲◳◴◵◶◷◸◹◺◻
+
+$ npx unicode-palette print 0041-005A -c 8
+ABCDEFGH
+IJKLMNOP
+QRSTUVWX
+YZ
 ```
 
 ## Unicode Block Data
