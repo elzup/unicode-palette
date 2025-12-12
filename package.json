@@ -1,6 +1,6 @@
 {
   "name": "unicode-palette",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Unicode character visualization tool - Generate grid-based character maps as SVG/PNG",
   "author": "elzup",
   "license": "MIT",
