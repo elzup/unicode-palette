@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import { defineCommand, runMain } from 'citty'
 import { printCommand } from './commands/print'
-import { tilesCommand } from './commands/tiles'
 import { randomCommand } from './commands/random'
 
 const main = defineCommand({
@@ -12,7 +11,6 @@ const main = defineCommand({
   },
   subCommands: {
     print: printCommand,
-    tiles: tilesCommand,
     random: randomCommand,
   },
 })

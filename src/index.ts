@@ -19,14 +19,8 @@ export {
 } from './core'
 
 // Render utilities (browser compatible)
-export type { CharInfo, GridData, TileOptions, TileData } from './render'
-export {
-  generateChars,
-  generateGrid,
-  generateSvgString,
-  generateTileData,
-  generateScriptTilesSvg,
-} from './render'
+export type { CharInfo, GridData } from './render'
+export { generateChars, generateGrid, generateSvgString } from './render'
 
 // Alias
 export { generateSvgString as renderSvg } from './render'

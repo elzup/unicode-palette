@@ -1,7 +1,7 @@
 {
   "name": "unicode-palette",
   "version": "1.0.0",
-  "description": "Unicode character visualization tool - Generate grid-based character maps as SVG/PNG",
+  "description": "Unicode character data and utilities",
   "author": "elzup",
   "license": "MIT",
   "type": "module",
@@ -16,11 +16,6 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
-    },
-    "./node": {
-      "types": "./dist/node.d.ts",
-      "import": "./dist/node.mjs",
-      "require": "./dist/node.cjs"
     }
   },
   "repository": "elzup/unicode-palette",
@@ -30,11 +25,9 @@
   "homepage": "https://github.com/elzup/unicode-palette#readme",
   "keywords": [
     "unicode",
-    "svg",
-    "png",
     "character",
-    "visualization",
-    "grid"
+    "codepoint",
+    "block"
   ],
   "engines": {
     "node": ">=18"
@@ -47,10 +40,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "prepublishOnly": "pnpm build && pnpm test",
-    "generate:data": "tsx scripts/generate-unicode-data.ts",
-    "render:svg": "tsx src/generator/render-sample-svg.ts",
-    "render:png": "tsx src/generator/render-sample.ts",
-    "render:tiles": "tsx src/generator/render-script-tiles.ts"
+    "generate:data": "tsx scripts/generate-unicode-data.ts"
   },
   "files": [
     "dist/"
@@ -60,20 +50,11 @@
     "@elzup/tsconfig": "^1.1.0",
     "@types/node": "^22.0.0",
     "@unicode/unicode-17.0.0": "^1.6.16",
-    "canvas": "^3.2.0",
     "oxlint": "^1.0.0",
     "tsx": "^4.21.0",
     "typescript": "^5.0.0",
     "unbuild": "^3.6.1",
     "vitest": "^3.0.0"
-  },
-  "peerDependencies": {
-    "canvas": "^3.0.0"
-  },
-  "peerDependenciesMeta": {
-    "canvas": {
-      "optional": true
-    }
   },
   "dependencies": {
     "citty": "^0.1.6",

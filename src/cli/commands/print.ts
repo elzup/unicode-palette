@@ -1,5 +1,4 @@
 import { defineCommand } from 'citty'
-import { renderSvgToFile, renderPngToFile } from '../../node-io'
 import { generateChars } from '../../render'
 import { UNICODE_BLOCKS } from '../../core'
 
@@ -25,7 +24,7 @@ function findBlockByName(name: string) {
 export const printCommand = defineCommand({
   meta: {
     name: 'print',
-    description: 'Print Unicode characters to console or file',
+    description: 'Print Unicode characters to console',
   },
   args: {
     range: {
@@ -33,37 +32,11 @@ export const printCommand = defineCommand({
       description: 'Range (hex-hex, e.g., 0000-00FF) or block name',
       required: false,
     },
-    output: {
-      type: 'string',
-      alias: 'o',
-      description: 'Output file path (.svg or .png)',
-    },
     cols: {
       type: 'string',
       alias: 'c',
       description: 'Number of columns',
       default: '16',
-    },
-    'cell-size': {
-      type: 'string',
-      description: 'Cell size in pixels (for image output)',
-      default: '16',
-    },
-    font: {
-      type: 'string',
-      alias: 'f',
-      description: 'Font file path (required for PNG output)',
-    },
-    'fill-unassigned': {
-      type: 'boolean',
-      description: 'Fill unassigned codepoints',
-      default: false,
-    },
-    background: {
-      type: 'boolean',
-      alias: 'b',
-      description: 'Show category colors as background',
-      default: false,
     },
     list: {
       type: 'boolean',
@@ -107,33 +80,15 @@ export const printCommand = defineCommand({
     }
 
     const cols = parseInt(args.cols, 10)
-    const cellSize = parseInt(args['cell-size'], 10)
     const total = end - start + 1
     const rows = Math.ceil(total / cols)
 
-    const options = {
+    const chars = generateChars({
       cols,
       rows,
-      cellSize,
       startCodepoint: start,
-      showBackground: args.background,
-      skipUnassigned: !args['fill-unassigned'],
-      fontPath: args.font,
-    }
+    })
 
-    // Output to file
-    if (args.output) {
-      const ext = args.output.split('.').pop()?.toLowerCase()
-      if (ext === 'png') {
-        renderPngToFile(args.output, options)
-      } else {
-        renderSvgToFile(args.output, options)
-      }
-      return
-    }
-
-    // Console output
-    const chars = generateChars(options)
     let line = ''
     let count = 0
     for (const char of chars) {
