@@ -17,7 +17,7 @@ exports[`parseUnicodeBlocksData > snapshot: parsed data structure 1`] = `
     ],
     "unassignedCount": 0,
   },
-  "totalBlocks": 338,
-  "version": "16.0.0",
+  "totalBlocks": 346,
+  "version": "17.0.0",
 }
 `;

@@ -68,7 +68,7 @@ exports[`BMP_BLOCKS > snapshot: first 10 BMP blocks 1`] = `
 exports[`UNICODE_BLOCKS > snapshot: block count 1`] = `
 {
   "bmpBlocks": 164,
-  "totalBlocks": 338,
+  "totalBlocks": 346,
 }
 `;
 

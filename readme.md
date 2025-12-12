@@ -264,7 +264,7 @@ pnpm generate:data
 ## References
 
 - [GNU Unifont](https://unifoundry.com/unifont/)
-- [@unicode/unicode-16.0.0](https://www.npmjs.com/package/@unicode/unicode-16.0.0)
+- [@unicode/unicode-17.0.0](https://www.npmjs.com/package/@unicode/unicode-17.0.0)
 - [ISO 15924 (Scripts)](https://unicode.org/iso15924/)
 - [Unicode Character Database](https://www.unicode.org/ucd/)
 

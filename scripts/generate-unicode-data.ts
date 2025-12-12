@@ -9,14 +9,14 @@ import {
 
 const require = createRequire(import.meta.url)
 
-const BLOCK_DIR = 'node_modules/@unicode/unicode-16.0.0/Block'
+const BLOCK_DIR = 'node_modules/@unicode/unicode-17.0.0/Block'
 const OUTPUT_DIR = 'data'
 const OUTPUT_JSON = `${OUTPUT_DIR}/unicode-blocks.json`
 const OUTPUT_CSV = `${OUTPUT_DIR}/unicode-blocks.csv`
 
 // Get all unassigned codepoints
 function getUnassignedSet(): Set<number> {
-  const unassigned: number[] = require('@unicode/unicode-16.0.0/General_Category/Unassigned/code-points.js')
+  const unassigned: number[] = require('@unicode/unicode-17.0.0/General_Category/Unassigned/code-points.js')
   return new Set(unassigned)
 }
 
@@ -49,7 +49,7 @@ function getBlockData(
   unassignedSet: Set<number>
 ): UnicodeBlockData | null {
   try {
-    const allCodepoints: number[] = require(`@unicode/unicode-16.0.0/Block/${blockName}/code-points.js`)
+    const allCodepoints: number[] = require(`@unicode/unicode-17.0.0/Block/${blockName}/code-points.js`)
     if (allCodepoints.length === 0) return null
 
     const blockStart = Math.min(...allCodepoints)
@@ -100,7 +100,7 @@ function main() {
   const bmpBlocks = blocks.filter((b) => b.blockStart <= 0xffff)
 
   const output: UnicodeBlocksData = {
-    version: '16.0.0',
+    version: '17.0.0',
     generatedAt: new Date().toISOString(),
     totalBlocks: blocks.length,
     bmpBlocks: bmpBlocks.length,

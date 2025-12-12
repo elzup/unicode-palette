@@ -59,6 +59,7 @@
   "devDependencies": {
     "@elzup/tsconfig": "^1.1.0",
     "@types/node": "^22.0.0",
+    "@unicode/unicode-17.0.0": "^1.6.16",
     "canvas": "^3.2.0",
     "oxlint": "^1.0.0",
     "tsx": "^4.21.0",

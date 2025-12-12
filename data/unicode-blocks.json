@@ -1,7 +1,7 @@
 {
-  "version": "16.0.0",
-  "generatedAt": "2025-12-08T15:15:21.517Z",
-  "totalBlocks": 338,
+  "version": "17.0.0",
+  "generatedAt": "2025-12-12T04:06:38.250Z",
+  "totalBlocks": 346,
   "bmpBlocks": 164,
   "blocks": [
     {
@@ -217,11 +217,10 @@
       "displayName": "Arabic Extended B",
       "blockStart": 2160,
       "blockEnd": 2207,
-      "definedCount": 42,
-      "unassignedCount": 6,
+      "definedCount": 43,
+      "unassignedCount": 5,
       "ranges": [
-        { "start": 2160, "end": 2190 },
-        { "start": 2192, "end": 2193 },
+        { "start": 2160, "end": 2193 },
         { "start": 2199, "end": 2207 }
       ]
     },
@@ -372,8 +371,8 @@
       "displayName": "Telugu",
       "blockStart": 3072,
       "blockEnd": 3199,
-      "definedCount": 100,
-      "unassignedCount": 28,
+      "definedCount": 101,
+      "unassignedCount": 27,
       "ranges": [
         { "start": 3072, "end": 3084 },
         { "start": 3086, "end": 3088 },
@@ -384,7 +383,7 @@
         { "start": 3146, "end": 3149 },
         { "start": 3157, "end": 3158 },
         { "start": 3160, "end": 3162 },
-        { "start": 3165, "end": 3165 },
+        { "start": 3164, "end": 3165 },
         { "start": 3168, "end": 3171 },
         { "start": 3174, "end": 3183 },
         { "start": 3191, "end": 3199 }
@@ -395,8 +394,8 @@
       "displayName": "Kannada",
       "blockStart": 3200,
       "blockEnd": 3327,
-      "definedCount": 91,
-      "unassignedCount": 37,
+      "definedCount": 92,
+      "unassignedCount": 36,
       "ranges": [
         { "start": 3200, "end": 3212 },
         { "start": 3214, "end": 3216 },
@@ -407,7 +406,7 @@
         { "start": 3270, "end": 3272 },
         { "start": 3274, "end": 3277 },
         { "start": 3285, "end": 3286 },
-        { "start": 3293, "end": 3294 },
+        { "start": 3292, "end": 3294 },
         { "start": 3296, "end": 3299 },
         { "start": 3302, "end": 3311 },
         { "start": 3313, "end": 3315 }
@@ -768,9 +767,12 @@
       "displayName": "Combining Diacritical Marks Extended",
       "blockStart": 6832,
       "blockEnd": 6911,
-      "definedCount": 31,
-      "unassignedCount": 49,
-      "ranges": [{ "start": 6832, "end": 6862 }]
+      "definedCount": 58,
+      "unassignedCount": 22,
+      "ranges": [
+        { "start": 6832, "end": 6877 },
+        { "start": 6880, "end": 6891 }
+      ]
     },
     {
       "name": "Balinese",
@@ -958,9 +960,9 @@
       "displayName": "Currency Symbols",
       "blockStart": 8352,
       "blockEnd": 8399,
-      "definedCount": 33,
-      "unassignedCount": 15,
-      "ranges": [{ "start": 8352, "end": 8384 }]
+      "definedCount": 34,
+      "unassignedCount": 14,
+      "ranges": [{ "start": 8352, "end": 8385 }]
     },
     {
       "name": "Combining_Diacritical_Marks_For_Symbols",
@@ -1147,12 +1149,11 @@
       "displayName": "Miscellaneous Symbols And Arrows",
       "blockStart": 11008,
       "blockEnd": 11263,
-      "definedCount": 253,
-      "unassignedCount": 3,
+      "definedCount": 254,
+      "unassignedCount": 2,
       "ranges": [
         { "start": 11008, "end": 11123 },
-        { "start": 11126, "end": 11157 },
-        { "start": 11159, "end": 11263 }
+        { "start": 11126, "end": 11263 }
       ]
     },
     {
@@ -1481,14 +1482,11 @@
       "displayName": "Latin Extended D",
       "blockStart": 42784,
       "blockEnd": 43007,
-      "definedCount": 199,
-      "unassignedCount": 25,
+      "definedCount": 204,
+      "unassignedCount": 20,
       "ranges": [
-        { "start": 42784, "end": 42957 },
-        { "start": 42960, "end": 42961 },
-        { "start": 42963, "end": 42963 },
-        { "start": 42965, "end": 42972 },
-        { "start": 42994, "end": 43007 }
+        { "start": 42784, "end": 42972 },
+        { "start": 42993, "end": 43007 }
       ]
     },
     {
@@ -1772,13 +1770,10 @@
       "displayName": "Arabic Presentation Forms A",
       "blockStart": 64336,
       "blockEnd": 65023,
-      "definedCount": 631,
-      "unassignedCount": 57,
+      "definedCount": 656,
+      "unassignedCount": 32,
       "ranges": [
-        { "start": 64336, "end": 64450 },
-        { "start": 64467, "end": 64911 },
-        { "start": 64914, "end": 64967 },
-        { "start": 64975, "end": 64975 },
+        { "start": 64336, "end": 64975 },
         { "start": 65008, "end": 65023 }
       ]
     },
@@ -2222,6 +2217,15 @@
       ]
     },
     {
+      "name": "Sidetic",
+      "displayName": "Sidetic",
+      "blockStart": 67904,
+      "blockEnd": 67935,
+      "definedCount": 26,
+      "unassignedCount": 6,
+      "ranges": [{ "start": 67904, "end": 67929 }]
+    },
+    {
       "name": "Meroitic_Hieroglyphs",
       "displayName": "Meroitic Hieroglyphs",
       "blockStart": 67968,
@@ -2414,11 +2418,12 @@
       "displayName": "Arabic Extended C",
       "blockStart": 69312,
       "blockEnd": 69375,
-      "definedCount": 7,
-      "unassignedCount": 57,
+      "definedCount": 21,
+      "unassignedCount": 43,
       "ranges": [
-        { "start": 69314, "end": 69316 },
-        { "start": 69372, "end": 69375 }
+        { "start": 69314, "end": 69319 },
+        { "start": 69328, "end": 69336 },
+        { "start": 69370, "end": 69375 }
       ]
     },
     {
@@ -2816,6 +2821,15 @@
       "ranges": [{ "start": 72448, "end": 72457 }]
     },
     {
+      "name": "Sharada_Supplement",
+      "displayName": "Sharada Supplement",
+      "blockStart": 72544,
+      "blockEnd": 72575,
+      "definedCount": 8,
+      "unassignedCount": 24,
+      "ranges": [{ "start": 72544, "end": 72551 }]
+    },
+    {
       "name": "Sunuwar",
       "displayName": "Sunuwar",
       "blockStart": 72640,
@@ -2885,6 +2899,18 @@
         { "start": 73104, "end": 73105 },
         { "start": 73107, "end": 73112 },
         { "start": 73120, "end": 73129 }
+      ]
+    },
+    {
+      "name": "Tolong_Siki",
+      "displayName": "Tolong Siki",
+      "blockStart": 73136,
+      "blockEnd": 73199,
+      "definedCount": 54,
+      "unassignedCount": 10,
+      "ranges": [
+        { "start": 73136, "end": 73179 },
+        { "start": 73184, "end": 73193 }
       ]
     },
     {
@@ -3094,6 +3120,18 @@
       "ranges": [{ "start": 93760, "end": 93850 }]
     },
     {
+      "name": "Beria_Erfe",
+      "displayName": "Beria Erfe",
+      "blockStart": 93856,
+      "blockEnd": 93919,
+      "definedCount": 50,
+      "unassignedCount": 14,
+      "ranges": [
+        { "start": 93856, "end": 93880 },
+        { "start": 93883, "end": 93907 }
+      ]
+    },
+    {
       "name": "Miao",
       "displayName": "Miao",
       "blockStart": 93952,
@@ -3111,11 +3149,11 @@
       "displayName": "Ideographic Symbols And Punctuation",
       "blockStart": 94176,
       "blockEnd": 94207,
-      "definedCount": 7,
-      "unassignedCount": 25,
+      "definedCount": 12,
+      "unassignedCount": 20,
       "ranges": [
         { "start": 94176, "end": 94180 },
-        { "start": 94192, "end": 94193 }
+        { "start": 94192, "end": 94198 }
       ]
     },
     {
@@ -3123,9 +3161,9 @@
       "displayName": "Tangut",
       "blockStart": 94208,
       "blockEnd": 100351,
-      "definedCount": 6136,
-      "unassignedCount": 8,
-      "ranges": [{ "start": 94208, "end": 100343 }]
+      "definedCount": 6144,
+      "unassignedCount": 0,
+      "ranges": [{ "start": 94208, "end": 100351 }]
     },
     {
       "name": "Tangut_Components",
@@ -3153,9 +3191,18 @@
       "displayName": "Tangut Supplement",
       "blockStart": 101632,
       "blockEnd": 101759,
-      "definedCount": 9,
-      "unassignedCount": 119,
-      "ranges": [{ "start": 101632, "end": 101640 }]
+      "definedCount": 31,
+      "unassignedCount": 97,
+      "ranges": [{ "start": 101632, "end": 101662 }]
+    },
+    {
+      "name": "Tangut_Components_Supplement",
+      "displayName": "Tangut Components Supplement",
+      "blockStart": 101760,
+      "blockEnd": 101887,
+      "definedCount": 115,
+      "unassignedCount": 13,
+      "ranges": [{ "start": 101760, "end": 101874 }]
     },
     {
       "name": "Kana_Extended_B",
@@ -3240,11 +3287,24 @@
       "displayName": "Symbols For Legacy Computing Supplement",
       "blockStart": 117760,
       "blockEnd": 118463,
-      "definedCount": 686,
-      "unassignedCount": 18,
+      "definedCount": 695,
+      "unassignedCount": 9,
       "ranges": [
-        { "start": 117760, "end": 118009 },
-        { "start": 118016, "end": 118451 }
+        { "start": 117760, "end": 118012 },
+        { "start": 118016, "end": 118451 },
+        { "start": 118458, "end": 118463 }
+      ]
+    },
+    {
+      "name": "Miscellaneous_Symbols_Supplement",
+      "displayName": "Miscellaneous Symbols Supplement",
+      "blockStart": 118464,
+      "blockEnd": 118527,
+      "definedCount": 34,
+      "unassignedCount": 30,
+      "ranges": [
+        { "start": 118464, "end": 118480 },
+        { "start": 118496, "end": 118512 }
       ]
     },
     {
@@ -3466,6 +3526,19 @@
       ]
     },
     {
+      "name": "Tai_Yo",
+      "displayName": "Tai Yo",
+      "blockStart": 124608,
+      "blockEnd": 124671,
+      "definedCount": 55,
+      "unassignedCount": 9,
+      "ranges": [
+        { "start": 124608, "end": 124638 },
+        { "start": 124640, "end": 124661 },
+        { "start": 124670, "end": 124671 }
+      ]
+    },
+    {
       "name": "Ethiopic_Extended_B",
       "displayName": "Ethiopic Extended B",
       "blockStart": 124896,
@@ -3657,10 +3730,10 @@
       "displayName": "Transport And Map Symbols",
       "blockStart": 128640,
       "blockEnd": 128767,
-      "definedCount": 118,
-      "unassignedCount": 10,
+      "definedCount": 119,
+      "unassignedCount": 9,
       "ranges": [
-        { "start": 128640, "end": 128727 },
+        { "start": 128640, "end": 128728 },
         { "start": 128732, "end": 128748 },
         { "start": 128752, "end": 128764 }
       ]
@@ -3670,12 +3743,9 @@
       "displayName": "Alchemical Symbols",
       "blockStart": 128768,
       "blockEnd": 128895,
-      "definedCount": 124,
-      "unassignedCount": 4,
-      "ranges": [
-        { "start": 128768, "end": 128886 },
-        { "start": 128891, "end": 128895 }
-      ]
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [{ "start": 128768, "end": 128895 }]
     },
     {
       "name": "Geometric_Shapes_Extended",
@@ -3695,8 +3765,8 @@
       "displayName": "Supplemental Arrows C",
       "blockStart": 129024,
       "blockEnd": 129279,
-      "definedCount": 162,
-      "unassignedCount": 94,
+      "definedCount": 171,
+      "unassignedCount": 85,
       "ranges": [
         { "start": 129024, "end": 129035 },
         { "start": 129040, "end": 129095 },
@@ -3704,7 +3774,8 @@
         { "start": 129120, "end": 129159 },
         { "start": 129168, "end": 129197 },
         { "start": 129200, "end": 129211 },
-        { "start": 129216, "end": 129217 }
+        { "start": 129216, "end": 129217 },
+        { "start": 129232, "end": 129240 }
       ]
     },
     {
@@ -3721,10 +3792,10 @@
       "displayName": "Chess Symbols",
       "blockStart": 129536,
       "blockEnd": 129647,
-      "definedCount": 98,
-      "unassignedCount": 14,
+      "definedCount": 102,
+      "unassignedCount": 10,
       "ranges": [
-        { "start": 129536, "end": 129619 },
+        { "start": 129536, "end": 129623 },
         { "start": 129632, "end": 129645 }
       ]
     },
@@ -3733,15 +3804,16 @@
       "displayName": "Symbols And Pictographs Extended A",
       "blockStart": 129648,
       "blockEnd": 129791,
-      "definedCount": 114,
-      "unassignedCount": 30,
+      "definedCount": 120,
+      "unassignedCount": 24,
       "ranges": [
         { "start": 129648, "end": 129660 },
-        { "start": 129664, "end": 129673 },
-        { "start": 129679, "end": 129734 },
-        { "start": 129742, "end": 129756 },
-        { "start": 129759, "end": 129769 },
-        { "start": 129776, "end": 129784 }
+        { "start": 129664, "end": 129674 },
+        { "start": 129678, "end": 129734 },
+        { "start": 129736, "end": 129736 },
+        { "start": 129741, "end": 129756 },
+        { "start": 129759, "end": 129770 },
+        { "start": 129775, "end": 129784 }
       ]
     },
     {
@@ -3749,11 +3821,11 @@
       "displayName": "Symbols For Legacy Computing",
       "blockStart": 129792,
       "blockEnd": 130047,
-      "definedCount": 249,
-      "unassignedCount": 7,
+      "definedCount": 250,
+      "unassignedCount": 6,
       "ranges": [
         { "start": 129792, "end": 129938 },
-        { "start": 129940, "end": 130041 }
+        { "start": 129940, "end": 130042 }
       ]
     },
     {
@@ -3770,9 +3842,9 @@
       "displayName": "CJK Unified Ideographs Extension C",
       "blockStart": 173824,
       "blockEnd": 177983,
-      "definedCount": 4154,
-      "unassignedCount": 6,
-      "ranges": [{ "start": 173824, "end": 177977 }]
+      "definedCount": 4160,
+      "unassignedCount": 0,
+      "ranges": [{ "start": 173824, "end": 177983 }]
     },
     {
       "name": "CJK_Unified_Ideographs_Extension_D",
@@ -3788,9 +3860,9 @@
       "displayName": "CJK Unified Ideographs Extension E",
       "blockStart": 178208,
       "blockEnd": 183983,
-      "definedCount": 5762,
-      "unassignedCount": 14,
-      "ranges": [{ "start": 178208, "end": 183969 }]
+      "definedCount": 5774,
+      "unassignedCount": 2,
+      "ranges": [{ "start": 178208, "end": 183981 }]
     },
     {
       "name": "CJK_Unified_Ideographs_Extension_F",
@@ -3836,6 +3908,15 @@
       "definedCount": 4192,
       "unassignedCount": 0,
       "ranges": [{ "start": 201552, "end": 205743 }]
+    },
+    {
+      "name": "CJK_Unified_Ideographs_Extension_J",
+      "displayName": "CJK Unified Ideographs Extension J",
+      "blockStart": 205744,
+      "blockEnd": 210047,
+      "definedCount": 4298,
+      "unassignedCount": 6,
+      "ranges": [{ "start": 205744, "end": 210041 }]
     },
     {
       "name": "Tags",
