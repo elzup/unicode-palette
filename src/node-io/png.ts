@@ -10,14 +10,23 @@ import {
 
 export type RenderStats = Record<CharCategory, number>
 
-function ensureFont(fontPath: string): void {
+function ensureFont(fontPath: string | undefined): void {
+  if (!fontPath) {
+    console.error('Error: Font path is required for PNG output.')
+    console.error('')
+    console.error('Usage:')
+    console.error('  unicode-palette print 0000-00FF -o output.png --font /path/to/font.otf')
+    console.error('')
+    console.error('Recommended font: GNU Unifont')
+    console.error('  https://unifoundry.com/pub/unifont/')
+    process.exit(1)
+  }
   if (!fs.existsSync(fontPath)) {
-    console.error('Error: Font file not found.')
+    console.error(`Error: Font file not found: ${fontPath}`)
     console.error('')
-    console.error('Please run the setup script first:')
-    console.error('  ./scripts/setup-font.sh')
+    console.error('Please provide a valid font path.')
     console.error('')
-    console.error('Or download manually from:')
+    console.error('Recommended font: GNU Unifont')
     console.error('  https://unifoundry.com/pub/unifont/')
     process.exit(1)
   }

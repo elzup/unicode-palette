@@ -1,12 +1,5 @@
-export { add } from './unit'
-
 // Types
-export type {
-  CharCategory,
-  GridOptions,
-  GridConfig,
-  CodePoint,
-} from './types'
+export type { CharCategory, GridOptions, GridConfig, CodePoint } from './types'
 export { DEFAULT_CONFIG } from './types'
 
 // Core utilities (browser compatible)

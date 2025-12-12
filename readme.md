@@ -67,10 +67,11 @@ block.ranges.flatMap(r => range(r.end - r.start + 1)).slice(0, 20)
 - [x] **Function abstraction** - Export reusable functions with configurable options
 - [x] **PNG export** - Convert SVG to PNG using canvas
 
+- [x] **Random sampling mode** - Select random characters (excluding unassigned)
+
 ### WIP / Planned
 
 - [ ] **Browser support** - Run in browser environment
-- [ ] **Random sampling mode** - Select random characters (excluding undefined), e.g., 30x20 grid
 
 ## Install
 
@@ -92,7 +93,7 @@ unicode-palette print Hiragana
 
 # Output to file (auto-detect format by extension)
 unicode-palette print 0000-00FF -o output.svg
-unicode-palette print 0000-00FF -o output.png
+unicode-palette print 0000-00FF -o output.png -f /path/to/font.otf
 
 # With options
 unicode-palette print 0000-00FF -c 32 -b  # 32 cols, with background colors
@@ -102,6 +103,12 @@ unicode-palette print --list
 
 # Generate script tiles
 unicode-palette tiles -o tiles.svg -c 8
+
+# Random characters from BMP
+unicode-palette random -s 16x10
+
+# Random from specific block
+unicode-palette random Hiragana -s 8x3
 ```
 
 ### Example Output
@@ -125,22 +132,72 @@ $ unicode-palette print Hiragana -c 10
 ぼぽまみむめもゃやゅ
 ゆょよらりるれろゎわ
 ゐゑをんゔゕゖ  ゙
-゚゛゜ゝゞゟ
+
+$ unicode-palette random Katakana -s 10x3
+ゲモッヅザホナヸバィ
+クゴ゠ボカパヶシラチ
+セニズコーヤゥハビゼ
+
+$ unicode-palette random Greek_And_Coptic -s 12x2
+ϷϰΖλͺζσϦϩϭϔϖ
+ͽΌϲΘϕυʹώϞϸϚϋ
+
+$ unicode-palette random Cyrillic -s 12x2
+РӨљңѽнҠЃҗҍцҹ
+ӹ҂їӋѮҬҌѡүБяҽ
+
+$ unicode-palette random Arabic -s 12x2
+؋ٱثڔ۳يٕڨۈگۅؒ
+ۙضؔؾۚ۷ُڏڢ؟ٍخ
+
+$ unicode-palette random Hebrew -s 12x2
+ְ֣ה֮׳֘ב֢װֿעּ
+ׁׅכח֖שךרץׇ֥֚
+
+$ unicode-palette random Devanagari -s 12x2
+कक़टऺध॑१ऽॡएॺ८
+स७ह२९ॾ॰ॎजॲऱऎ
+
+$ unicode-palette random Thai -s 12x2
+๎ฝบมฤ๑ฐโฯฏใๆ
+้ชฬดุไ็๖ธสเถ
+
+$ unicode-palette random Hangul_Syllables -s 12x2
+펴쉒곦뫪쯵꾦걔댵젉큥퉆붂
+풧쎖쩔쉞속븈걭뎇덣횽꼃빜
+
+$ unicode-palette random CJK_Unified_Ideographs -s 12x2
+廂芓鯙蜿鬯瀒燙韔琧蕖皳邴
+瓜鐺茯弆堇巿敪雀砠藫鈶稶
+
+$ unicode-palette random Ethiopic -s 12x2
+ኁጞቝኧሮጬኩጐኢቆዝሣ
+ቧ፮ዅዀጇጡሲደሊሬሀጶ
+
+$ unicode-palette random Georgian -s 12x2
+სႯႻႲქႳჀႽႥჽჲც
+ႠႡႿჳჵპმჇნკშუ
 ```
 
-## Font Setup
+## Font Setup (for PNG output)
 
-GNU Unifont is required for consistent character display.
+A font file is required for PNG output. GNU Unifont is recommended for consistent Unicode character display.
 
 ```bash
+# Download GNU Unifont
 bash scripts/setup-font.sh
+
+# Or download manually from:
+# https://unifoundry.com/pub/unifont/
 ```
 
-Or install to system:
+Usage with PNG output:
 
 ```bash
-cp fonts/unifont.otf ~/Library/Fonts/  # macOS
+unicode-palette print 0000-00FF -o output.png -f ./fonts/unifont.otf
 ```
+
+Note: SVG output does not require a local font file (font is embedded via URL).
 
 ## Architecture
 

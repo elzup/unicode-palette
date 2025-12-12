@@ -17,13 +17,13 @@ export type GridOptions = {
   showBackground?: boolean
 }
 
-export type GridConfig = Required<GridOptions>
+export type GridConfig = Required<Omit<GridOptions, 'fontPath'>> & { fontPath?: string }
 
 export const DEFAULT_CONFIG: GridConfig = {
   cols: 64,
   rows: 104,
   cellSize: 16,
   startCodepoint: 0x0000,
-  fontPath: './fonts/unifont.otf',
+  fontPath: undefined,
   showBackground: false,
 }

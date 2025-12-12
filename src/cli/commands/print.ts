@@ -49,9 +49,13 @@ export const printCommand = defineCommand({
       description: 'Cell size in pixels (for image output)',
       default: '16',
     },
+    font: {
+      type: 'string',
+      alias: 'f',
+      description: 'Font file path (required for PNG output)',
+    },
     'fill-unassigned': {
       type: 'boolean',
-      alias: 'f',
       description: 'Fill unassigned codepoints',
       default: false,
     },
@@ -114,6 +118,7 @@ export const printCommand = defineCommand({
       startCodepoint: start,
       showBackground: args.background,
       skipUnassigned: !args['fill-unassigned'],
+      fontPath: args.font,
     }
 
     // Output to file
