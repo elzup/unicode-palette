@@ -2,6 +2,18 @@
 
 Unicode character visualization tool - Generate grid-based character maps as SVG/PNG.
 
+```bash
+$ npx unicode-palette random Box_Drawing -s 5x5
+╊┸┱┷╏
+┋┥┐┑┳
+╆╫┵╾┫
+┽═╔╛┧
+┖╈╨│┎
+
+$ npx unicode-palette print 25E7-25FB -c 30
+◧◨◩◪◫◬◭◮◯◰◱◲◳◴◵◶◷◸◹◺◻
+```
+
 ## Unicode Block Data
 
 This repository includes pre-generated Unicode block data (Unicode 16.0.0, 338 blocks) that can be used directly:
@@ -53,26 +65,6 @@ block.ranges.flatMap(r => range(r.end - r.start + 1)).slice(0, 20)
 // ͰͱͲͳʹ͵Ͷͷͺͻͼͽ;Ϳ΄΅Ά·ΈΉ
 ```
 
-## Features
-
-### Implemented
-
-- [x] SVG generation with Unicode characters in grid layout
-- [x] Character category detection (printable, control, surrogate, unassigned, private)
-- [x] XML escape handling
-- [x] GNU Unifont support for consistent character width
-- [x] Console output mode (dump-scripts)
-- [x] **Script tile mode** - For each Unicode block, select 4 representative characters (from defined ranges, quartile positions) and arrange in 4x1 tiles
-- [x] **Full Unicode block data** - 338 blocks from `@unicode/unicode-16.0.0`
-- [x] **Function abstraction** - Export reusable functions with configurable options
-- [x] **PNG export** - Convert SVG to PNG using canvas
-
-- [x] **Random sampling mode** - Select random characters (excluding unassigned)
-
-### WIP / Planned
-
-- [ ] **Browser support** - Run in browser environment
-
 ## Install
 
 ```bash
@@ -109,6 +101,9 @@ unicode-palette random -s 16x10
 
 # Random from specific block
 unicode-palette random Hiragana -s 8x3
+
+# Print specific hex range (subset of block)
+unicode-palette print 25E7-25FB  # ◧◨◩◪◫◬◭◮◯◰◱◲◳◴◵◶◷◸◹◺◻◼◽◾◿
 ```
 
 ### Example Output
