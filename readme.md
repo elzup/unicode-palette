@@ -20,7 +20,7 @@ QRSTUVWX
 YZ
 ```
 
-## Unicode Block Data
+## Unicode Block Data Usage
 
 This repository includes pre-generated Unicode block data (Unicode 16.0.0, 338 blocks) that can be used directly:
 
@@ -32,25 +32,64 @@ This repository includes pre-generated Unicode block data (Unicode 16.0.0, 338 b
 
 Each block includes: name, display name, code point range, defined/unassigned counts, and character ranges.
 
+### Sample schema
 
+```
+{
+  "version": "17.0.0",
+  "generatedAt": "2025-12-12T04:06:38.250Z",
+  "totalBlocks": 346,
+  "bmpBlocks": 164,
+  "blocks": [
+    {
+      "name": "Basic_Latin",
+      "displayName": "Basic Latin",
+      "blockStart": 0,
+      "blockEnd": 127,
+      "definedCount": 128,
+      "unassignedCount": 0,
+      "ranges": [{ "start": 0, "end": 127 }]
+    }
+    /* ... */,
+    {
+      "name": "Armenian",
+      "displayName": "Armenian",
+      "blockStart": 1328,
+      "blockEnd": 1423,
+      "definedCount": 91,
+      "unassignedCount": 5,
+      "ranges": [
+        { "start": 1329, "end": 1366 },
+        { "start": 1369, "end": 1418 },
+        { "start": 1421, "end": 1423 }
+      ]
+    }
+     /* ... */ ]}
+```
+
+### Example Usage
 
 ```rb
 require 'json'
-block = JSON.parse(File.read('data/unicode-blocks.json'))['blocks'].find{|b| b['name']=='Bopomofo'}\
-puts (0...20).map{|i| (block['blockStart']+i).chr('UTF-8')}.join
-# ㄀㄁㄂㄃㄄ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓ
-#  Note:  ㄀~㄄ are unassigned
+data = JSON.parse(File.read('data/unicode-blocks.json'))
+block = data['blocks'].find{|b| b['name']=='Bopomofo'}
 
 # filter out unassigned
 puts block['ranges'].flat_map{|r| (r['start']..r['end']).to_a}.first(20).pack('U*')
 # ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘ
+
+# without skipping unassigned
+puts (0...20).map{|i| (block['blockStart']+i).chr('UTF-8')}.join
+# ㄀㄁㄂㄃㄄ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓ
+#  Note:  ㄀~㄄ are unassigned
 ```
+
 
 ```sh
 $ jq -r '.blocks[] | select(.name=="Tifinagh") | [range(.blockStart; .blockStart+20)] | implode' unicode-blocks.json
 ⴰⴱⴲⴳⴴⴵⴶⴷⴸⴹⴺⴻⴼⴽⴾⴿⵀⵁⵂⵃ
 
-jq -r '.blocks[] | select(.name=="Superscripts_And_Subscripts") | [.ranges[] | range(.start; .end+1)] | .[:20] | implode' data/unicode-blocks.json
+$ jq -r '.blocks[] | select(.name=="Superscripts_And_Subscripts") | [.ranges[] | range(.start; .end+1)] | .[:20] | implode' data/unicode-blocks.json
 ⁰ⁱ⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿ₀₁₂₃₄₅
 ```
 
@@ -61,20 +100,21 @@ const block = data.blocks.find(b => b.name === 'Greek_And_Coptic')
 const toChar = cp => String.fromCodePoint(cp)
 const range = (n) => [...Array(n).keys()]
 
-// Simple: from blockStart (may include unassigned holes)
-range(20).map(i => toChar(block.blockStart + i)).join('')
-// ͰͱͲͳʹ͵Ͷͷ͸͹ͺͻͼͽ;Ϳ΀΁΂΃
-
 // Using ranges: only defined characters (no holes)
 block.ranges.flatMap(r => range(r.end - r.start + 1)).slice(0, 20)
   .map(i => toChar(r.start + i)).join('')
 // ͰͱͲͳʹ͵Ͷͷͺͻͼͽ;Ϳ΄΅Ά·ΈΉ
+
+// Simple: from blockStart (may include unassigned holes)
+range(20).map(i => toChar(block.blockStart + i)).join('')
+// ͰͱͲͳʹ͵Ͷͷ͸͹ͺͻͼͽ;Ϳ΀΁΂΃
+
 ```
 
 ## Install
 
 ```bash
-pnpm add unicode-palette
+npm install unicode-palette
 ```
 
 ## CLI
