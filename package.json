@@ -32,7 +32,7 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.28.2",
   "scripts": {
     "build": "unbuild",
     "lint": "oxlint",
@@ -59,7 +59,7 @@
     "vitest": "^3.0.0"
   },
   "dependencies": {
-    "citty": "^0.1.6",
+    "citty": "^0.2.0",
     "zod": "^4.1.13"
   }
 }
