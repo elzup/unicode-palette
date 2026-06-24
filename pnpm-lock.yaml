@@ -7,13 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      citty:
-        specifier: ^0.2.0
-        version: 0.2.2
-      zod:
-        specifier: ^4.1.13
-        version: 4.4.3
     devDependencies:
       '@elzup/tsconfig':
         specifier: ^1.1.0
@@ -42,6 +35,9 @@ importers:
       vitest:
         specifier: ^3.0.0
         version: 3.2.4(@types/node@24.12.4)(jiti@2.6.1)(tsx@4.22.4)
+      zod:
+        specifier: ^4.1.13
+        version: 4.4.3
 
 packages:
 
@@ -764,9 +760,6 @@ packages:
 
   citty@0.1.6:
     resolution: {integrity: sha512-tskPPKEs8D2KPafUypv2gxwJP8h/OaJmC82QQGGDQcHvXX43xF2VDACcJVmZ0EuSxkpO9Kc4MlrA3q0+FG58AQ==}
-
-  citty@0.2.2:
-    resolution: {integrity: sha512-+6vJA3L98yv+IdfKGZHBNiGW5KHn22e/JwID0Strsz8h4S/csAu/OuICwxrg44k5MRiZHWIo8XXuJgQTriRP4w==}
 
   colord@2.9.3:
     resolution: {integrity: sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==}
@@ -1899,8 +1892,6 @@ snapshots:
   citty@0.1.6:
     dependencies:
       consola: 3.4.2
-
-  citty@0.2.2: {}
 
   colord@2.9.3: {}
 
