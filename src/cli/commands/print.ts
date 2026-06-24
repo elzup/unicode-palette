@@ -1,6 +1,7 @@
-import { defineCommand } from 'citty'
+import { parseArgs } from 'node:util'
 import { generateChars } from '../../render'
 import { UNICODE_BLOCKS } from '../../core'
+import type { Command } from '../types'
 
 function parseRange(range: string): { start: number; end: number } | null {
   const match = range.match(/^([0-9a-fA-F]+)-([0-9a-fA-F]+)$/)
@@ -21,32 +22,40 @@ function findBlockByName(name: string) {
   )
 }
 
-export const printCommand = defineCommand({
-  meta: {
-    name: 'print',
-    description: 'Print Unicode characters to console',
-  },
-  args: {
-    range: {
-      type: 'positional',
-      description: 'Range (hex-hex, e.g., 0000-00FF) or block name',
-      required: false,
-    },
-    cols: {
-      type: 'string',
-      alias: 'c',
-      description: 'Number of columns (default: all in one line)',
-    },
-    list: {
-      type: 'boolean',
-      alias: 'l',
-      description: 'List available block names',
-      default: false,
-    },
-  },
-  run({ args }) {
+const help = `unicode-palette print - Print Unicode characters to console
+
+Usage: unicode-palette print [range] [options]
+
+Arguments:
+  range            Range (hex-hex, e.g., 0000-00FF) or block name
+
+Options:
+  -c, --cols <n>   Number of columns (default: all in one line)
+  -l, --list       List available block names
+  -h, --help       Show this help`
+
+export const printCommand: Command = {
+  name: 'print',
+  description: 'Print Unicode characters to console',
+  help,
+  run(argv) {
+    const { values, positionals } = parseArgs({
+      args: argv,
+      options: {
+        cols: { type: 'string', short: 'c' },
+        list: { type: 'boolean', short: 'l', default: false },
+        help: { type: 'boolean', short: 'h', default: false },
+      },
+      allowPositionals: true,
+    })
+
+    if (values.help) {
+      console.log(help)
+      return
+    }
+
     // List blocks
-    if (args.list) {
+    if (values.list) {
       console.log('Available blocks:')
       for (const block of UNICODE_BLOCKS) {
         const startHex = block.start.toString(16).toUpperCase().padStart(4, '0')
@@ -60,18 +69,19 @@ export const printCommand = defineCommand({
     let start = 0x0000
     let end = 0x00ff
 
-    if (args.range) {
-      const rangeResult = parseRange(args.range)
+    const range = positionals[0]
+    if (range) {
+      const rangeResult = parseRange(range)
       if (rangeResult) {
         start = rangeResult.start
         end = rangeResult.end
       } else {
-        const block = findBlockByName(args.range)
+        const block = findBlockByName(range)
         if (block) {
           start = block.start
           end = block.end
         } else {
-          console.error(`Invalid range or block name: ${args.range}`)
+          console.error(`Invalid range or block name: ${range}`)
           console.error('Use --list to see available block names')
           process.exit(1)
         }
@@ -79,7 +89,7 @@ export const printCommand = defineCommand({
     }
 
     const total = end - start + 1
-    const cols = args.cols ? parseInt(args.cols, 10) : total
+    const cols = values.cols ? parseInt(values.cols, 10) : total
     const rows = Math.ceil(total / cols)
 
     const chars = generateChars({
@@ -107,4 +117,4 @@ export const printCommand = defineCommand({
       console.log(line)
     }
   },
-})
+}

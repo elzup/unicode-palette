@@ -1,5 +1,6 @@
-import { defineCommand } from 'citty'
+import { parseArgs } from 'node:util'
 import { UNICODE_BLOCKS, getBlockDataByName } from '../../core'
+import type { Command } from '../types'
 
 function parseRange(range: string): { start: number; end: number } | null {
   const match = range.match(/^([0-9a-fA-F]+)-([0-9a-fA-F]+)$/)
@@ -61,29 +62,40 @@ function shuffle<T>(array: T[]): T[] {
   return result
 }
 
-export const randomCommand = defineCommand({
-  meta: {
-    name: 'random',
-    description: 'Print random Unicode characters',
-  },
-  args: {
-    range: {
-      type: 'positional',
-      description: 'Range (hex-hex) or block name (default: BMP)',
-      required: false,
-    },
-    size: {
-      type: 'string',
-      alias: 's',
-      description: 'Grid size (COLSxROWS, e.g., 16x10)',
-      default: '16x10',
-    },
-  },
-  run({ args }) {
+const help = `unicode-palette random - Print random Unicode characters
+
+Usage: unicode-palette random [range] [options]
+
+Arguments:
+  range              Range (hex-hex) or block name (default: BMP)
+
+Options:
+  -s, --size <WxH>   Grid size (COLSxROWS, e.g., 16x10) (default: 16x10)
+  -h, --help         Show this help`
+
+export const randomCommand: Command = {
+  name: 'random',
+  description: 'Print random Unicode characters',
+  help,
+  run(argv) {
+    const { values, positionals } = parseArgs({
+      args: argv,
+      options: {
+        size: { type: 'string', short: 's', default: '16x10' },
+        help: { type: 'boolean', short: 'h', default: false },
+      },
+      allowPositionals: true,
+    })
+
+    if (values.help) {
+      console.log(help)
+      return
+    }
+
     // Parse size
-    const sizeResult = parseSize(args.size)
+    const sizeResult = parseSize(values.size)
     if (!sizeResult) {
-      console.error(`Invalid size format: ${args.size}`)
+      console.error(`Invalid size format: ${values.size}`)
       console.error('Use format: COLSxROWS (e.g., 16x10)')
       process.exit(1)
     }
@@ -94,18 +106,19 @@ export const randomCommand = defineCommand({
     let start = 0x0000
     let end = 0xffff // BMP default
 
-    if (args.range) {
-      const rangeResult = parseRange(args.range)
+    const range = positionals[0]
+    if (range) {
+      const rangeResult = parseRange(range)
       if (rangeResult) {
         start = rangeResult.start
         end = rangeResult.end
       } else {
-        const block = findBlockByName(args.range)
+        const block = findBlockByName(range)
         if (block) {
           start = block.start
           end = block.end
         } else {
-          console.error(`Invalid range or block name: ${args.range}`)
+          console.error(`Invalid range or block name: ${range}`)
           process.exit(1)
         }
       }
@@ -131,4 +144,4 @@ export const randomCommand = defineCommand({
       console.log(line)
     }
   },
-})
+}
