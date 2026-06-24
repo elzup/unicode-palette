@@ -1,0 +1,35 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  id-token: write # OIDC: required for npm Trusted Publishing
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24' # OIDC needs npm >= 11.5.1 (bundled with Node 24)
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'pnpm'
+      - name: Strip placeholder token so OIDC engages
+        # setup-node writes a dummy `:_authToken=` into the user .npmrc; if left in
+        # place npm skips the OIDC handshake and fails with E404. Remove it so npm
+        # sees "registry, no token" and performs the trusted-publishing exchange.
+        run: sed -i '/:_authToken=/d; /always-auth/d' "$NPM_CONFIG_USERCONFIG"
+      - name: Install dependencies
+        run: pnpm install
+      - name: Publish
+        # `npm publish` runs prepublishOnly (pnpm build && pnpm test) then publishes
+        # via OIDC. provenance is attached automatically; no NPM_TOKEN required.
+        run: npm publish --provenance --access public
