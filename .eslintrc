@@ -1,6 +1,0 @@
-{
-  "extends": ["nzap", "nzap/typescript", "nzap/jest"],
-  "rules": {
-    "import/no-unresolved": "off"
-  }
-}
