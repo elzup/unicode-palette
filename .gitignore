@@ -1,6 +1,6 @@
 node_modules
 coverage
-lib
+/lib
 fonts/
 output/*
 !output/script-tiles.svg

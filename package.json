@@ -40,7 +40,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "prepublishOnly": "pnpm build && pnpm test",
-    "generate:data": "tsx scripts/generate-unicode-data.ts"
+    "generate:data": "tsx scripts/generate-unicode-data.ts",
+    "generate:tiles": "tsx scripts/generate-tiles.ts",
+    "generate:tiles:non-bmp": "tsx scripts/generate-tiles-non-bmp.ts"
   },
   "files": [
     "dist/",
@@ -52,6 +54,7 @@
     "@types/node": "^24.0.0",
     "@unicode/unicode-17.0.0": "^1.6.16",
     "oxlint": "^1.0.0",
+    "playwright": "^1.61.1",
     "prettier": "^3.7.4",
     "tsx": "^4.21.0",
     "typescript": "^5.0.0",
